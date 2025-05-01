@@ -1,0 +1,42 @@
+/* Additional vars */
+:root {
+  --bs-root-font-size: clamp(0.875rem, 1vw + 0.5rem, 1.25rem);
+  --gcc-light-yellow: #FFF4D4;
+  --gcc-light-red: #FDF9F9;
+  --gcc-sunset: linear-gradient(to bottom, rgba(253,249,249,1) 0%,rgba(255,249,233,1) 100%);
+  --gcc-proxima-nova: "proxima-nova", sans-serif;
+  --gcc-lora: "Lora", serif;
+}
+
+/* Font Helpers */
+.proxima-nova {
+  font-family: var(--gcc-proxima-nova);
+}
+
+.lora {
+  font-family: var(--gcc-lora);
+}
+
+/* Color Helpers */
+.bg-yellow {
+  background: var(--bs-yellow) !important;
+}
+
+.bg-light-yellow {
+  background: var(--gcc-light-yellow) !important;
+}
+
+.bg-sunset {
+  background: var(--gcc-sunset) !important;
+}
+
+.bg-light-red {
+  background: var(--gcc-light-red) !important;
+}
+
+.preheading {
+  font-weight: 700;
+  font-size: calc(var(--font-size-base) * 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

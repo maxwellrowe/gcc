@@ -1,0 +1,180 @@
+/* Baselines */
+body {
+	font-size: var(--font-size-base);
+	line-height: 1.4;
+}
+h1 {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 1.1;
+  font-family: var(--gcc-lora);
+}
+h2 {
+  font-size: clamp(1.625rem, 3.5vw, 2.5rem);
+  line-height: 1.15;
+}
+h3 {
+  font-size: clamp(1.375rem, 2.5vw, 2rem);
+  line-height: 1.2;
+}
+h4 {
+  font-size: clamp(1.125rem, 1.8vw, 1.5rem);
+  line-height: 1.3;
+}
+h5 {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  line-height: 1.4;
+}
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 800;
+}
+p {
+	margin-top: 0;
+}
+a {
+	transition: all .2s ease-in-out;	
+}
+
+// Buttons
+.btn-outline-light {
+	border-color: var(--bs-yellow);
+	color: var(--bs-white);
+}
+.btn-outline-light:hover {
+	border-color: var(--bs-yellow);
+	background: var(--bs-yellow);	
+}
+
+// Circle Button
+.btn {
+	&.btn-circle {
+		padding: 0;
+		height: 3.75rem;
+		width: 3.75rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all .2s ease-in-out;
+		
+		&.btn-lg {
+			width: 4.625rem;
+			height: 4.625rem;
+		}
+		
+		&.btn-sm {
+			width: 2.5625rem;
+			height: 2.5625rem;
+		}
+	}	
+}
+
+/*****************************
+Header
+*****************************/
+.global-header .global-brand {
+	display: block;
+	max-width: 12.5rem;
+}
+.global-header .global-brand img {
+	max-width: 100%;
+	height: auto;	
+}
+
+// Header Menu Bars Button
+.btn#primary-menu-toggle {
+	
+	&.collapsed {
+		.menu-bars {
+			.menu-bar:first-child {
+				top: 0;
+				transform: rotate(0);
+			}
+			.menu-bar:last-child {
+				top: 10px;
+				transform: rotate(0);
+			}
+		}
+	}
+	
+	.menu-bars {
+		width: 1.5rem;
+		position: relative;
+		height: 1.675rem;
+		
+		.menu-bar {
+			display: block;
+			width: 100%;
+			height: 3px;
+			background-color: var(--bs-dark);	
+			margin: .5rem 0;
+			transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+			position: absolute;
+			
+			&:first-child {
+				transform: rotate(45deg);
+				top: 5px;
+			}
+			&:last-child {
+				transform: rotate(-45deg);
+				top: 5px;
+			}
+			
+		}	
+	}
+}
+
+// Search 
+.btn#global-search-toggle {
+	position: relative;
+	transition: background-color 0.3s ease;
+	
+	span.fa-sharp {
+		position: absolute;
+		transition: opacity 0.3s ease-in-out, top 0.3s ease;
+		&.fa-xmark {
+			visibility: hidden;
+			opacity: 0;	
+			top: 100px;
+		}
+		&.fa-magnifying-glass {
+			top: auto;
+			opacity: 1;
+			visibility: visible;	
+		}
+	}
+	
+	&[aria-expanded="true"] {
+		background-color: var(--bs-gray-600); 
+		span.fa-sharp {
+			&.fa-xmark {
+				opacity: 1;
+				visibility: visible;
+				top: auto;	
+			}	
+			&.fa-magnifying-glass {
+				opacity: 0;
+				visibility: hidden;
+				top: -100px;	
+			}
+		}
+	}	
+	
+}
+
+/**********************
+FOOTER
+**********************/
+#global-footer {
+	margin-top: 6rem;
+		
+	.footer-college-outline {
+		margin-top: -4rem;	
+	}
+	#footer-brand {
+		img {
+			width: 12.5rem;
+			height: auto;	
+		}	
+	}
+}

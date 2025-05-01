@@ -5,7 +5,7 @@
 		<title><?php echo $title; ?></title>
 		<meta name="description" content="<?php echo $description; ?>">
 		
-		<link rel="icon/x-icon" href="/gcc/_resources/images/favicon.ico" type="image/x-icon">
+		<link rel="icon/x-icon" href="/gcc/favicon.ico" type="image/x-icon">
 		<link rel="icon/png" href="/gcc/_resources/images/favicon-32x32.png" type="image/png">
 		<link rel="apple-touch-icon" href="/gcc/_resources/images/apple-touch-icon.png">
 		
@@ -27,9 +27,21 @@
 		<link rel="manifest" href="/gcc/manifest.json">
 		<meta name="theme-color" content="#ffffff">
 		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/cxl7ewr.css">
+		
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/e5f14fee05.js" crossorigin="anonymous"></script>
+		
 		<!-- Plugins -->
 		<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		
+		<!-- GCC Bootstrap -->
+		<link href="/gcc/_resources/css/gcc-bootstrap.css" rel="stylesheet" />
 		
 		<!-- GCC -->
 		<link href="/gcc/_resources/css/utilities.css" rel="stylesheet" />

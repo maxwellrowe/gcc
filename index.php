@@ -12,7 +12,8 @@
 		<?php include('_resources/includes/header.php'); ?>
 		
 		<main>
-			Hello World!
+			<h1>Hello World!</h1>
+			<a href="#" class="btn btn-primary">Go Somewhere</a>
 		</main>
 		
 		<?php include('_resources/includes/footer.php'); ?>

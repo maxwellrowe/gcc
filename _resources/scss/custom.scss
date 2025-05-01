@@ -1,0 +1,76 @@
+/* Bootstrap Function Imports (needed early) */
+@import "../../../node_modules/bootstrap/scss/functions";
+
+/* --- YOUR CUSTOM COLORS FIRST --- */
+
+/* Core colors */
+$primary: #A32036;
+$secondary: #60040B;
+$yellow: #FFC62A;
+$black: #151413;
+$light: #ECECEC;
+$white: #ffffff;
+$dark: $black;
+
+/* Custom grays */
+$gray-900: #3D3936;
+$gray-600: #666666;
+$gray-500: #D9D9D9;
+$gray-400: #ECECEC;
+$gray-300: #F2F2F2;
+$gray-200: #F9F9F9;
+
+/* Redefine full $theme-colors early */
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "yellow": $yellow,
+  "light": $light,
+  "dark": $dark,
+  "white": $white,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-900": $gray-900
+);
+
+/* Other customizations (font-sizes, spacers, etc.) */
+$font-family-base: 'proxima-nova', sans-serif;
+$font-size-base: 1rem;
+$font-size-root: 16px;
+
+$spacer: 2rem;
+
+/* Buttons */
+$btn-border-radius: 10rem;
+$btn-border-radius-sm: 10rem;
+$btn-border-radius-lg: 10rem;
+$btn-font-weight: 700;
+$btn-padding-y: 1rem;
+$btn-padding-x: 2rem;
+$btn-padding-y-lg: 1.25rem;
+$btn-padding-x-lg: 2.25rem;
+$btn-padding-y-sm: .5rem;
+$btn-padding-x-sm: 1rem;
+$btn-border-width: 2px;
+$btn-light-bg: #ECECEC;
+
+/* Border Radius */
+$border-radius: 1.5rem;
+$border-radius-sm: 0.75rem;
+$border-radius-lg: 2rem;
+$border-radius-xl: 2.5rem;
+$border-radius-xxl: 3rem; 
+
+/* Fluid Font Sizes */
+$font-size-1: clamp(2.5rem, 1.5vw + 1rem, 4rem);
+$font-size-2: clamp(2rem, 1.2vw + 0.75rem, 3rem);
+$font-size-3: clamp(1.75rem, 1vw + 0.5rem, 2.5rem);
+$font-size-4: clamp(1.5rem, 0.8vw + 0.5rem, 2rem);
+$font-size-5: clamp(1.25rem, 0.6vw + 0.4rem, 1.5rem);
+$font-size-6: clamp(1rem, 0.4vw + 0.3rem, 1.25rem);
+
+/* --- NOW import full Bootstrap --- */
+@import "../../../node_modules/bootstrap/scss/bootstrap";

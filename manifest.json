@@ -6,12 +6,12 @@
   "theme_color": "#ffffff",
   "icons": [
 	{
-	  "src": "/gcc/android-chrome-192x192.png",
+	  "src": "/gcc/_resources/images/android-chrome-192x192.png",
 	  "sizes": "192x192",
 	  "type": "image/png"
 	},
 	{
-	  "src": "/gcc/android-chrome-512x512.png",
+	  "src": "/gcc/_resources/images/android-chrome-512x512.png",
 	  "sizes": "512x512",
 	  "type": "image/png"
 	}
