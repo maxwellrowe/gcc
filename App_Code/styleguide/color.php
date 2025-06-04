@@ -96,4 +96,11 @@
 			#FDF9F9
 		</p>
 	</div>
+	<div class="col">
+		<div style="height: 200px; width: 100%;" class="bg-medium-red rounded"></div>
+		<p class="fs-6 mt-1 mb-3">
+			<strong>Medium Red</strong><br />
+			#EED7D9
+		</p>
+	</div>
 </div>

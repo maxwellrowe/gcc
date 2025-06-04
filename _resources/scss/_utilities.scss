@@ -1,0 +1,154 @@
+@use "mixins";
+
+/* Additional vars */
+:root {
+	--bs-root-font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+	--gcc-light-yellow: #FFF4D4;
+	--gcc-light-red: #FDF9F9;
+	--gcc-medium-red: #EED7D9;
+	--gcc-sunset: linear-gradient(to bottom, 
+		rgba(253,249,249,1) 0%,
+		rgba(255,249,233,1) 100%);
+	--gcc-red-gradient: linear-gradient(135deg,
+	  #A32036 0%,
+	  #C42842 100%);
+	--gcc-proxima-nova: 'proxima-nova', sans-serif;
+	--gcc-lora: 'Lora', serif;
+}
+
+// Animations
+@keyframes kenburns {
+  0% {
+	transform: scale(1) translate(0, 0);
+  }
+  100% {
+	transform: scale(1.1) translate(-2.5%, -2.5%);
+  }
+}
+.fade-up {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.5s forwards;
+}
+@keyframes fadeUp {
+  to {
+	opacity: 1;
+	transform: translateY(0);
+  }
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInSection 0.6s forwards;
+}
+
+@keyframes fadeInSection {
+  to {
+	opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/* Font Helpers */
+.proxima-nova {
+	font-family: var(--gcc-proxima-nova);	
+}
+.lora {
+	font-family: var(--gcc-lora);	
+}
+.fs-7 {
+	font-size: clamp(0.95rem, 0.35vw + 0.25rem, 1.1rem);	
+}
+
+/* Color Helpers */
+.bg-yellow {
+	background: var(--bs-yellow) !important;	
+}
+.bg-light-yellow {
+	background: var(--gcc-light-yellow) !important;	
+}
+.bg-sunset {
+	background: var(--gcc-sunset) !important;
+}
+.bg-red-gradient {
+	background: var(--gcc-red-gradient) !important;	
+}
+.bg-light-red {
+	background: var(--gcc-light-red) !important;	
+}
+.bg-medium-red {
+	background: var(--gcc-medium-red) !important;	
+}
+.bg-bright-red {
+	background: #E30000;	
+}
+
+// Other Helpers/ Utilities
+.w-max-content {
+	width: max-content;	
+}
+
+// Links
+a {
+	transition: all .2s ease-in-out;
+	
+	&.arrow-link {
+		text-decoration: none;
+		display: flex;
+		justify-content: start;
+		align-items: start;
+		gap: .5rem;
+		font-weight: 700;
+		
+		&::before {
+			font-family: "Font Awesome 6 Sharp";
+			content: '\f0a9';
+			font-weight: 300;
+			color: var(--bs-dark);
+			transition: all .2s ease-in-out;
+		}
+		&:hover {
+			color: var(--bs-gray-900);
+			
+			&::before {
+				transform: translatex(.15rem);	
+			}
+		}
+			
+	}	
+}
+
+// Pre-Heading
+.preheading {
+	font-weight: 700;
+	font-size: 1rem !important;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: 1rem;
+	display: block;
+	
+	&.small {
+		font-size: 85% !important;	
+	}
+	&.preheading-arrow {
+		display: flex;
+		align-items: start;
+		justify-content: start;
+		gap: .5rem;
+		width: max-content;
+		
+		&::before {
+			font-family: "Font Awesome 6 Sharp";
+			font-weight: 400;
+			content:'\f175';
+			color: var(--bs-primary);
+				
+		}	
+	}
+}
+
+// Containers
+.container {
+	max-width: 1140px;	
+}

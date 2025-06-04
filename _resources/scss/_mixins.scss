@@ -1,0 +1,170 @@
+// Add icons per file type/ url to links
+@mixin icon-link {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: start;
+	
+	&::after {
+		font-family: "Font Awesome 6 Sharp";
+		font-weight: 400;
+		content:'\f35d';	
+		transition: all .2s ease-in-out;
+	}
+	
+	&[href*="glendale.edu"] {
+		&::after  {
+			content: '\f061';	
+		}	
+	}
+	
+	&[href*=".pdf"] {
+		&::after {
+			content: '\f1c1';	
+		}	
+	}
+	
+	&[href^="#"]:not([href="#"]) {
+		&::after {
+			content: '\f13d';	
+		}	
+	}
+	
+	&[href*=".doc"], &[href*=".docx"], &[href*=".xsl"] {
+		&::after {
+			content: '\f15b';	
+		}
+	}
+}
+
+@mixin plus-icon {
+	font-family: "Font Awesome 6 Sharp";
+	font-weight: 400;
+	content: "\2b";	
+}
+
+@mixin menu-bars {
+	&.is-open {
+		.menu-bars {
+			.menu-bar:first-child {
+				transform: rotate(45deg);
+				top: 5px;
+			}
+			.menu-bar:last-child {
+				transform: rotate(-45deg);
+				top: 5px;
+			}
+		}
+	}
+	
+	.menu-bars {
+		width: 1.5rem;
+		position: relative;
+		height: 1.675rem;
+		
+		.menu-bar {
+			display: block;
+			width: 100%;
+			height: 3px;
+			background-color: var(--bs-primary);	
+			margin: .5rem 0;
+			transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+			position: absolute;
+			
+			&:first-child {
+				top: 0;
+				transform: rotate(0);
+			}
+			&:last-child {
+				top: 10px;
+				transform: rotate(0);
+			}
+			
+		}	
+	}	
+}
+
+@mixin toggle-menu {
+	ul {
+		margin: 0;
+		padding: 0;	
+		
+		li  {
+			list-style: none;
+			display: block;
+			border-bottom: 1px solid var(--bs-gray-400);
+			
+			&:first-child {
+				border-top: 1px solid var(--bs-gray-400);	
+			}
+			
+			a {
+				transition: all .2s ease-in-out;
+				text-decoration: none;
+				color: var(--bs-dark);
+				padding: .5rem;
+				font-weight: 600;
+				
+				&:after {
+					transform: translateX(-0.125rem);	
+					opacity: 0;
+				}
+				
+				&:hover {
+					color: var(--bs-primary);
+					
+					&:after {
+						opacity: 1;
+						transform: translateX(0.125rem);	
+					}
+				}	
+			}
+			
+			ul {
+				opacity: 0;
+				max-height: 0;
+				overflow: hidden;
+				padding: 0 .5rem;
+				transition: max-height .2s ease-in;	
+				
+				li {
+					&:last-child {
+						border-bottom-width: 0;	
+					}	
+				}
+			}
+			
+			&.toggle-sub-menu {
+				transition: all .2s ease-in-out;
+				> a {
+					&::after {
+						content: '\2b';
+						opacity: 1;
+						transform: none;	
+					}
+				}	
+				&.toggle-sub-menu-open {
+					border: 1px solid var(--gcc-medium-red);
+					background: var(--bs-white);
+					border-radius: .125rem;
+					padding: .5rem;
+					margin-top: -1px;
+					margin-bottom: .5rem;
+					
+					> ul {
+						max-height: 1000px;
+						opacity: 1;
+						overflow: auto;	
+					}	
+					> a {
+						color: var(--bs-secondary);
+						
+						&::after {
+							transform: rotate(135deg);	
+						}	
+					}
+				}
+			}	
+		}
+	}	
+}

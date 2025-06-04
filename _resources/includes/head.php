@@ -1,3 +1,8 @@
+<?php 
+	// functions used for Components and Snippets
+	require_once('../App_Code/includes/functions/template-functions.php');
+?>
+
 <?php function head($title, $description) { ?>
 	<head>
 		<meta charset="UTF-8">
@@ -39,14 +44,13 @@
 		<!-- Plugins -->
 		<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 		
 		<!-- GCC Bootstrap -->
 		<link href="/gcc/_resources/css/gcc-bootstrap.css" rel="stylesheet" />
 		
 		<!-- GCC -->
-		<link href="/gcc/_resources/css/utilities.css" rel="stylesheet" />
-		<link href="/gcc/_resources/css/global.css" rel="stylesheet" />
-		<link href="/gcc/_resources/css/components.css" rel="stylesheet" />
+		<link href="/gcc/_resources/css/main.css" rel="stylesheet" />
 		
 	</head>
 <?php } ?>

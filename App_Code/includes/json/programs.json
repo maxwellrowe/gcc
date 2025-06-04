@@ -1,0 +1,434 @@
+[
+  {
+    "program": "Accounting",
+    "division": "Business",
+    "lpp": "Business, Entrepreneurship & Management",
+    "lpp_id": "bem",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Business, Entrepreneurship & Management"
+  },
+  {
+    "program": "Business Administration",
+    "division": "Business",
+    "lpp": "Business, Entrepreneurship & Management",
+    "lpp_id": "bem",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Business, Entrepreneurship & Management"
+  },
+  {
+    "program": "Computer Applications and Business Office Technology",
+    "division": "Business",
+    "lpp": "Business, Entrepreneurship & Management",
+    "lpp_id": "bem",
+    "awards": "sc",
+    "Sub Area of LPP": "Business, Entrepreneurship & Management"
+  },
+  {
+    "program": "Culinary Arts, Nutrition and Hospitality Management",
+    "division": "Technology & Aviation",
+    "lpp": "Business, Entrepreneurship & Management",
+    "lpp_id": "bem",
+    "awards": "coa,aa",
+    "Sub Area of LPP": "Business, Entrepreneurship & Management"
+  },
+  {
+    "program": "Hospitality and Tourism Management",
+    "division": "Technology & Aviation",
+    "lpp": "Business, Entrepreneurship & Management",
+    "lpp_id": "bem",
+    "awards": "aa",
+    "Sub Area of LPP": "Business, Entrepreneurship & Management"
+  },
+  {
+    "program": "Real Estate",
+    "division": "Business",
+    "lpp": "Business, Entrepreneurship & Management",
+    "lpp_id": "bem",
+    "awards": "ast",
+    "Sub Area of LPP": "Business, Entrepreneurship & Management"
+  },
+  {
+    "program": "Administration of Justice",
+    "division": "Technology & Aviation",
+    "lpp": "Health, Wellness & Public Safety",
+    "lpp_id": "hwp",
+    "awards": "as",
+    "Sub Area of LPP": "Health, Wellness & Public Safety"
+  },
+  {
+    "program": "Alcohol/Drug Specialist Studies",
+    "division": "Health Sciences",
+    "lpp": "Health, Wellness & Public Safety",
+    "lpp_id": "hwp",
+    "awards": "coa,as",
+    "Sub Area of LPP": "Health, Wellness & Public Safety"
+  },
+  {
+    "program": "Emergency Medical Services",
+    "division": "Health Sciences",
+    "lpp": "Health, Wellness & Public Safety",
+    "lpp_id": "hwp",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Health, Wellness & Public Safety"
+  },
+  {
+    "program": "Fire Technology",
+    "division": "Technology & Aviation",
+    "lpp": "Health, Wellness & Public Safety",
+    "lpp_id": "hwp",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Health, Wellness & Public Safety"
+  },
+  {
+    "program": "Healthcare",
+    "division": "Noncredit",
+    "lpp": "Health, Wellness & Public Safety",
+    "lpp_id": "hwp",
+    "awards": "sc",
+    "Sub Area of LPP": "Health, Wellness & Public Safety"
+  },
+  {
+    "program": "Healthcare Administration(Medical Office Administration, Billing & Coding)",
+    "division": "Business",
+    "lpp": "Health, Wellness & Public Safety",
+    "lpp_id": "hwp",
+    "awards": "coa,aa",
+    "Sub Area of LPP": "Health, Wellness & Public Safety"
+  },
+  {
+    "program": "Kinesiology",
+    "division": "Kinesiology",
+    "lpp": "Health, Wellness & Public Safety",
+    "lpp_id": "hwp",
+    "awards": "aa",
+    "Sub Area of LPP": "Health, Wellness & Public Safety"
+  },
+  {
+    "program": "Nursing",
+    "division": "Health Sciences",
+    "lpp": "Health, Wellness & Public Safety",
+    "lpp_id": "hwp",
+    "awards": "ast",
+    "Sub Area of LPP": "Health, Wellness & Public Safety"
+  },
+  {
+    "program": "Architecture",
+    "division": "Technology & Aviation",
+    "lpp": "Industrial Technology & Aviation",
+    "lpp_id": "ita",
+    "awards": "as",
+    "Sub Area of LPP": "Industrial Technology & Aviation"
+  },
+  {
+    "program": "Aviation and Transportation",
+    "division": "Technology & Aviation",
+    "lpp": "Industrial Technology & Aviation",
+    "lpp_id": "ita",
+    "awards": "coa,as",
+    "Sub Area of LPP": "Industrial Technology & Aviation"
+  },
+  {
+    "program": "Electronics & Computer Technology",
+    "division": "Technology & Aviation",
+    "lpp": "Industrial Technology & Aviation",
+    "lpp_id": "ita",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Industrial Technology & Aviation"
+  },
+  {
+    "program": "Welding & Metallurgy",
+    "division": "Technology & Aviation",
+    "lpp": "Industrial Technology & Aviation",
+    "lpp_id": "ita",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Industrial Technology & Aviation"
+  },
+  {
+    "program": "American Sign Language",
+    "division": "Langauge Arts",
+    "lpp": "Language & Communication",
+    "lpp_id": "lc",
+    "awards": "sc",
+    "Sub Area of LPP": "Language & Communication"
+  },
+  {
+    "program": "English",
+    "division": "English",
+    "lpp": "Language & Communication",
+    "lpp_id": "lc",
+    "awards": "coa,aa",
+    "Sub Area of LPP": "Language & Communication"
+  },
+  {
+    "program": "ESL, CREDIT",
+    "division": "ESL Credit",
+    "lpp": "Language & Communication",
+    "lpp_id": "lc",
+    "awards": "aa",
+    "Sub Area of LPP": "Language & Communication"
+  },
+  {
+    "program": "ESL, NONCREDIT",
+    "division": "Noncredit",
+    "lpp": "Language & Communication",
+    "lpp_id": "lc",
+    "awards": "ast",
+    "Sub Area of LPP": "Language & Communication"
+  },
+  {
+    "program": "Foreign Language",
+    "division": "Langauge Arts",
+    "lpp": "Language & Communication",
+    "lpp_id": "lc",
+    "awards": "as",
+    "Sub Area of LPP": "Language & Communication"
+  },
+  {
+    "program": "Journalism",
+    "division": "Langauge Arts",
+    "lpp": "Language & Communication",
+    "lpp_id": "lc",
+    "awards": "coa,as",
+    "Sub Area of LPP": "Language & Communication"
+  },
+  {
+    "program": "Mass Communications/Public Relations",
+    "division": "Langauge Arts",
+    "lpp": "Language & Communication",
+    "lpp_id": "lc",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Language & Communication"
+  },
+  {
+    "program": "Speech Communication",
+    "division": "Langauge Arts",
+    "lpp": "Language & Communication",
+    "lpp_id": "lc",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Language & Communication"
+  },
+  {
+    "program": "Anthropology",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "sc",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Child Development",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "coa,aa",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Economics",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "aa",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Ethnic Studies",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "ast",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Geography and Environment",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "as",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "History",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "coa,as",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Philosophy",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Political Science",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Psychology",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "sc",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Social Science",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "coa,aa",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Sociology",
+    "division": "Social Sciences",
+    "lpp": "People, Power & Perspectives",
+    "lpp_id": "ppp",
+    "awards": "aa",
+    "Sub Area of LPP": "People, Power & Perspectives"
+  },
+  {
+    "program": "Biology",
+    "division": "Biology",
+    "lpp": "Science, Technology, Engineering & Math",
+    "lpp_id": "stem",
+    "awards": "ast",
+    "Sub Area of LPP": "Science, Technology, Engineering & Math"
+  },
+  {
+    "program": "Biotech",
+    "division": "Biology",
+    "lpp": "Science, Technology, Engineering & Math",
+    "lpp_id": "stem",
+    "awards": "as",
+    "Sub Area of LPP": "Science, Technology, Engineering & Math"
+  },
+  {
+    "program": "Computer Science - Information Systems",
+    "division": "Business",
+    "lpp": "Science, Technology, Engineering & Math",
+    "lpp_id": "stem",
+    "awards": "coa,as",
+    "Sub Area of LPP": "Science, Technology, Engineering & Math"
+  },
+  {
+    "program": "Engineering",
+    "division": "Technology & Aviation",
+    "lpp": "Science, Technology, Engineering & Math",
+    "lpp_id": "stem",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Science, Technology, Engineering & Math"
+  },
+  {
+    "program": "Geology",
+    "division": "Physical Science",
+    "lpp": "Science, Technology, Engineering & Math",
+    "lpp_id": "stem",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Science, Technology, Engineering & Math"
+  },
+  {
+    "program": "MATHEMATICS",
+    "division": "Mathematics",
+    "lpp": "Science, Technology, Engineering & Math",
+    "lpp_id": "stem",
+    "awards": "sc",
+    "Sub Area of LPP": "Science, Technology, Engineering & Math"
+  },
+  {
+    "program": "Physics",
+    "division": "Physical Science",
+    "lpp": "Science, Technology, Engineering & Math",
+    "lpp_id": "stem",
+    "awards": "coa,aa",
+    "Sub Area of LPP": "Science, Technology, Engineering & Math"
+  },
+  {
+    "program": "Animation",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "aa",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  },
+  {
+    "program": "Art History",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "ast",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  },
+  {
+    "program": "Ceramics",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "as",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  },
+  {
+    "program": "Dance",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "coa,as",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  },
+  {
+    "program": "Film, TV & Media Arts",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  },
+  {
+    "program": "Graphic Design",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "coa,ast",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  },
+  {
+    "program": "Music",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "sc",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  },
+  {
+    "program": "Photography",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "coa,aa",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  },
+  {
+    "program": "Studio Arts",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "aa",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  },
+  {
+    "program": "Theatre Arts",
+    "division": "Visual and Performing Arts",
+    "lpp": "Visual & Performing Arts",
+    "lpp_id": "vpa",
+    "awards": "ast",
+    "Sub Area of LPP": "Visual & Performing Arts"
+  }
+]
