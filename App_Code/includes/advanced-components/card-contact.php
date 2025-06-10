@@ -415,6 +415,103 @@
 	</div>
 </div>
 
+<h3 class="mt-3">Contact List Group</h3>
+<p>In cases where the entire card is not needed, have the ability to still use the list group styling.</p>
+<div class="row">
+	<div class="col-12 col-lg-4">
+		<div class="card component-contact-card rounded-0 border-0">
+			<div class="card-body p-0">
+				<ul class="list-group list-group-flush border-gray-500">
+					<li class="list-group-item border-gray-500">
+						<div class="d-flex align-items-center justify-content-start gap-2">
+							<span class="fa-sharp fa-regular fa-envelope"></span>
+							<a href="mailto:myemail@glendale.edu" class="fw-medium flex-grow-1 text-break">myemail@glendale.edu</a>
+							<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="myemail@glendale.edu">
+								<span class="fa-sharp fa-regular fa-copy"></span>
+								<span class="visually-hidden">Copy</span>
+							</button>
+						</div>
+					</li>
+					<li class="list-group-item border-gray-500">
+						<div class="d-flex align-items-center justify-content-start gap-2">
+							<span class="fa-sharp fa-regular fa-envelope"></span>
+							<a href="mailto:myemail@glendale.edu" class="fw-medium flex-grow-1 text-break">myemailsuperlongemail@glendale.edu</a>
+							<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="myemailsuperlongemail@glendale.edu">
+								<span class="fa-sharp fa-regular fa-copy"></span>
+								<span class="visually-hidden">Copy</span>
+						  </button>
+						</div>
+					</li>
+					<li class="list-group-item border-gray-500">
+						<div class="d-flex align-items-center justify-content-start gap-2">
+							<span class="fa-sharp fa-regular fa-phone"></span>
+							<a href="tel:8181234567" class="fw-medium flex-grow-1 text-break">818-123-4567</a>
+							<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="8181234567">
+								<span class="fa-sharp fa-regular fa-copy"></span>
+								<span class="visually-hidden">Copy</span>
+						  </button>
+						</div>
+					</li>
+					<li class="list-group-item border-gray-500">
+						<div class="d-flex align-items-center justify-content-start gap-2">
+							<span class="fa-sharp fa-regular fa-location-dot"></span>
+							<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+								<span>B Building</span>
+								<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+							</a>
+						</div>
+					</li>
+					<li class="list-group-item border-gray-500">
+						<div class="d-flex align-items-center justify-content-start gap-2">
+							<span class="fa-sharp fa-regular fa-clock"></span>
+							<a href="#hours-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content">
+								<span>Hours</span>
+								<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
+							</a>
+						</div>
+						<div class="collapse" id="hours-toggle-content">
+							<div class="pt-2">
+								<p>Monday - Friday | 8:00 a.m. to 4:30 p.m.</p>
+							</div>
+						</div>
+					</li>
+					<li class="list-group-item border-gray-500">
+						<div class="d-flex align-items-center justify-content-start gap-2">
+							<span class="fa-sharp fa-regular fa-fax"></span>
+							<span class="fw-medium flex-grow-1 text-break">818-123-4567</span>
+							<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="8181234567">
+								<span class="fa-sharp fa-regular fa-copy"></span>
+								<span class="visually-hidden">Copy</span>
+						  </button>
+						</div>
+					</li>
+					<li class="list-group-item border-gray-500">
+						<div class="d-flex align-items-center justify-content-start gap-2">
+							<a href="#custom-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content">
+								<span>Custom Toggle</span>
+								<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
+							</a>
+						</div>
+						<div class="collapse" id="custom-toggle-content">
+							<div class="pt-2">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</li>
+					<li class="list-group-item border-gray-500">
+						<div class="d-flex align-items-center justify-content-start gap-2">
+							<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+								<span>All Contact Info</span>
+								<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
 <h3 class="mt-3">Horizontal</h3>
 <p>Card - Contact Components can be made horizontal by adding the class "component-card-contact-horizontal" to the wrapping div. It is recommended if using Horizontal layout, not to include toggles and limit number of contact fields/ items.</p> 
 

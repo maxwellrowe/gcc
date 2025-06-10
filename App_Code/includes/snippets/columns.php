@@ -1,15 +1,15 @@
 <p>Columns built using Bootstrap classes. Default will be 3 columns (col col-lg-4).</p>
 
-<div class="row">
-	<div class="col col-lg-4">
+<div class="row gy-2 gy-lg-0 gx-lg-4">
+	<div class="col-12 col-lg-4">
 		<h3>col col-lg-3</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur snack-adipiscing elit. Tacos over kale any day, unless kale is deep-fried and covered in cheese. Integer porttitor Netflixus bingea est, ut commodo sriracha nisi. Coffeeus firstus, responsibilitus laterum. Donec non blandit sapien, sed vehicula pineapple-on-pizza. Nullam at felis eget magna meh ullamcorper YOLO. Suspendisse potenti—especially if there’s karaoke involved.</p>
 	</div>
-	<div class="col col-lg-4">
+	<div class="col-12 col-lg-4">
 		<h3>col col-lg-3</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur snack-adipiscing elit. Tacos over kale any day, unless kale is deep-fried and covered in cheese. Integer porttitor Netflixus bingea est, ut commodo sriracha nisi. Coffeeus firstus, responsibilitus laterum. Donec non blandit sapien, sed vehicula pineapple-on-pizza. Nullam at felis eget magna meh ullamcorper YOLO. Suspendisse potenti—especially if there’s karaoke involved.</p>
 	</div>
-	<div class="col col-lg-4">
+	<div class="col-12 col-lg-4">
 		<h3>col col-lg-3</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur snack-adipiscing elit. Tacos over kale any day, unless kale is deep-fried and covered in cheese. Integer porttitor Netflixus bingea est, ut commodo sriracha nisi. Coffeeus firstus, responsibilitus laterum. Donec non blandit sapien, sed vehicula pineapple-on-pizza. Nullam at felis eget magna meh ullamcorper YOLO. Suspendisse potenti—especially if there’s karaoke involved.</p>
 	</div>
@@ -26,6 +26,12 @@
 				</tr>
 			</thead>
 			<tbody>
+				<tr>
+					<td>Row Classes</td>
+					<td>
+						<p>Option to add classes to the "row" common ones might be gutter, eg gy-md-3 and gx-md-1</p>
+					</td>
+				</tr>
 				<tr>
 					<td>Column Size</td>
 					<td>

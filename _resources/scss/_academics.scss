@@ -1,0 +1,236 @@
+// Programs Listing
+#academic-programs-list {
+	.academic-program-card {
+		text-decoration: none;	
+		border: 1px solid transparent;
+		transition: all .2s ease-in-out;
+		opacity: 1;
+		
+		.ap-card-title {
+			h2 {
+				transition: all .2s ease-in-out;
+			}
+		}
+		
+		.ap-card-awards {
+			span {
+				&.rounded-pill {
+					padding: .25rem .5rem;	
+				}	
+			}	
+		}
+		
+		.ap-card-division,
+		.ap-card-lpp {
+			border-radius: 2rem;
+			padding: .25rem .5rem;
+			background-color: var(--bs-white);
+			display: inline-block;	
+		}
+		
+		.ap-card-awards,
+		.ap-card-division,
+		.ap-card-lpp {
+			font-size: 0.85rem;	
+		}
+		
+		// LPPs
+		&.lpp-bem {
+			.ap-card-lpp {
+				span {
+					&.fa-sharp {
+						color: #3A8F5D;	
+					}	
+				}	
+			}	
+		}
+		&.lpp-hwp {
+			.ap-card-lpp {
+				span {
+					&.fa-sharp {
+						color: #6F2A78;	
+					}	
+				}	
+			}	
+		}
+		&.lpp-ita {
+			.ap-card-lpp {
+				span {
+					&.fa-sharp {
+						color: #0097BD;	
+					}	
+				}	
+			}	
+		}
+		&.lpp-lc {
+			.ap-card-lpp {
+				span {
+					&.fa-sharp {
+						color: #901233;	
+					}	
+				}	
+			}	
+		}
+		&.lpp-ppp {
+			.ap-card-lpp {
+				span {
+					&.fa-sharp {
+						color: #EE981A;	
+					}	
+				}	
+			}	
+		}
+		&.lpp-stem {
+			.ap-card-lpp {
+				span {
+					&.fa-sharp {
+						color: #185D8E;	
+					}	
+				}	
+			}	
+		}
+		&.lpp-vpa {
+			.ap-card-lpp {
+				span {
+					&.fa-sharp {
+						color: #BC2065;	
+					}	
+				}	
+			}	
+		}
+		
+		.ap-card-arrow {
+			height: 2rem;
+			width: 2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 3rem;
+			color: var(--bs-primary);
+			background-color: var(--bs-white);
+			transition: all .2s ease-in-out;
+			flex: 0 0 auto;
+			transform: rotate(-45deg);
+		}
+		
+		&:hover {
+			border-color: var(--bs-primary);
+			
+			.ap-card-title {
+				h2 {
+					color: var(--bs-primary);	
+				}
+			}
+			
+			.ap-card-arrow {
+				transform: rotate(0deg);	
+			}	
+		}
+		
+		@media (min-width: 992px) {
+			.ap-card-start {
+				flex: 0 0 auto;
+				max-width: 50%;	
+			}
+			.ap-card-division,
+			.ap-card-lpp {
+				white-space: nowrap;	
+			}
+			.ap-card-arrow {
+				width: 3rem;
+				height: 3rem;	
+			}	
+		}
+	}	
+}
+
+// Program Listing Controller
+#ap-controller {
+	.btn.btn-link {
+		span {
+			&.fa-sharp {
+				transition: all .2s ease-in-out;	
+			}	
+		}
+		&[aria-expanded="true"] {
+			span {
+				&.fa-sharp {
+					transform: rotate(180deg);	
+				}	
+			}	
+		}	
+	}
+	
+	#ap-controller-lpp {
+		label {
+			span {
+				width: 0.5rem;
+				height: 0.5rem;
+				background-color: var(--bs-secondary);	
+				display: inline-block;
+				margin-right: 0.25rem;
+				border-radius: 100%;
+			}
+			
+			&.ap-controller-lpp-label-bem {
+				span {
+					background-color: #3A8F5D;
+				}	
+			}
+			&.ap-controller-lpp-label-hwp {
+				span {
+					background-color: #6F2A78;;
+				}	
+			}
+			&.ap-controller-lpp-label-ita {
+				span {
+					background-color: #0097BD;
+				}	
+			}
+			&.ap-controller-lpp-label-lc {
+				span {
+					background-color: #901233;
+				}	
+			}
+			&.ap-controller-lpp-label-ppp {
+				span {
+					background-color: #EE981A;
+				}	
+			}
+			&.ap-controller-lpp-label-stem {
+				span {
+					background-color: #185D8E;
+				}	
+			}
+			&.ap-controller-lpp-label-vpa {
+				span {
+					background-color: #BC2065;
+				}	
+			}	
+		}	
+	}	
+}
+
+
+// Program
+.page-hero {
+	.academic-program-header {
+		color: var(--bs-white);
+		
+		margin: 2rem 2rem 4rem 2rem;
+		
+		@media (min-width: 992px) {
+			margin: 0 2rem 0 3rem;	
+		}
+		@media (min-width: 1200px) {
+			margin: 0 3rem 0 4rem;
+		}
+		@media (min-width: 1400px) {
+			margin: 0 4rem 2rem 5rem;	
+		}	
+		
+		a {
+			color: var(--bs-white);	
+		}
+	}	
+}

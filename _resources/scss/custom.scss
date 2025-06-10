@@ -93,8 +93,19 @@ $form-range-thumb-focus-box-shadow: $focus-ring-shadow;
 $btn-focus-box-shadow: $focus-ring-shadow;
 $btn-close-focus-shadow: $focus-ring-shadow;
 
+// Forms
+$input-border-radius: 0.75rem;
+$form-select-border-radius: 0.75rem;
+$input-padding-y: 0.5rem;
+$input-padding-x: 1rem;
+$form-check-input-border: 1px solid $gray-600;
+
 // List Group
 $list-group-item-padding-x: 1.5rem;
+
+// Pagination
+$pagination-padding-y: 1rem;
+$pagination-padding-x: 1rem;
 
 // Container Widths
 $container-max-widths: (
@@ -105,6 +116,8 @@ $container-max-widths: (
 	xxl: 1600px
 );
 $container-padding-x: 3rem;
+
+$enable-negative-margins: true;
 
 /* --- NOW import full Bootstrap --- */
 @import "../../../node_modules/bootstrap/scss/bootstrap";

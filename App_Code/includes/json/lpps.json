@@ -1,0 +1,34 @@
+[
+  {
+    "lpp": "Visual and Performing Arts",
+    "id": "vpa"
+  },
+  {
+    "lpp": "Language and Communication",
+    "id": "lc"
+  },
+  {
+    "lpp": "People, Power, and Perspective",
+    "id": "ppp"
+  },
+  {
+    "lpp": "Business, Entrepreneurship, and Management",
+    "id": "bem"
+  },
+  {
+    "lpp": "Industrial Technology and Aviation",
+    "id": "ita"
+  },
+  {
+    "lpp": "Science, Technology, Engineering, and Math (STEM)",
+    "id": "stem"
+  },
+  {
+    "lpp": "Health, Wellness, and Public Safety",
+    "id": "hwp"
+  },
+  {
+    "lpp": "Personal Exploration",
+    "id": "pe"
+  }
+]

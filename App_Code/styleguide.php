@@ -7,8 +7,8 @@ error_reporting(E_ALL);
 
 	// Page Variables Setup
 	$page_title = 'Style Guide';
-	$section_title = 'Style Guide';
-	$section_url = '';
+	$section_title = 'Templates & Resources';
+	$section_url = 'index.php';
 	$page_nav_secondary = true;
 	$page_nav_tertiary = true;
 	$page_garfield = false;
@@ -16,7 +16,7 @@ error_reporting(E_ALL);
 	
 	// Nav Includes if applicable, otherwise leave blank
 	$page_nav_secondary_include = 'navs/secondary-nav-styleguide.php';
-	$page_nav_tertiary_inlcude = '';
+	$page_nav_tertiary_inlcude = 'navs/tertiary-nav-styleguide.php';
 	
 	//  Body Classes Based on Navigation
 	$body_classes = [];
@@ -75,48 +75,62 @@ error_reporting(E_ALL);
 				
 				<section class="mb-4">
 					<div class="container">
-						<h2>Color</h2>
+						<h2 id="color">Color</h2>
 						<?php include('styleguide/color.php'); ?>
 					</div>
 				</section>
 				
 				<section class="mb-4">
 					<div class="container">
-						<h2>Typography</h2>
+						<h2 id="typography">Typography</h2>
 						<?php include('styleguide/typography.php'); ?>
 					</div>
 				</section>
 				
 				<section class="mb-4">
 					<div class="container">
-						<h2>Horizontal Rule</h2>
+						<h2 id="hr">Horizontal Rule</h2>
 						<?php include('styleguide/hr.php'); ?>
 					</div>
 				</section>
 				
 				<section class="mb-4">
 					<div class="container">
-						<h2>Links</h2>
+						<h2 id="links">Links</h2>
 						<?php include('styleguide/links.php'); ?>
 					</div>
 				</section>
 				
 				<section class="mb-4">
 					<div class="container">
-						<h2>Buttons</h2>
+						<h2 id="buttons">Buttons</h2>
 						<?php include('styleguide/buttons.php'); ?>
+					</div>
+				</section>
+				
+				<section class="mb-4">
+					<div class="container">
+						<h2 id="images">Images</h2>
+						<?php include('styleguide/images.php'); ?>
+					</div>
+				</section>
+				
+				<section class="mb-4">
+					<div class="container">
+						<h2 id="utilities">Utilities</h2>
+						<?php include('styleguide/utilities.php'); ?>
 					</div>
 				</section>
 				
 			</main>
 			<?php if($page_nav_tertiary) { ?>
 				<div class="d-none d-lg-block bg-light-red border-start border-1 border-primary nav-tertiary-lg">
+					<button class="toggle-tertiary">
+						<span class="fa-sharp fa-regular fa-angle-right"></span>
+						<span class="visually-hidden">Open / Close Menu</span>
+					</button>
 					<div class="border-start border-5 border-secondary position-sticky">
 						<?php include('../_resources/includes/nav-tertiary.php'); ?>
-						<button class="toggle-tertiary">
-							<span class="fa-sharp fa-regular fa-angle-right"></span>
-							<span class="visually-hidden">Open / Close Menu</span>
-						</button>
 					</div>
 				</div>
 			<?php } ?>

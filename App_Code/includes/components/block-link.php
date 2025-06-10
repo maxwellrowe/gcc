@@ -40,6 +40,20 @@
 			); ?>
 		</div>
 	</div>
+	<div class="row row-cols-1 row-cols-lg-2 mt-3">
+		<?php block_link (
+			$style = 'red',
+			$links = [
+				["url" => "https://url.com/test.doc", "text" => "Lorem Ipsum", "description" => "Short description can be included with link"]
+			]
+		); ?>
+		<?php block_link (
+			$style = 'red-border',
+			$links = [
+				["url" => "https://url.com/test.doc", "text" => "Lorem Ipsum", "description" => "Short description can be included with link"]
+			]
+		); ?>
+	</div>
 </div>
 
 
@@ -64,6 +78,7 @@
 							<li>White (white)</li>
 							<li>Light Gray (gray)</li>
 							<li>Red Border (red-border)</li>
+							<li>Red (red)</li>
 						</ul>
 					</td>
 				</tr>
@@ -74,6 +89,7 @@
 						<ul>
 							<li>Link (File Chooser, optional)</li>
 							<li>Text (Text Input, required)</li>
+							<li>Description (Text Input, optional)</li>
 						</ul>
 					</td>
 				</tr>

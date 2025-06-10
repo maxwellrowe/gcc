@@ -65,7 +65,7 @@ function button(
 	$text = '', 
 	$icon = ''
 ) { ?>
-	<a href="<?php echo $link; ?>" class="btn <?php echo $type; ?> <?php echo $style; ?> <?php echo $size; ?> d-flex gap-1 align-items-center flex-wrap">
+	<a href="<?php echo $link; ?>" class="btn <?php echo $type; ?> <?php echo $style; ?> <?php echo $size; ?> d-flex gap-1 align-items-center flex-wrap w-max-content">
 		<?php if($type == 'btn-circle') { ?>
 			<?php if(!empty($icon)) { ?>
 				<span class="<?php echo $icon; ?>"></span>
@@ -170,7 +170,7 @@ function list_group(
 }
 
 // Block Link
-// $style can be white, gray, red-border
+// $style can be white, gray, red-border, red
 // $links is an array [["url" => "", "text" => ""]]
 function block_link(
 	$style = "white",
@@ -179,8 +179,73 @@ function block_link(
 	<div class="d-flex flex-column gap-1 justify-content-start align-items-start">
 		<?php foreach($links as $link) { ?>
 			<a href="<?php echo $link['url']; ?>" class="component-block-link block-link-style-<?php echo $style; ?>">
-				<?php echo $link['text']; ?>
+				<?php if (isset($link['description']) && !empty($link['description'])) { ?>
+					<span class="p-2">
+						<span class="fw-bolder fs-5"><?php echo $link['text']; ?></span>
+						<br /><?php echo $link['description']; ?>
+					</span>
+				<?php } else { ?>
+					<?php echo $link['text']; ?>
+				<?php } ?>	
 			</a>
 		<?php } ?>	
 	</div>
 <?php }
+
+
+// Programs
+// $programs is an array [ ["title" => "", "url" => "", "awards" => [] ]
+function academic_programs($programs = '', $style = 'bg-white') {
+	if(!empty($programs)) { ?>
+		<div class="row row-cols-1 row-cols-md-2 gx-2 gy-2">
+			<?php foreach($programs as $program) { 
+				$title = $program['title'];
+				$url = $program['url'];
+				$awards = $program['awards'];
+			?>
+				<div class="col">
+					<a href="<?php echo $url; ?>" class="card component-card component-card-program match-height-row <?php echo $style; ?>">
+						<div class="card-body">
+							<h2 class="h4"><?php echo $title; ?></h2>
+							<div class="d-flex align-items-center justify-content-start gap-2">
+								<?php foreach($awards as $award) { ?>
+									<span>
+										<span class="rounded-pill bg-transparent border border-1 border-dark fw-bolder text-uppercase lh-1"><?php echo $award; ?></span>
+									</span>
+								<?php } ?>
+							</div>
+						</div>
+					</a>
+				</div>	
+			<?php } ?>
+		</div>	
+	<?php }
+}
+
+// Awards
+// $awards is an array [ ["title" => "", "url" => "", "type" => "" ]
+function academic_awards($awards = '', $style = 'bg-white') {
+	if(!empty($awards)) { ?>
+		<div class="row row-cols-1 row-cols-md-2 gx-2 gy-2">
+			<?php foreach($awards as $award) { 
+				$title = $award['title'];
+				$url = $award['url'];
+				$type = $award['type'];
+			?>
+				<div class="col">
+					<div class="card component-card component-card-award match-height-row <?php echo $style; ?>">
+						<div class="card-body">
+							<h2 class="h4"><?php echo $title; ?></h2>
+							<div class="d-flex align-items-center justify-content-start gap-2 mb-4">
+								<span>
+									<span class="rounded-pill bg-transparent border border-1 border-dark fw-bolder lh-1"><?php echo $type; ?></span>
+								</span>
+							</div>
+							<a href="<?php echo $url; ?>" class="arrow-link fs-7">Requirements</a>
+						</div>
+					</div>
+				</div>	
+			<?php } ?>
+		</div>	
+	<?php }
+}

@@ -60,7 +60,7 @@ error_reporting(E_ALL);
 				<div class="container-xxl">
 					<header id="page-header" class="page-hero page-hero-full page-hero-full-video border-0 rounded overflow-hidden p-0" style="background-image: url('/gcc/_resources/images/placeholder_students_2.jpg');">
 						<video autoplay="true" muted="true" loop="true" playsinline="true">
-							<source src="/gcc/_resources/video/placeholder.mp4" type="video/mp4" />
+							<source src="/gcc/_resources/video/gcc-arial_optimized.mp4" type="video/mp4" />
 						</video>
 						<button id="page-hero-full-video-play-pause" class="btn btn-outline-light">
 							<span class="fa-sharp fa-solid fa-pause"></span>
@@ -107,11 +107,11 @@ error_reporting(E_ALL);
 			<?php if($page_nav_tertiary) { ?>
 				<div class="d-none d-lg-block bg-light-red border-start border-1 border-primary nav-tertiary-lg">
 					<div class="border-start border-5 border-secondary position-sticky">
-						<?php include('../_resources/includes/nav-tertiary.php'); ?>
 						<button class="toggle-tertiary">
 							<span class="fa-sharp fa-regular fa-angle-right"></span>
 							<span class="visually-hidden">Open / Close Menu</span>
 						</button>
+						<?php include('../_resources/includes/nav-tertiary.php'); ?>
 					</div>
 				</div>
 			<?php } ?>

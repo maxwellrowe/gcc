@@ -3,7 +3,7 @@
 
 <div class="d-flex align-items-start justify-content-start flex-column flex-lg-row align-items-lg-center gap-2">
 	<?php button (
-		$type = 'btn', 
+		$type = 'default', 
 		$style = 'btn-primary', 
 		$size = 'default', 
 		$link = '#', 
@@ -12,7 +12,7 @@
 	); ?>
 	
 	<?php button (
-		$type = 'btn', 
+		$type = 'default', 
 		$style = 'btn-secondary', 
 		$size = 'default', 
 		$link = '#', 
@@ -32,7 +32,7 @@
 
 <div class="d-flex align-items-start justify-content-start flex-column flex-lg-row align-items-lg-center gap-2 mt-2">
 	<?php button (
-		$type = 'btn', 
+		$type = 'default', 
 		$style = 'btn-yellow', 
 		$size = 'btn-lg', 
 		$link = '#', 
@@ -41,7 +41,7 @@
 	); ?>
 	
 	<?php button (
-		$type = 'btn', 
+		$type = 'default', 
 		$style = 'btn-light', 
 		$size = 'default', 
 		$link = '#', 

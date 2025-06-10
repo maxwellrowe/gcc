@@ -1,4 +1,5 @@
 <ul>
+	<li><a href="#section">Section</a></li>
 	<li><a href="#columns">Columns</a></li>
 	<li><a href="#equal-columns">Equal Columns</a></li>
 	<li><a href="#full-width-bg">Full Width Background</a></li>

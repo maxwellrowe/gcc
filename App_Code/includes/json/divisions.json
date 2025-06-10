@@ -1,0 +1,15 @@
+[
+  { "name": "Business", "id": "bus" },
+  { "name": "English", "id": "eng" },
+  { "name": "ESL, Credit", "id": "eslc" },
+  { "name": "ESL, Noncredit", "id": "esln" },
+  { "name": "Health Sciences", "id": "hs" },
+  { "name": "Kinesiology", "id": "kin" },
+  { "name": "Language Arts", "id": "la" },
+  { "name": "Mathematics", "id": "math" },
+  { "name": "Noncredit Business & Life Skills", "id": "nbls" },
+  { "name": "Physical Science", "id": "ps" },
+  { "name": "Social Sciences", "id": "ss" },
+  { "name": "Technology & Aviation", "id": "ta" },
+  { "name": "Visual & Performing Arts", "id": "vpa" }
+]

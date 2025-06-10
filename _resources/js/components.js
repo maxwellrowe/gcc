@@ -79,3 +79,63 @@ $('.component-carousel-anything').each(function(index, slider) {
 		}
 	});
 });
+
+// Academic Programs Controller
+document.addEventListener('DOMContentLoaded', function () {
+	const searchInput = document.getElementById('ap-controller-search');
+	const checkboxes = document.querySelectorAll('input.form-check-input[type="checkbox"]');
+	const cards = document.querySelectorAll('.academic-program-card');
+
+	// Debounce utility
+	function debounce(func, wait) {
+		let timeout;
+		return function (...args) {
+			clearTimeout(timeout);
+			timeout = setTimeout(() => func.apply(this, args), wait);
+		};
+	}
+
+	function filterCards() {
+		const checkedValues = Array.from(checkboxes)
+			.filter(checkbox => checkbox.checked)
+			.map(checkbox => checkbox.value);
+	
+		const searchTerm = searchInput.value.trim().toLowerCase();
+	
+		let visibleCount = 0;
+	
+		cards.forEach(card => {
+			const matchesCheckboxes = checkedValues.every(val => card.classList.contains(val));
+			const matchesSearch = card.textContent.toLowerCase().includes(searchTerm);
+			const shouldShow = matchesCheckboxes && (!searchTerm || matchesSearch);
+	
+			if (shouldShow) {
+				card.style.display = 'block';
+				requestAnimationFrame(() => {
+					card.style.opacity = 1;
+				});
+				visibleCount++;
+			} else {
+				card.style.opacity = 0;
+				setTimeout(() => {
+					card.style.display = 'none';
+				}, 300);
+			}
+		});
+	
+		// Show/hide no results message
+		const noResultsMessage = document.getElementById('ap-controller-no-results');
+		if (noResultsMessage) {
+			noResultsMessage.style.display = visibleCount === 0 ? 'block' : 'none';
+		}
+	}
+
+	// Event listeners
+	if (searchInput) {
+		searchInput.addEventListener('input', debounce(filterCards, 300));
+		checkboxes.forEach(cb => cb.addEventListener('change', filterCards));
+		
+		// Optional: trigger filter on page load if needed
+		filterCards();
+	}
+});

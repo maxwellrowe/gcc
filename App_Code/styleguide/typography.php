@@ -41,6 +41,17 @@
 	</div>
 </div>
 
+<h3>Special Font Sizes Classes</h3>
+<p>These are classes added to any element. Range from "fs-1" to "fs-8" with "fs-8" being the smallest.</p>
+<p class="fs-1">Font Size 1</p>
+<p class="fs-2">Font Size 2</p>
+<p class="fs-3">Font Size 3</p>
+<p class="fs-4">Font Size 4</p>
+<p class="fs-5">Font Size 5</p>
+<p class="fs-6">Font Size 6</p>
+<p class="fs-7">Font Size 7</p>
+<p class="fs-8">Font Size 8</p>
+
 <h3>Pre-Heading</h3>
 <p>Apply the class "preheading" to a span, heading or p tag. Additional options include adding the class "small" for smaller size and "preheading-arrow" for downward arrow prefix.</p>
 <span class="preheading">Pre-Heading</span>

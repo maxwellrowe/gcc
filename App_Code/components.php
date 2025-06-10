@@ -3,8 +3,8 @@
 <?php
 	// Page Variables Setup
 	$page_title = 'Components';
-	$section_title = 'Style Guide';
-	$section_url = 'styleguide.php';
+	$section_title = 'Templates & Resources';
+	$section_url = 'index.php';
 	$page_nav_secondary = true;
 	$page_nav_tertiary = true;
 	$page_garfield = false;
@@ -154,15 +154,29 @@
 					</div>
 				</section>
 				
+				<section>
+					<div class="container">
+						<h2 id="programs">Academic Programs</h2>
+						<?php include('includes/components/programs.php'); ?>
+					</div>
+				</section>
+				
+				<section>
+					<div class="container">
+						<h2 id="awards">Academic Awards</h2>
+						<?php include('includes/components/awards.php'); ?>
+					</div>
+				</section>
+				
 			</main>
 			<?php if($page_nav_tertiary) { ?>
 				<div class="d-none d-lg-block bg-light-red border-start border-1 border-primary nav-tertiary-lg">
+					<button class="toggle-tertiary">
+						<span class="fa-sharp fa-regular fa-angle-right"></span>
+						<span class="visually-hidden">Open / Close Menu</span>
+					</button>
 					<div class="border-start border-5 border-secondary position-sticky">
 						<?php include('../_resources/includes/nav-tertiary.php'); ?>
-						<button class="toggle-tertiary">
-							<span class="fa-sharp fa-regular fa-angle-right"></span>
-							<span class="visually-hidden">Open / Close Menu</span>
-						</button>
 					</div>
 				</div>
 			<?php } ?>

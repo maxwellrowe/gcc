@@ -105,11 +105,11 @@ error_reporting(E_ALL);
 			<?php if($page_nav_tertiary) { ?>
 				<div class="d-none d-lg-block bg-light-red border-start border-1 border-primary nav-tertiary-lg">
 					<div class="border-start border-5 border-secondary position-sticky">
-						<?php include('../_resources/includes/nav-tertiary.php'); ?>
 						<button class="toggle-tertiary">
 							<span class="fa-sharp fa-regular fa-angle-right"></span>
 							<span class="visually-hidden">Open / Close Menu</span>
 						</button>
+						<?php include('../_resources/includes/nav-tertiary.php'); ?>
 					</div>
 				</div>
 			<?php } ?>

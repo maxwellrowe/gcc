@@ -98,7 +98,7 @@
 					<td>Number of Columns Desktop</td>
 					<td>Select</td>
 					<td>
-						2, 3, or 4
+						1, 2, 3, or 4
 					</td>
 				</tr>
 				<tr>

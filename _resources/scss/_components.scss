@@ -148,6 +148,19 @@
 		}
 	}
 	
+	&.card-lpp {
+		img {
+			width: 3.5rem;	
+		}	
+		text-decoration: none;
+		transition: all .2s ease-in-out;
+		border: 1px solid transparent;
+		
+		&:hover {
+			border-color: var(--bs-primary);	
+		}
+	}
+	
 	// Card Component
 	&.component-card {
 		border-width: 0;
@@ -527,6 +540,7 @@
 	.list-group-item {
 		font-size: clamp(1rem, 1.2vw + 0.5rem, 1rem);
 		border-color: var(--bs-gray-400);
+		background: transparent;
 	}
 	&.list-group-flush > .list-group-item {
 		&:first-child {
@@ -606,6 +620,15 @@ a.component-block-link {
 		border-color: var(--bs-primary);
 	}
 	
+	&.block-link-style-red {
+		background: var(--bs-primary);
+		color: var(--bs-white);
+		
+		&:hover {
+			background: var(--bs-secondary);
+		}	
+	}
+	
 	
 }
 
@@ -666,4 +689,66 @@ a.component-block-link {
 			}	
 		}
 	}	
+}
+
+// Academic Programs
+.card {
+	&.component-card {
+		&.component-card-program {
+			text-decoration: none;
+			transition: all .2s ease-in-out;
+			border: 1px solid transparent;
+			position: relative;
+			
+			.rounded-pill {
+				padding: 0.25rem 0.5rem;
+				font-size: 0.85rem;	
+			}
+			
+			.card-body {
+				padding-right: 3rem;
+			}	
+			
+			&:after {
+				font-family: "Font Awesome 6 Sharp";
+				font-weight: 400;
+				content: '\f061';
+				transition: all .2s ease-in-out;
+				color: var(--bs-primary);
+				position: absolute;
+				right: 1rem;
+				top: 1rem;
+				transform: rotate(-45deg);
+			}	
+			
+			&:hover {
+				border-color: var(--bs-primary);
+				
+				&:after {
+					transform: rotate(0deg);	
+				}
+			}
+		}
+	}
+}
+
+// Academic Awards
+.card {
+	&.component-card {
+		&.component-card-award {
+			text-decoration: none;
+			transition: all .2s ease-in-out;
+			border: 1px solid transparent;
+			position: relative;
+			
+			.rounded-pill {
+				padding: 0.25rem 0.5rem;
+				font-size: 0.85rem;	
+			}
+			
+			.card-body {
+				padding-right: 3rem;
+			}	
+		}
+	}
 }

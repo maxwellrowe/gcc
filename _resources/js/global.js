@@ -1,31 +1,40 @@
 // Heading 1 Animation and Main content fade in
 window.addEventListener('DOMContentLoaded', () => {
 	const h1 = document.getElementById('page-title');
-	const text = h1.textContent;
-	h1.textContent = '';
-
-	const words = text.trim().split(/\s+/); // split by any whitespace
-
-	words.forEach((word, index) => {
-		const span = document.createElement('span');
-		span.textContent = word;
-		span.classList.add('fade-up');
-		span.style.display = 'inline-block';
-		span.style.animationDelay = `${index * 0.1}s`;
-		h1.appendChild(span);
-
-		// Add a space between words (not inside the span)
-		if (index < words.length - 1) {
-			h1.appendChild(document.createTextNode(' '));
-		}
-	});
-
-	// Animate sections
-	const sections = document.querySelectorAll('#main-content section');
-	sections.forEach((section, i) => {
-		section.style.animationDelay = `${i * 0.2}s`;
-		section.classList.add('fade-in-section');
-	});
+	if(h1) {
+		const text = h1.textContent;
+		h1.textContent = '';
+	
+		const words = text.trim().split(/\s+/); // split by any whitespace
+	
+		words.forEach((word, index) => {
+			const span = document.createElement('span');
+			span.textContent = word;
+			span.classList.add('fade-up');
+			span.style.display = 'inline-block';
+			span.style.animationDelay = `${index * 0.1}s`;
+			h1.appendChild(span);
+	
+			// Add a space between words (not inside the span)
+			if (index < words.length - 1) {
+				h1.appendChild(document.createTextNode(' '));
+			}
+		});
+		
+		// Animate sections
+		const sections = document.querySelectorAll('#main-content section');
+		sections.forEach((section, i) => {
+			section.style.animationDelay = `${i * 0.2}s`;
+			section.classList.add('fade-in-section');
+		});
+	} else {
+		// Animate sections
+		const sections = document.querySelectorAll('#main-content section');
+		sections.forEach((section, i) => {
+			section.style.animationDelay = `${i * 0.2}s`;
+			section.classList.add('fade-in-section');
+		});	
+	}
 });
 
 // AOS for animations
@@ -82,6 +91,8 @@ function getThreshold() {
 function updateTertiaryPosition(topOffset) {
 	if (navTertiaryLg) {
 		navTertiaryLg.style.top = `${topOffset}px`;
+		navTertiaryLg.style.maxHeight = `calc(100vh - ${topOffset}px)`;
+		navTertiaryLg.style.overflowY = 'auto';
 	}
 }
 
@@ -371,4 +382,137 @@ document.addEventListener('DOMContentLoaded', function () {
 	  }
 	});
   }
+});
+
+// Split Image Hero Slider
+$('.page-hero-slider').each(function(index, slider) {
+	var swiper = new Swiper(slider, {
+		loop: false,
+		speed: 500,
+		slidesPerView: 1,
+		spaceBetween: 30,
+		zoom: true,
+		watchOverflow: true,
+		autoplay: {
+			delay: 4000,
+			pauseOnMouseEnter: true	
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		}
+	});
+
+	// Pause/Play toggle
+	const toggleBtn = document.getElementById('swiper-toggle');
+	if (toggleBtn) {
+		const icon = toggleBtn.querySelector('span.fa');
+		const label = toggleBtn.querySelector('.visually-hidden');
+
+		toggleBtn.addEventListener('click', function () {
+			if (swiper.autoplay.running) {
+				swiper.autoplay.stop();
+				icon.classList.remove('fa-pause');
+				icon.classList.add('fa-play');
+				label.textContent = 'Play autoplay';
+			} else {
+				swiper.autoplay.start();
+				icon.classList.remove('fa-play');
+				icon.classList.add('fa-pause');
+				label.textContent = 'Pause autoplay';
+			}
+		});
+	}
+});
+
+
+// Homepage Hero Swiper
+const swiperHome = new Swiper('.page-hero-home-swiper', {
+  effect: 'fade',
+  fadeEffect: { crossFade: true },
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: false,
+  speed: 800,
+  autoplay: {
+	delay: 2000,
+	disableOnInteraction: false,
+  },
+  on: {
+	init: function () {
+		const activeText = document.querySelector('.swiper-slide-active .swiper-slide-content-text');
+		if (activeText) {
+		activeText.style.opacity = 1;
+		activeText.style.transform = 'translateX(0)';
+		}
+	},
+	slideChangeTransitionStart: function () {
+		// Only animate the CURRENT slide out to the right
+		const prevText = document.querySelector('.swiper-slide-prev .swiper-slide-content-text');
+		if (prevText) {
+		prevText.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+		prevText.style.opacity = 0;
+		prevText.style.transform = 'translateX(100%)';
+		}
+	},
+	slideChangeTransitionEnd: function () {
+		// Animate the NEW active slide in from the left
+		const activeText = document.querySelector('.swiper-slide-active .swiper-slide-content-text');
+		if (activeText) {
+		activeText.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+		activeText.style.opacity = 1;
+		activeText.style.transform = 'translateX(0)';
+		}
+	},
+	slideChange: function () {
+	  const vertDots = document.querySelector('.vert-dots');
+	
+	  if (this.isEnd) {
+		this.autoplay.stop();
+	
+		if (vertDots) {
+		  vertDots.classList.add('animate');
+	
+		  // Optional: replace animate with a "done" class once animation finishes
+		  vertDots.addEventListener('animationend', () => {
+			vertDots.classList.remove('animate');
+			vertDots.classList.add('done');
+		  }, { once: true });
+		}
+	  } else {
+		// Reset if not on last slide
+		if (vertDots) {
+		  vertDots.classList.remove('animate', 'done');
+		  vertDots.style.height = ''; // optional if height is controlled by class
+		}
+	  }
+	}
+  }
+});
+
+// Homepage Toast
+const homeToast = new Swiper('.home-toast-swiper', {
+  direction: 'vertical',
+  loop: true,
+  pagination: {
+	el: '.swiper-pagination',
+	clickable: true,
+  },
+  autoplay: {
+	delay: 4000,
+	disableOnInteraction: true
+  }
+});
+
+// Homepage Parallax Effect
+document.addEventListener('scroll', () => {
+	const el = document.querySelector('.homepage-cta');
+	if (!el) return;
+
+	const rect = el.getBoundingClientRect();
+	const scrollAmount = (window.innerHeight - rect.top) * -0.1;
+
+	if (rect.top < window.innerHeight && rect.bottom > 0) {
+		el.style.setProperty('--scroll', `${scrollAmount}px`);
+	}
 });

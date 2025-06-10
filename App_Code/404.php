@@ -82,12 +82,12 @@ error_reporting(E_ALL);
 			</main>
 			<?php if($page_nav_tertiary) { ?>
 				<div class="d-none d-lg-block bg-light-red border-start border-1 border-primary nav-tertiary-lg">
+					<button class="toggle-tertiary">
+						<span class="fa-sharp fa-regular fa-angle-right"></span>
+						<span class="visually-hidden">Open / Close Menu</span>
+					</button>
 					<div class="border-start border-5 border-secondary position-sticky">
 						<?php include('../_resources/includes/nav-tertiary.php'); ?>
-						<button class="toggle-tertiary">
-							<span class="fa-sharp fa-regular fa-angle-right"></span>
-							<span class="visually-hidden">Open / Close Menu</span>
-						</button>
 					</div>
 				</div>
 			<?php } ?>

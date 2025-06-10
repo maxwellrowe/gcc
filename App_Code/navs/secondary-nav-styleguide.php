@@ -1,16 +1,15 @@
 <ul>
 	<li><a href="components.php">Components</a></li>
 	<li><a href="snippets.php">Snippets</a></li>
+	<li><a href="styleguide.php">Style Guide</a></li>
+	<li><a href="index.php">Templates</a></li>
 	<li>
-		<a href="#">Templates</a>
+		<a href="#">News</a>
 		<ul>
-			<li><a href="temp-basic-page.php">Basic Page</a></li>
-			<li><a href="temp-hero-split.php">Hero - Split</a></li>
-			<li><a href="temp-hero-split-video.php">Hero - Split with Video</a></li>
-			<li><a href="temp-hero-full.php">Hero - Full Width</a></li>
-			<li><a href="temp-hero-full-video.php">Hero - Full Width with Video</a></li>
-			<li><a href="alerts.php">Alerts</a></li>
-			<li><a href="404.php">404 Error</a></li>
+			<li><a href="news.php">News Landing Page</a></li>
+			<li><a href="news-archive.php">News Archive</a></li>
+			<li><a href="news-single-image.php">News Single with Image</a></li>
+			<li><a href="news-single.php">News Single</a></li>
 		</ul>
 	</li>
 </ul>

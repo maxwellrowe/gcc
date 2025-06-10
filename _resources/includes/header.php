@@ -4,7 +4,7 @@
 		<div class="container-xxl">
 			<nav class="d-flex justify-content-between align-items-center gap-4 py-3">
 				<div class="d-flex justify-content-start align-items-center gap-3">
-					<a href="/" class="global-brand">
+					<a href="index.php" class="global-brand">
 						<img src="/gcc/_resources/images/gcc-logo.png" alt="Glendale City College Logo" />
 					</a>
 					<a href="#" class="btn btn-primary d-none d-lg-block">Apply Now</a>
