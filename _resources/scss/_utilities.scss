@@ -10,8 +10,9 @@
 		rgba(253,249,249,1) 0%,
 		rgba(255,249,233,1) 100%);
 	--gcc-red-gradient: linear-gradient(135deg,
-	  #A32036 0%,
-	  #C42842 100%);
+	  #8f1a2e 0%,
+	  #a32036 40%,
+	  #d64757 100%);
 	--gcc-proxima-nova: 'proxima-nova', sans-serif;
 	--gcc-lora: 'Lora', serif;
 }
@@ -83,6 +84,9 @@
 
 .text-shadow-none {
   	text-shadow: none !important;
+}
+.text-justify {
+	text-align: justify;	
 }
 
 /* Color Helpers */

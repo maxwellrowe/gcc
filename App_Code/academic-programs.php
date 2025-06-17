@@ -97,7 +97,7 @@ error_reporting(E_ALL);
 									$awards = array_map('trim', explode(',', $program->awards));
 									
 									?>
-									<a href="" class="card academic-program-card bg-gray-300 mb-2 dvision-<?php echo $division_id; ?> lpp-<?php echo $lpp_id; ?> <?php foreach($awards as $award) { echo 'award-' . $award . ' '; } ?>">
+									<a href="" class="card academic-program-card bg-gray-300 mb-2 division-<?php echo $division_id; ?> lpp-<?php echo $lpp_id; ?> <?php foreach($awards as $award) { echo 'award-' . $award . ' '; } ?>">
 										<div class="card-body">
 											<div class="d-flex justify-content-between align-items-start align-items-lg-center gap-2">
 												<div class="d-flex flex-column flex-lg-row gap-2 justify-content-lg-between align-items-lg-center w-100">

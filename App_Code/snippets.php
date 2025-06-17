@@ -88,8 +88,8 @@
 				<section class="mb-5" id="full-width-bg">
 					<div class="container">
 						<h2>Full Width Background</h2>
-						<?php include('includes/snippets/full-width-bg.php'); ?>
 					</div>
+					<?php include('includes/snippets/full-width-bg.php'); ?>
 				</section>
 				
 				<section class="mb-5" id="accordion">
@@ -103,6 +103,13 @@
 					<div class="container">
 						<h2>Card</h2>
 						<?php include('includes/snippets/card.php'); ?>
+					</div>
+				</section>
+				
+				<section class="mb-5" id="card-slide">
+					<div class="container">
+						<h2>Slide Card</h2>
+						<?php include('includes/snippets/card-slide.php'); ?>
 					</div>
 				</section>
 				

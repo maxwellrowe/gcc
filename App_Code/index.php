@@ -79,32 +79,44 @@ error_reporting(E_ALL);
 						<ul>
 							<li>Create a page parameter to set the main content as contained vs full width. If full width, then the editor would need to use the Section snippets to provide basic structure.</li>
 						</ul>
-						<div class="my-4">
-							<?php block_link (
-								$style = 'red-border',
-								$links = [
-									["url" => "homepage.php", "text" => "Home Page"],
-									["url" => "news.php", "text" => "News"],
-									["url" => "news-archive.php", "text" => "News Archive"],
-									["url" => "news-single.php", "text" => "News Single Article"],
-									["url" => "academic-programs.php", "text" => "Academic Program Listing"],
-									["url" => "academic-program-accounting.php", "text" => "Academic Program - Accounting"],
-									["url" => "academic-program-nursing.php", "text" => "Academic Program - Nursing"],
-									["url" => "academic-division.php", "text" => "Academic Division"],
-									["url" => "eops.php", "text" => "EOPS/ CARE/ Foster Youth"],
-									["url" => "current-students.php", "text" => "Current Students"],
-									["url" => "apply.php", "text" => "Apply"],
-									["url" => "temp-basic-page.php", "text" => "Basic Page"],
-									["url" => "temp-hero-split.php", "text" => "Hero - Split"],
-									["url" => "temp-hero-split-slider.php", "text" => "Hero - Split Slider"],
-									["url" => "temp-hero-split-video.php", "text" => "Hero - Split with Video"],
-									["url" => "temp-hero-full.php", "text" => "Hero - Full Width"],
-									["url" => "temp-hero-full-video.php", "text" => "Hero - Full Width with Video"],
-									["url" => "alerts.php", "text" => "Alerts"],
-									["url" => "404.php", "text" => "404 Error"],
-								]
-							); ?>
-						</div>
+						<?php block_link (
+							$style = 'red-border',
+							$links = [
+								["url" => "homepage.php", "text" => "Home Page"],
+								["url" => "news.php", "text" => "News"],
+								["url" => "news-archive.php", "text" => "News Archive"],
+								["url" => "news-single.php", "text" => "News Single Article"],
+								["url" => "academic-programs.php", "text" => "Academic Program Listing"],
+								["url" => "academic-program-accounting.php", "text" => "Academic Program - Accounting"],
+								["url" => "academic-program-nursing.php", "text" => "Academic Program - Nursing"],
+								["url" => "academic-division.php", "text" => "Academic Division"],
+								["url" => "eops.php", "text" => "EOPS/ CARE/ Foster Youth"],
+								["url" => "financial-aid.php", "text" => "Financial Aid"],
+								["url" => "current-students.php", "text" => "Current Students"],
+								["url" => "library.php", "text" => "Library"],
+								["url" => "apply.php", "text" => "Apply"],
+								["url" => "directory.php", "text" => "Directory"],
+								["url" => "directory-detail.php", "text" => "Directory Detail"],
+								["url" => "temp-basic-page.php", "text" => "Basic Page"],
+								["url" => "temp-hero-split.php", "text" => "Hero - Split"],
+								["url" => "temp-hero-split-slider.php", "text" => "Hero - Split Slider"],
+								["url" => "temp-hero-split-video.php", "text" => "Hero - Split with Video"],
+								["url" => "temp-hero-full.php", "text" => "Hero - Full Width"],
+								["url" => "temp-hero-full-video.php", "text" => "Hero - Full Width with Video"],
+								["url" => "alerts.php", "text" => "Alerts"],
+								["url" => "404.php", "text" => "404 Error"],
+							]
+						); ?>
+						
+						<h2>Garfield</h2>
+						<?php block_link (
+							$style = 'red-border',
+							$links = [
+								["url" => "garfield.php", "text" => "Garfield Header and Footer"],
+								["url" => "garfield-homepage.php", "text" => "Garfield Homepage"]
+							]
+						); ?>
+						
 						<h2>Resources</h2>
 						<?php block_link (
 							$style = 'red-border',

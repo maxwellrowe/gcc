@@ -43,6 +43,12 @@
 	content: "\2b";	
 }
 
+@mixin arrow-icon {
+	font-family: "Font Awesome 6 Sharp";
+	font-weight: 400;
+	content: "\f061";	
+}
+
 @mixin menu-bars {
 	&.is-open {
 		.menu-bars {

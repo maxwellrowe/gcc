@@ -38,6 +38,50 @@ $(document).ready(function () {
 	});
 });
 
+// Directory Data Table
+$(document).ready(function () {
+	const table = $('.directory-datatable').DataTable({
+		responsive: true,
+		paging: true,
+		searching: true,
+		ordering: false,
+		pageLength: 25,
+		dom:
+			// Top row: search left, filters placeholder right
+			'<"row align-items-center mb-2"<"col-sm-6"f><"col-sm-6 text-end dataTables_filters">>' +
+			// Table
+			'rt' +
+			// Bottom row: length left, info center, pagination right
+			'<"row mt-2"<"col-sm-4"l><"col-sm-4 text-center"i><"col-sm-4 text-end"p>>',
+		language: {
+			search: "_INPUT_",
+			searchPlaceholder: "Search..."
+		},
+		initComplete: function () {
+			$('.directory-datatable').closest('.dt-container').addClass('directory-datatable-wrapper');
+			// Add filters to the placeholder container
+			this.api().columns([3, 4]).every(function () {
+				const column = this;
+				const title = $(column.header()).text();
+				const select = $(`
+					<select class="form-select form-select-sm d-inline-block ms-2" style="width: auto;">
+						<option value="">Filter ${title}</option>
+					</select>
+				`)
+				.appendTo('.dataTables_filters')
+				.on('change', function () {
+					const val = $.fn.dataTable.util.escapeRegex($(this).val());
+					column.search(val ? '^' + val + '$' : '', true, false).draw();
+				});
+
+				column.data().unique().sort().each(function (d) {
+					select.append(`<option value="${d}">${d}</option>`);
+				});
+			});
+		}
+	});
+});
+
 // Swiper Carousel Anything
 $('.component-carousel-anything').each(function(index, slider) {
 	var $slider = $(slider);
@@ -138,4 +182,43 @@ document.addEventListener('DOMContentLoaded', function () {
 		// Optional: trigger filter on page load if needed
 		filterCards();
 	}
+});
+
+// Slide Card
+function setSlideCardHeights() {
+	const slideCards = document.querySelectorAll('.component-slide-card');
+
+	slideCards.forEach(card => {
+		const content = card.querySelector('.component-slide-card-content');
+		if (!content) return;
+
+		// Temporarily reset height to get correct measurement
+		card.style.height = 'auto';
+
+		// If it's visible, get height
+		const cardHeight = card.offsetHeight;
+		card.style.height = `${cardHeight}px`;
+		card.style.overflow = 'auto';
+	});
+}
+
+// Initial run
+document.addEventListener('DOMContentLoaded', () => {
+	setSlideCardHeights();
+
+	// Toggle logic
+	document.querySelectorAll('.component-slide-card').forEach(card => {
+		const toggle = card.querySelector('.slide-card-toggle');
+		if (!toggle) return;
+
+		toggle.addEventListener('click', (e) => {
+			e.preventDefault();
+			card.classList.toggle('active');
+		});
+	});
+});
+
+// Responsive update
+window.addEventListener('resize', () => {
+	setSlideCardHeights();
 });

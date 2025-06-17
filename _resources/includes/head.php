@@ -3,7 +3,11 @@
 	require_once('../App_Code/includes/functions/template-functions.php');
 ?>
 
-<?php function head($title, $description) { ?>
+<?php function head(
+		$title, 
+		$description,
+		$page_garfield = false
+	) { ?>
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,13 +48,21 @@
 		<!-- Plugins -->
 		<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+		<link href="https://cdn.datatables.net/2.3.2/css/dataTables.bootstrap5.css" rel="stylesheet">
+		<link href="https://cdn.datatables.net/responsive/3.0.4/css/responsive.bootstrap5.css" rel="stylesheet">
 		
 		<!-- GCC Bootstrap -->
 		<link href="/gcc/_resources/css/gcc-bootstrap.css" rel="stylesheet" />
 		
 		<!-- GCC -->
-		<link href="/gcc/_resources/css/main.css" rel="stylesheet" />
+		<link href="/gcc/_resources/css/main.css?v=1.3" rel="stylesheet" />
 		
+		<?php if (isset($page_garfield) && $page_garfield === true) { ?>
+			<!-- Garfield-->
+			<link href="/gcc/_resources/css/garfield.css?v=1.3" rel="stylesheet" />
+		<?php } ?>
+		
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	</head>
 <?php } ?>

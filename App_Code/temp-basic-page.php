@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 	$page_title = 'Basic Page';
 	$section_title = 'Style Guide';
 	$section_url = 'styleguide.php';
-	$page_nav_secondary = true;
+	$page_nav_secondary = false;
 	$page_nav_tertiary = false;
 	$page_garfield = false;
 	$custom_hero = false;

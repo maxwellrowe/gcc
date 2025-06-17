@@ -20,8 +20,8 @@
 				</label>
 			</div>
 			<div class="form-check mb-1">
-				<input class="form-check-input" type="checkbox" value="award-adt" id="ap-controller-award-adt">
-				<label class="form-check-label" for="ap-controller-award-adt">
+				<input class="form-check-input" type="checkbox" value="award-ast" id="ap-controller-award-ast">
+				<label class="form-check-label" for="ap-controller-award-ast">
 					Associate Degree for Transfer
 				</label>
 			</div>

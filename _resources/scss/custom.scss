@@ -92,13 +92,21 @@ $form-switch-focus-box-shadow: $focus-ring-shadow;
 $form-range-thumb-focus-box-shadow: $focus-ring-shadow;
 $btn-focus-box-shadow: $focus-ring-shadow;
 $btn-close-focus-shadow: $focus-ring-shadow;
+$nav-tabs-border-radius: $border-radius-sm;
 
 // Forms
 $input-border-radius: 0.75rem;
+$input-border-radius-lg: 0.75rem;
+$input-border-radius-sm: 0.5rem;
 $form-select-border-radius: 0.75rem;
 $input-padding-y: 0.5rem;
 $input-padding-x: 1rem;
 $form-check-input-border: 1px solid $gray-600;
+$input-border-color: $gray-600;
+$input-padding-y: 1rem;
+$input-padding-x: 1rem;
+$form-select-padding-y: 1rem;
+$form-select-padding-x: 1rem;
 
 // List Group
 $list-group-item-padding-x: 1.5rem;

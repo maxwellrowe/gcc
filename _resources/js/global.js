@@ -134,16 +134,146 @@ primaryMenuOffcanvas.addEventListener('hide.bs.offcanvas', () => {
 	header.classList.remove('fixed-top');
 });
 
+// Toggle behavior for Tabs
+document.addEventListener('DOMContentLoaded', function () {
+	const tabButtons = document.querySelectorAll('.primary-menu-tabs button[data-bs-toggle="pill"]');
+	const defaultTabPane = document.getElementById('pmt-default');
+	const primaryMenuContent = document.querySelector('.primary-menu-content');
+	const backButton = document.getElementById('primary-menu-back');
+	const toggleButton = document.getElementById('primary-menu-toggle');
+
+	let lastClickedTab = null;
+
+	function resetTabsToDefault() {
+		tabButtons.forEach(btn => {
+			btn.classList.remove('active');
+			btn.setAttribute('aria-selected', 'false');
+
+			const targetId = btn.getAttribute('data-bs-target');
+			const targetPane = document.querySelector(targetId);
+			if (targetPane) {
+				targetPane.classList.remove('show', 'active');
+			}
+		});
+
+		defaultTabPane.classList.add('show', 'active');
+		primaryMenuContent.classList.remove('primary-menu-content-active');
+		lastClickedTab = null;
+	}
+
+	tabButtons.forEach(button => {
+		button.addEventListener('click', function (e) {
+			const targetId = button.getAttribute('data-bs-target');
+			const targetPane = document.querySelector(targetId);
+
+			// CASE 1: Clicked the same tab again
+			if (lastClickedTab === button && button.classList.contains('active')) {
+				button.classList.remove('active');
+				button.setAttribute('aria-selected', 'false');
+
+				if (targetPane) {
+					targetPane.classList.remove('show', 'active');
+				}
+
+				defaultTabPane.classList.add('show', 'active');
+				primaryMenuContent.classList.remove('primary-menu-content-active');
+				lastClickedTab = null;
+
+				e.preventDefault();
+				e.stopPropagation();
+			} else {
+				defaultTabPane.classList.remove('show', 'active');
+				lastClickedTab = button;
+
+				if (targetId !== '#pmt-default') {
+					primaryMenuContent.classList.add('primary-menu-content-active');
+				}
+			}
+		});
+	});
+
+	// Back button behavior
+	if (backButton) {
+		backButton.addEventListener('click', resetTabsToDefault);
+	}
+
+	// Reset tabs when opening menu
+	if (toggleButton) {
+		toggleButton.addEventListener('click', resetTabsToDefault);
+	}
+});
+
+// Mobile Info For Toggle
+document.addEventListener('DOMContentLoaded', function () {
+	const collapseElement = document.getElementById('mobile-info-for-dropdown-menu');
+	const targetElement = document.getElementById('mobile-primary-info-for');
+
+	if (collapseElement && targetElement) {
+		collapseElement.addEventListener('shown.bs.collapse', function () {
+			targetElement.classList.add('mobile-primary-info-for-open');
+		});
+
+		collapseElement.addEventListener('hidden.bs.collapse', function () {
+			targetElement.classList.remove('mobile-primary-info-for-open');
+		});
+	}
+});
+
+// Google Translate Modal
+document.addEventListener("DOMContentLoaded", function () {
+	const observer = new MutationObserver((mutations, obs) => {
+		const selectEl = document.querySelector('.goog-te-combo');
+		if (selectEl) {
+			// Ensure the select has an ID
+			selectEl.id = 'goog-te-combo';
+
+			// Add Bootstrap styling
+			selectEl.classList.add('form-select', 'mb-3');
+
+			// Add label if not present
+			if (!document.getElementById('translate-label')) {
+				const label = document.createElement('label');
+				label.setAttribute('for', 'goog-te-combo');
+				label.setAttribute('id', 'translate-label');
+				label.classList.add('form-label');
+				label.textContent = 'Translate the Site';
+				selectEl.parentNode.insertBefore(label, selectEl);
+			}
+
+			// Close modal on change
+			selectEl.addEventListener('change', () => {
+				const modalEl = document.getElementById('google-translate-modal');
+				const bsModal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+				bsModal.hide();
+			});
+
+			obs.disconnect();
+		}
+	});
+
+	observer.observe(document.body, {
+		childList: true,
+		subtree: true
+	});
+});
+
 // Search
 const searchOffcanvas = document.getElementById('global-search');
 const searchOffcanvasTrigger = document.getElementById('global-search-toggle');
+const globalSearchInput = document.getElementById('global-search-input');
+
 searchOffcanvas.addEventListener('show.bs.offcanvas', () => {
 	searchOffcanvasTrigger.classList.add('is-open');
 	header.classList.add('fixed-top');
 });
+
 searchOffcanvas.addEventListener('hide.bs.offcanvas', () => {
 	searchOffcanvasTrigger.classList.remove('is-open');
 	header.classList.remove('fixed-top');
+});
+
+searchOffcanvas.addEventListener('shown.bs.offcanvas', () => {
+	if (globalSearchInput) globalSearchInput.focus();
 });
 
 // Set height of offcanvas
@@ -154,11 +284,12 @@ function setOffcanvasHeights() {
 	if (!mainNav) return;
 
 	const navHeight = mainNav.offsetHeight;
+	const viewportHeight = window.innerHeight; // More reliable on mobile than 100vh
 
 	offcanvasIds.forEach(id => {
 		const el = document.getElementById(id);
 		if (el) {
-			el.style.height = `calc(100vh - ${navHeight}px)`;
+			el.style.height = `${viewportHeight - navHeight}px`;
 		}
 	});
 }
@@ -175,13 +306,29 @@ window.addEventListener('resize', setOffcanvasHeights);
 });
 
 // On desktop, info for dropdown click hide offcanvas if open
-document.getElementById('info-for-dropdown').addEventListener('click', () => {
-	const openOffcanvasElements = document.querySelectorAll('.offcanvas.show');
-	openOffcanvasElements.forEach(offcanvasEl => {
-		const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
-		if (offcanvasInstance) {
-			offcanvasInstance.hide();
-		}
+const infoForDropdown = document.getElementById('info-for-dropdown');
+if (infoForDropdown) {
+	infoForDropdown.addEventListener('click', () => {
+		const openOffcanvasElements = document.querySelectorAll('.offcanvas.show');
+		openOffcanvasElements.forEach(offcanvasEl => {
+			const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+			if (offcanvasInstance) {
+				offcanvasInstance.hide();
+			}
+		});
+	});
+}
+
+// On desktop, garfield close opencanvas if dropdown clicked
+document.querySelectorAll('#garfield-nav-primary-desktop a').forEach(link => {
+	link.addEventListener('click', () => {
+		const openOffcanvasElements = document.querySelectorAll('.offcanvas.show');
+		openOffcanvasElements.forEach(offcanvasEl => {
+			const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+			if (offcanvasInstance) {
+				offcanvasInstance.hide();
+			}
+		});
 	});
 });
 
@@ -406,7 +553,7 @@ $('.page-hero-slider').each(function(index, slider) {
 	// Pause/Play toggle
 	const toggleBtn = document.getElementById('swiper-toggle');
 	if (toggleBtn) {
-		const icon = toggleBtn.querySelector('span.fa');
+		const icon = toggleBtn.querySelector('span.fa-sharp');
 		const label = toggleBtn.querySelector('.visually-hidden');
 
 		toggleBtn.addEventListener('click', function () {
@@ -516,3 +663,77 @@ document.addEventListener('scroll', () => {
 		el.style.setProperty('--scroll', `${scrollAmount}px`);
 	}
 });
+
+// Garfield Homepage Hero Sliders
+// Match Height for Garfield Hero
+$(document).ready(function () {
+	$('.garfield-hero-match-height').matchHeight({
+		byRow: true,
+		target: $('.garfield-hero-content'),
+		property: 'height'
+	});
+});
+
+// Image Sliders
+function shuffleSlidesById(swiperId) {
+	const wrapper = document.querySelector(`${swiperId} .swiper-wrapper`);
+	const slides = Array.from(wrapper.children);
+	slides.sort(() => Math.random() - 0.5).forEach(slide => wrapper.appendChild(slide));
+}
+
+// Create isolated Swiper instance with fade + random autoplay
+function createFadeSwiper(swiperId) {
+	shuffleSlidesById(swiperId);
+
+	const delay = Math.floor(Math.random() * 4000) + 3000; // 3000–7000 ms
+
+	return new Swiper(swiperId, {
+		loop: true,
+		effect: 'fade',
+		speed: 1200,
+		fadeEffect: { crossFade: true },
+		autoplay: {
+			delay: delay,
+			disableOnInteraction: false,
+		},
+		allowTouchMove: false,
+	});
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	if (document.getElementById('garfield-hero-swiper-1')) {
+		createFadeSwiper('#garfield-hero-swiper-1');
+	}
+	if (document.getElementById('garfield-hero-swiper-2')) {
+		createFadeSwiper('#garfield-hero-swiper-2');
+	}
+	if (document.getElementById('garfield-hero-swiper-3')) {
+		createFadeSwiper('#garfield-hero-swiper-3');
+	}
+});
+  
+// Hero Slider
+$('.garfield-hero-swiper').each(function(index, slider) {
+	var swiper = new Swiper(slider, {
+		direction: 'vertical',
+		loop: true,
+		speed: 500,
+		slidesPerView: 1,
+		spaceBetween: 0,
+		zoom: true,
+		watchOverflow: false,
+		pagination: {
+		el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: true
+		}
+	});
+});
+

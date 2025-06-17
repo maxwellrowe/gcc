@@ -166,7 +166,7 @@ error_reporting(E_ALL);
 				
 				<section class="mt-md-n4 mt-lg-n5 z-1 position-relative">
 					<div class="container-xxl bg-sunset rounded pt-4 pb-5">
-						<div class="container">
+						<div class="container mb-5">
 							<div class="row gx-5 gy-3">
 								<div class="col-12 col-md-8 col-lg-7">
 									<h2 class="h3 gcc-anim-fade">Start Your Future</h2>
@@ -474,71 +474,52 @@ error_reporting(E_ALL);
 							</div>
 							<div class="col-12 col-md-4 col-lg-4">
 								<h3 class="preheading mt-3">Events</h3>
-								<div class="row row-cols-1 row-cols-lg-1 gy-2">
-									<div class="col mb-2 mb-lg-0">
-										<a class="card component-events border-primary d-block match-height-row text-decoration-none">
-											<div class="card-body p-2">
-												<div class="row">
-													<div class="col-3">
-														<span class="text-uppercase d-block text-center text-secondary fw-medium">Feb</span>
-														<span class="lora d-block text-center fs-2 text-secondary fw-bold lh-1">03</span>
-													</div>
-													<div class="col-9">
-														<h2 class="h5 lh-sm">The Event Title</h2>
-														<div class="d-flex align-items-center justify-content-start w-100 gap-2 fs-7">
-															<span class="fa-sharp fa-regular fa-clock text-primary"></span>
-															<span>11:00 AM - 12:30 PM</span>
-														</div>
-														<div class="d-flex align-items-center justify-content-start w-100 gap-2 fs-7">
-															<span class="fa-sharp fa-regular fa-map-marker text-primary"></span>
-															<span>Main Auditorium</span>
-														</div>
+								<div class="card component-card-event-list">
+									<div class="list-group list-group-flush">
+										<a href="" class="list-group-item">
+											<div class="d-flex justify-content-start gap-2 align-items-start">
+												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
+												<div>
+													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
+														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
+														<span>11:00 AM - 12:30 PM</span>
 													</div>
 												</div>
 											</div>
 										</a>
-									</div>
-									<div class="col mb-2 mb-lg-0">
-										<a class="card component-events border-primary d-block match-height-row text-decoration-none">
-											<div class="card-body p-2">
-												<div class="row">
-													<div class="col-3">
-														<span class="text-uppercase d-block text-center text-secondary fw-medium">Feb</span>
-														<span class="lora d-block text-center fs-2 text-secondary fw-bold lh-1">03</span>
-													</div>
-													<div class="col-9">
-														<h2 class="h5 lh-sm">A Long Event Title that goes on forever</h2>
-														<div class="d-flex align-items-center justify-content-start w-100 gap-2 fs-7">
-															<span class="fa-sharp fa-regular fa-clock text-primary"></span>
-															<span>11:00 AM - 12:30 PM</span>
-														</div>
-														<div class="d-flex align-items-center justify-content-start w-100 gap-2 fs-7">
-															<span class="fa-sharp fa-regular fa-map-marker text-primary"></span>
-															<span>Main Auditorium</span>
-														</div>
+										<a href="" class="list-group-item">
+											<div class="d-flex justify-content-start gap-2 align-items-start">
+												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
+												<div>
+													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
+														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
+														<span>11:00 AM - 12:30 PM</span>
 													</div>
 												</div>
 											</div>
 										</a>
-									</div>
-									<div class="col mb-2 mb-lg-0">
-										<a class="card component-events border-primary d-block match-height-row text-decoration-none">
-											<div class="card-body p-2">
-												<div class="row">
-													<div class="col-3">
-														<span class="text-uppercase d-block text-center text-secondary fw-medium">Feb</span>
-														<span class="lora d-block text-center fs-2 text-secondary fw-bold lh-1">03</span>
+										<a href="" class="list-group-item">
+											<div class="d-flex justify-content-start gap-2 align-items-start">
+												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
+												<div>
+													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
+														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
+														<span>11:00 AM - 12:30 PM</span>
 													</div>
-													<div class="col-9">
-														<h2 class="h5 lh-sm">The Event Title</h2>
-														<div class="d-flex align-items-center justify-content-start w-100 gap-2 fs-7">
-															<span class="fa-sharp fa-regular fa-clock text-primary"></span>
-															<span>11:00 AM - 12:30 PM</span>
-														</div>
-														<div class="d-flex align-items-center justify-content-start w-100 gap-2 fs-7">
-															<span class="fa-sharp fa-regular fa-map-marker text-primary"></span>
-															<span>Main Auditorium</span>
-														</div>
+												</div>
+											</div>
+										</a>
+										<a href="" class="list-group-item">
+											<div class="d-flex justify-content-start gap-2 align-items-start">
+												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
+												<div>
+													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
+														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
+														<span>11:00 AM - 12:30 PM</span>
 													</div>
 												</div>
 											</div>

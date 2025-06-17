@@ -10,7 +10,7 @@
 		$links = [
 			["url" => "https://url.com", "text" => "Quicklink Title", "icon" => "fa-sharp fa-regular fa-unicorn"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-unicorn"],
-			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "icon" => "fa-sharp fa-regular fa-phone"],
+			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "icon" => "fa-sharp fa-regular fa-phone"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-laptop"]
 		]
 	);
@@ -24,7 +24,7 @@
 		$links = [
 			["url" => "https://url.com", "text" => "Quicklink Title", "icon" => "fa-sharp fa-regular fa-unicorn"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-unicorn"],
-			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "icon" => "fa-sharp fa-regular fa-phone"],
+			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "icon" => "fa-sharp fa-regular fa-phone"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-laptop"]
 		]
 	);
@@ -38,7 +38,7 @@
 		$links = [
 			["url" => "https://url.com", "text" => "Quicklink Title", "icon" => "fa-sharp fa-regular fa-unicorn"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-unicorn"],
-			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "icon" => "fa-sharp fa-regular fa-phone"],
+			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "icon" => "fa-sharp fa-regular fa-phone"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-laptop"]
 		]
 	);
@@ -52,7 +52,7 @@
 		$links = [
 			["url" => "https://url.com", "text" => "Quicklink Title", "icon" => "fa-sharp fa-regular fa-unicorn"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-unicorn"],
-			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "icon" => "fa-sharp fa-regular fa-phone"],
+			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "icon" => "fa-sharp fa-regular fa-phone"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-laptop"]
 		]
 	);
@@ -66,7 +66,7 @@
 		$links = [
 			["url" => "https://url.com", "text" => "Quicklink Title", "icon" => "fa-sharp fa-regular fa-unicorn"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-unicorn"],
-			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "icon" => "fa-sharp fa-regular fa-phone"],
+			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "icon" => "fa-sharp fa-regular fa-phone"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-laptop"]
 		]
 	);
@@ -80,7 +80,7 @@
 		$links = [
 			["url" => "https://url.com", "text" => "Quicklink Title", "icon" => "fa-sharp fa-regular fa-unicorn"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-unicorn"],
-			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "icon" => "fa-sharp fa-regular fa-phone"],
+			["url" => "https://url.com", "text" => "Submit the Financial Aid Contact Form", "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "icon" => "fa-sharp fa-regular fa-phone"],
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-laptop"]
 		]
 	);
@@ -105,6 +105,7 @@
 					<td>
 						<ul>
 							<li>Link Text (text input)</li>
+							<li>Description (text input, optional)</li>
 							<li>Link URL (file chooser)</li>
 							<li>Icon (text input, Font Awesome classes)</li>
 						</ul>
@@ -117,7 +118,6 @@
 						<p>This sets the style of the quicklink, adding a class to the card.</p>
 						<ul>
 							<li>white</li>
-							<li>white-red-header</li>
 							<li>white-red-border</li>
 							<li>light-gray</li>
 							<li>gray</li>

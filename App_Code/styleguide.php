@@ -117,6 +117,13 @@ error_reporting(E_ALL);
 				
 				<section class="mb-4">
 					<div class="container">
+						<h2 id="forms">Forms</h2>
+						<?php include('styleguide/forms.php'); ?>
+					</div>
+				</section>
+				
+				<section class="mb-4">
+					<div class="container">
 						<h2 id="utilities">Utilities</h2>
 						<?php include('styleguide/utilities.php'); ?>
 					</div>

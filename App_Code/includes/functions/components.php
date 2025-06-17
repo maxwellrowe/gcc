@@ -3,7 +3,7 @@
 // Created as a function for easier use across demonstration templates
 // function card($title, $content, $style, $links, $image, $orientation, $match_height)
 // $links must be an array [["link" => "https://url.com", "link_text" => "Learn More"], ["link" => "https://url.com", "link_text" => "Learn More"]]
-// Options for $style are white, white-red-header, white-red-border, light-gray, gray, sunset, red
+// Options for $style are white, white-red-header, white-red-border, light-gray, gray, sunset, red-header
 // $match_height true or false
 // $link_style options "btn btn-primary btn-sm" "btn btn-secondary btn-sm" "btn btn-light btn-sm" or "arrow-link"
 function card(
@@ -33,7 +33,7 @@ function card(
 				</div>
 			<?php } ?>
 			<div class="card-body">
-				<p><?php echo $content; ?></p>
+				<p class="fs-7"><?php echo $content; ?></p>
 				
 				<?php if (!empty($links) && is_array($links) && count($links) > 0) { ?>
 					<div>
@@ -81,7 +81,7 @@ function button(
 <?php }
 
 // Quicklinks
-// $links --> array of links [['url' => '#', 'text' => 'TEXT', 'icon' => 'fa-sharp fa-regular fa-arrow-right']]
+// $links --> array of links [['url' => '#', 'text' => 'TEXT', "description" => "", 'icon' => 'fa-sharp fa-regular fa-arrow-right']]
 // $style --> white, white-red-header, white-red-border, light-gray, gray, sunset, red
 // $columns_desktop --> 1, 2, 3 etc
 // $columns_tablet --> 1, 2, 3 etc
@@ -95,17 +95,28 @@ function button(
 	$links = []
 ) { ?>
 	<?php if (!empty($links) && is_array($links) && count($links) > 0) { ?>
-		<div class="row row-cols-<?php echo $columns_mobile; ?> row-cols-sm-<?php echo $columns_tablet; ?> row-cols-lg-<?php echo $columns_desktop; ?>">
+		<div class="row row-cols-<?php echo $columns_mobile; ?> row-cols-sm-<?php echo $columns_tablet; ?> row-cols-lg-<?php echo $columns_desktop; ?> gx-2 gy-2">
 			<?php foreach($links as $link) { ?>
-				<div class="col mb-3">
+				<div class="col">
 					<a href="<?php echo $link['url']; ?>" class="card card-style-<?php echo $style; ?> component-card component-quicklink d-block ">
 						<div class="card-body d-flex flex-column align-items-center justify-content-center p-3 match-height-row">
-							<div class="component-quicklink-icon">
-								<span class="<?php echo $link['icon']; ?> fs-<?php echo $icon_size; ?>"></span>
-							</div>
-							<div class="component-quicklink-text text-center lh-sm mt-2 fs-7 fw-bold">
-								<?php echo $link['text']; ?>
-							</div>
+							<?php if (isset($link['icon']) && !empty($link['icon'])) { ?>
+								<div class="component-quicklink-icon mb-2">
+									<span class="<?php echo $link['icon']; ?> fs-<?php echo $icon_size; ?>"></span>
+								</div>
+							<?php } ?>
+							<?php if (isset($link['description']) && !empty($link['description'])) { ?>
+								<div class="component-quicklink-text text-center lh-sm fs-5 fw-bold">
+									<?php echo $link['text']; ?>
+								</div>
+								<div class="text-center fs-8 mt-1">
+									<?php echo $link['description']; ?>
+								</div>
+							<?php } else { ?>
+								<div class="component-quicklink-text text-center lh-sm fs-7 fw-bold">
+									<?php echo $link['text']; ?>
+								</div>
+							<?php } ?>	
 						</div>
 					</a>
 				</div>
@@ -180,7 +191,7 @@ function block_link(
 		<?php foreach($links as $link) { ?>
 			<a href="<?php echo $link['url']; ?>" class="component-block-link block-link-style-<?php echo $style; ?>">
 				<?php if (isset($link['description']) && !empty($link['description'])) { ?>
-					<span class="p-2">
+					<span>
 						<span class="fw-bolder fs-5"><?php echo $link['text']; ?></span>
 						<br /><?php echo $link['description']; ?>
 					</span>
@@ -248,4 +259,22 @@ function academic_awards($awards = '', $style = 'bg-white') {
 			<?php } ?>
 		</div>	
 	<?php }
+}
+
+// Primary Menu Links
+function primary_menu_links( $links = [] ) {
+	?>
+		<div class="d-flex flex-column gap-2 w-100 primary-menu-links">
+			<?php foreach($links as $link) { ?>
+				<a href="<?php echo $link['url']; ?>" class="d-flex justify-content-start align-items-center w-100 gap-1">
+					<?php if (isset($link['icon']) && !empty($link['icon'])) { ?>
+						<span class="primary-menu-link-icon flex-shrink-0">
+							<span class="<?php echo $link['icon']; ?>"></span>
+						</span>
+					<?php } ?>
+					<span><?php echo $link['text']; ?></span>
+				</a>
+			<?php } ?>
+		</div>
+	<?php	
 }

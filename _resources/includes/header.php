@@ -2,7 +2,7 @@
 <header id="global-header" class="bg-white">
 	<div id="main-nav">
 		<div class="container-xxl">
-			<nav class="d-flex justify-content-between align-items-center gap-4 py-3">
+			<nav class="d-flex justify-content-between align-items-center gap-1 gap-md-4 py-3">
 				<div class="d-flex justify-content-start align-items-center gap-3">
 					<a href="index.php" class="global-brand">
 						<img src="/gcc/_resources/images/gcc-logo.png" alt="Glendale City College Logo" />
@@ -10,10 +10,12 @@
 					<a href="#" class="btn btn-primary d-none d-lg-block">Apply Now</a>
 				</div>
 				<div class="d-flex justify-content-end gap-3">
-					<ul class="nav gap-2">
+					<ul class="nav gap-1 gap-md-2 flex-nowrap">
 						<li class="nav-item dropdown d-none d-lg-block">
 							<a id="info-for-dropdown" class="dropdown-toggle btn btn-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Info For...</a>
-							<?php include('nav-audiences.php'); ?>
+							<ul class="dropdown-menu" id="info-for-dropdown-menu">
+								<?php include('nav-audiences.php'); ?>
+							</ul>
 						</li>
 						<li class="nav-item">
 							<button class="btn btn-dark btn-circle collapsed" aria-label="Search" data-bs-target="#global-search" data-bs-toggle="offcanvas" type="button" id="global-search-toggle">

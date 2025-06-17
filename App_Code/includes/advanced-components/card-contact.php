@@ -55,12 +55,12 @@
 				<li class="list-group-item border-gray-500">
 					<div class="d-flex align-items-center justify-content-start gap-2">
 						<span class="fa-sharp fa-regular fa-clock"></span>
-						<a href="#hours-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content">
+						<a href="#hours-toggle-content1" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content1">
 							<span>Hours</span>
 							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
 						</a>
 					</div>
-					<div class="collapse" id="hours-toggle-content">
+					<div class="collapse" id="hours-toggle-content1">
 						<div class="pt-2">
 							<p>Monday - Friday | 8:00 a.m. to 4:30 p.m.</p>
 						</div>
@@ -78,12 +78,12 @@
 				</li>
 				<li class="list-group-item border-gray-500">
 					<div class="d-flex align-items-center justify-content-start gap-2">
-						<a href="#custom-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content">
+						<a href="#custom-toggle-content1" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content1">
 							<span>Custom Toggle</span>
 							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
 						</a>
 					</div>
-					<div class="collapse" id="custom-toggle-content">
+					<div class="collapse" id="custom-toggle-content1">
 						<div class="pt-2">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
@@ -152,12 +152,12 @@
 				<li class="list-group-item border-gray-500">
 					<div class="d-flex align-items-center justify-content-start gap-2">
 						<span class="fa-sharp fa-regular fa-clock"></span>
-						<a href="#hours-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content">
+						<a href="#hours-toggle-content2" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content2">
 							<span>Hours</span>
 							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
 						</a>
 					</div>
-					<div class="collapse" id="hours-toggle-content">
+					<div class="collapse" id="hours-toggle-content2">
 						<div class="pt-2">
 							<p>Monday - Friday | 8:00 a.m. to 4:30 p.m.</p>
 						</div>
@@ -175,12 +175,12 @@
 				</li>
 				<li class="list-group-item border-gray-500">
 					<div class="d-flex align-items-center justify-content-start gap-2">
-						<a href="#custom-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content">
+						<a href="#custom-toggle-content2" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content2">
 							<span>Custom Toggle</span>
 							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
 						</a>
 					</div>
-					<div class="collapse" id="custom-toggle-content">
+					<div class="collapse" id="custom-toggle-content2">
 						<div class="pt-2">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
@@ -249,12 +249,12 @@
 				<li class="list-group-item border-gray-500">
 					<div class="d-flex align-items-center justify-content-start gap-2">
 						<span class="fa-sharp fa-regular fa-clock"></span>
-						<a href="#hours-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content">
+						<a href="#hours-toggle-content3" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content3">
 							<span>Hours</span>
 							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
 						</a>
 					</div>
-					<div class="collapse" id="hours-toggle-content">
+					<div class="collapse" id="hours-toggle-content3">
 						<div class="pt-2">
 							<p>Monday - Friday | 8:00 a.m. to 4:30 p.m.</p>
 						</div>
@@ -272,12 +272,12 @@
 				</li>
 				<li class="list-group-item border-gray-500">
 					<div class="d-flex align-items-center justify-content-start gap-2">
-						<a href="#custom-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content">
+						<a href="#custom-toggle-content3" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content3">
 							<span>Custom Toggle</span>
 							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
 						</a>
 					</div>
-					<div class="collapse" id="custom-toggle-content">
+					<div class="collapse" id="custom-toggle-content3">
 						<div class="pt-2">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
@@ -325,12 +325,12 @@
 				<li class="list-group-item border-gray-500">
 					<div class="d-flex align-items-center justify-content-start gap-2">
 						<span class="fa-sharp fa-regular fa-clock"></span>
-						<a href="#hours-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content">
+						<a href="#hours-toggle-content4" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content4">
 							<span>Hours</span>
 							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
 						</a>
 					</div>
-					<div class="collapse" id="hours-toggle-content">
+					<div class="collapse" id="hours-toggle-content4">
 						<div class="pt-2">
 							<p>Monday - Friday | 8:00 a.m. to 4:30 p.m.</p>
 						</div>
@@ -464,12 +464,12 @@
 					<li class="list-group-item border-gray-500">
 						<div class="d-flex align-items-center justify-content-start gap-2">
 							<span class="fa-sharp fa-regular fa-clock"></span>
-							<a href="#hours-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content">
+							<a href="#hours-toggle-content5" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content5">
 								<span>Hours</span>
 								<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
 							</a>
 						</div>
-						<div class="collapse" id="hours-toggle-content">
+						<div class="collapse" id="hours-toggle-content5">
 							<div class="pt-2">
 								<p>Monday - Friday | 8:00 a.m. to 4:30 p.m.</p>
 							</div>
@@ -487,12 +487,12 @@
 					</li>
 					<li class="list-group-item border-gray-500">
 						<div class="d-flex align-items-center justify-content-start gap-2">
-							<a href="#custom-toggle-content" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content">
+							<a href="#custom-toggle-content4" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content4">
 								<span>Custom Toggle</span>
 								<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
 							</a>
 						</div>
-						<div class="collapse" id="custom-toggle-content">
+						<div class="collapse" id="custom-toggle-content4">
 							<div class="pt-2">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
