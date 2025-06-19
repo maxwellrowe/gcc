@@ -8,5 +8,5 @@
 <script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.js"></script>
 <script src="https://cdn.datatables.net/responsive/3.0.4/js/responsive.bootstrap5.js"></script>
 
-<script src="/gcc/_resources/js/global.js?v=1.2"></script>
-<script src="/gcc/_resources/js/components.js?v=1.2"></script>
+<script src="/gcc/_resources/js/global.js?v=1.3"></script>
+<script src="/gcc/_resources/js/components.js?v=1.3"></script>

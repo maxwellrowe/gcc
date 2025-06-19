@@ -433,7 +433,7 @@ error_reporting(E_ALL);
 			<?php } ?>
 		</div>
 		
-		<?php include('../_resources/includes/footer.php'); ?>
+		<?php include('../_resources/includes/garfield-footer.php'); ?>
 		
 		<?php include('../_resources/includes/footer-scripts.php'); ?>
 		

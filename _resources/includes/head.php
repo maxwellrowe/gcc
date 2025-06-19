@@ -55,11 +55,11 @@
 		<link href="/gcc/_resources/css/gcc-bootstrap.css" rel="stylesheet" />
 		
 		<!-- GCC -->
-		<link href="/gcc/_resources/css/main.css?v=1.3" rel="stylesheet" />
+		<link href="/gcc/_resources/css/main.css?v=1.4" rel="stylesheet" />
 		
 		<?php if (isset($page_garfield) && $page_garfield === true) { ?>
 			<!-- Garfield-->
-			<link href="/gcc/_resources/css/garfield.css?v=1.3" rel="stylesheet" />
+			<link href="/gcc/_resources/css/garfield.css?v=1.4" rel="stylesheet" />
 		<?php } ?>
 		
 		<!-- jQuery -->

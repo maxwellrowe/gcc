@@ -76,6 +76,8 @@ error_reporting(E_ALL);
 				
 				<section>
 					<div class="container">
+						<p class="lead">This is just a representation of a basic page with the Garfield Header and Footer.</p>
+						<a href="garfield-homepage.php" class="btn btn-primary">Go to Garfield Homepage</a>
 						<h2>Garfield General Template Notes</h2>
 						<ul>
 							<li>Garfield pages have the class "garfield-page" added to the "body" tag.</li>
