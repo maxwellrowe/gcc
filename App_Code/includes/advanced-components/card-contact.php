@@ -295,6 +295,301 @@
 		</div>
 	</div>
 </div>
+
+<h3>Vertical Toggle</h3>
+<div class="row row-cols-1 row-cols-lg-3 g-3">
+	<div class="col">
+		<p><strong>All Options - Default</strong>
+		<div class="card component-card-contact component-card-contact-vertical component-card-contact-toggle border-primary">
+			<img src="/gcc/_resources/images/placeholder_profile.jpg" alt="Jane Doe" class="card-img-top" />
+			<a class="px-3 py-2" data-bs-toggle="collapse" href="#contact-card-collapse-1" role="button" aria-expanded="false" aria-controls="contact-card-collapse-1">
+				<h2 class="h5 mb-0">Jane Doe</h2>
+				<p class="small mb-0">Dean of Anthropology</p>
+			</a>
+			<ul class="collapse list-group list-group-flush border-gray-500" id="contact-card-collapse-1">
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-envelope"></span>
+						<a href="mailto:myemail@glendale.edu" class="fw-medium flex-grow-1 text-break">myemail@glendale.edu</a>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="myemail@glendale.edu">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+						</button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-envelope"></span>
+						<a href="mailto:myemail@glendale.edu" class="fw-medium flex-grow-1 text-break">myemailsuperlongemail@glendale.edu</a>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="myemailsuperlongemail@glendale.edu">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+					</button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-phone"></span>
+						<a href="tel:8181234567" class="fw-medium flex-grow-1 text-break">818-123-4567</a>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="8181234567">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+					</button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-location-dot"></span>
+						<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+							<span>B Building</span>
+							<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+						</a>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-clock"></span>
+						<a href="#hours-toggle-content1" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content1">
+							<span>Hours</span>
+							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
+						</a>
+					</div>
+					<div class="collapse" id="hours-toggle-content1">
+						<div class="pt-2">
+							<p>Monday - Friday | 8:00 a.m. to 4:30 p.m.</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-fax"></span>
+						<span class="fw-medium flex-grow-1 text-break">818-123-4567</span>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="8181234567">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+					</button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<a href="#custom-toggle-content1" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content1">
+							<span>Custom Toggle</span>
+							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
+						</a>
+					</div>
+					<div class="collapse" id="custom-toggle-content1">
+						<div class="pt-2">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+							<span>All Contact Info</span>
+							<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="col">
+		<p><strong>All Options - Light Gray</strong>
+		<div class="card component-card-contact component-card-contact-vertical component-card-contact-toggle component-card-contact-light-gray border-0">
+			<img src="/gcc/_resources/images/placeholder_profile.jpg" alt="Jane Doe" class="card-img-top" />
+			<a class="px-3 py-2" data-bs-toggle="collapse" href="#contact-card-collapse-2" role="button" aria-expanded="false" aria-controls="contact-card-collapse-2">
+				<h2 class="h5 mb-0">Jane Doe</h2>
+				<p class="small mb-0">Dean of Anthropology</p>
+			</a>
+			<ul class="list-group list-group-flush border-gray-500 collapse" id="contact-card-collapse-2">
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-envelope"></span>
+						<a href="mailto:myemail@glendale.edu" class="fw-medium flex-grow-1 text-break">myemail@glendale.edu</a>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="myemail@glendale.edu">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+						</button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-envelope"></span>
+						<a href="mailto:myemail@glendale.edu" class="fw-medium flex-grow-1 text-break">myemailsuperlongemail@glendale.edu</a>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="myemailsuperlongemail@glendale.edu">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+					  </button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-phone"></span>
+						<a href="tel:8181234567" class="fw-medium flex-grow-1 text-break">818-123-4567</a>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="8181234567">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+					  </button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-location-dot"></span>
+						<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+							<span>B Building</span>
+							<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+						</a>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-clock"></span>
+						<a href="#hours-toggle-content2" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content2">
+							<span>Hours</span>
+							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
+						</a>
+					</div>
+					<div class="collapse" id="hours-toggle-content2">
+						<div class="pt-2">
+							<p>Monday - Friday | 8:00 a.m. to 4:30 p.m.</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-fax"></span>
+						<span class="fw-medium flex-grow-1 text-break">818-123-4567</span>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="8181234567">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+					  </button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<a href="#custom-toggle-content2" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content2">
+							<span>Custom Toggle</span>
+							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
+						</a>
+					</div>
+					<div class="collapse" id="custom-toggle-content2">
+						<div class="pt-2">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+							<span>All Contact Info</span>
+							<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="col">
+		<p><strong>All Options - Medium Gray w/ Red Header</strong>
+		<div class="card component-card-contact component-card-contact-vertical component-card-contact-toggle component-card-contact-medium-gray border-0">
+			<img src="/gcc/_resources/images/placeholder_profile.jpg" alt="Jane Doe" class="card-img-top" />
+			<a class="px-3 py-2" data-bs-toggle="collapse" href="#contact-card-collapse-3" role="button" aria-expanded="false" aria-controls="contact-card-collapse-3">
+				<h2 class="h5 mb-0">Jane Doe</h2>
+				<p class="small mb-0">Dean of Anthropology</p>
+			</a>
+			<ul class="list-group list-group-flush border-gray-500 collapse" id="contact-card-collapse-3">
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-envelope"></span>
+						<a href="mailto:myemail@glendale.edu" class="fw-medium flex-grow-1 text-break">myemail@glendale.edu</a>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="myemail@glendale.edu">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+						</button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-envelope"></span>
+						<a href="mailto:myemail@glendale.edu" class="fw-medium flex-grow-1 text-break">myemailsuperlongemail@glendale.edu</a>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="myemailsuperlongemail@glendale.edu">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+					  </button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-phone"></span>
+						<a href="tel:8181234567" class="fw-medium flex-grow-1 text-break">818-123-4567</a>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="8181234567">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+					  </button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-location-dot"></span>
+						<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+							<span>B Building</span>
+							<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+						</a>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-clock"></span>
+						<a href="#hours-toggle-content3" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hours-toggle-content3">
+							<span>Hours</span>
+							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
+						</a>
+					</div>
+					<div class="collapse" id="hours-toggle-content3">
+						<div class="pt-2">
+							<p>Monday - Friday | 8:00 a.m. to 4:30 p.m.</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<span class="fa-sharp fa-regular fa-fax"></span>
+						<span class="fw-medium flex-grow-1 text-break">818-123-4567</span>
+						<button class="btn btn-outline-primary btn-sm btn-circle flex-shrink-0 gcc-copy-button" data-clipboard-text="8181234567">
+							<span class="fa-sharp fa-regular fa-copy"></span>
+							<span class="visually-hidden">Copy</span>
+					  </button>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<a href="#custom-toggle-content3" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-toggle-content3">
+							<span>Custom Toggle</span>
+							<span class="fa-sharp fa-light fa-plus flex-shrink-0"></span>
+						</a>
+					</div>
+					<div class="collapse" id="custom-toggle-content3">
+						<div class="pt-2">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item border-gray-500">
+					<div class="d-flex align-items-center justify-content-start gap-2">
+						<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+							<span>All Contact Info</span>
+							<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
 <div class="row row-cols-1 row-cols-lg-3 mt-3 g-3">
 	<div class="col">
 		<div class="card component-card-contact component-card-contact-vertical border-primary match-height-row">

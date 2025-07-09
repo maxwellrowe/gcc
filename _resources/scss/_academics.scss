@@ -145,6 +145,74 @@
 }
 
 // Program Listing Controller
+#academic-programs-controller {
+	@media (max-width: 992px) {
+		position: fixed;
+		bottom: 1.5rem;
+		right: 0;
+		width: 80%;	
+		border-top-left-radius: var(--bs-border-radius);
+		border-bottom-left-radius: var(--bs-border-radius);
+		box-shadow: var(--bs-box-shadow);
+		max-height: 70vh;
+		overflow: scroll;
+		max-width: 0;
+		border: none !important;
+		
+		.border-start {
+			&.border-5 {
+				&.border-secondary {
+					border: none !important;
+					max-height: 100% !important;
+					top: auto !important;
+				}
+			}
+		}
+		
+		&.nav-tertiary-lg {
+			.nav-tertiary {
+				width: 90%;	
+			}	
+			
+			.toggle-tertiary {
+				right: 0;	
+				padding-left: 1rem;
+				padding-right: 1rem;
+				left: auto;
+			}
+		}
+		
+		#ap-controller-open-mobile {
+			position: fixed;
+			right: 1.5rem;
+			bottom: 1.5rem;	
+			transition: all .2s ease-in-out;
+			opacity: 1;
+		}
+		
+		&.nav-tertiary-lg-show {
+			max-width: 80%;	
+			
+			#ap-controller-open-mobile {
+				bottom: -4rem;
+				opacity: 0;
+			}
+			
+			.toggle-tertiary {
+				top: 1rem;
+				
+				span {
+					&.fa-sharp {
+						transform: rotate(0deg);	
+					}	
+				}
+			}
+		}
+		
+		
+	}	
+}
+
 #ap-controller {
 	.btn.btn-link {
 		span {

@@ -7,6 +7,9 @@
 <script src="https://cdn.datatables.net/2.3.2/js/dataTables.bootstrap5.js"></script>
 <script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.js"></script>
 <script src="https://cdn.datatables.net/responsive/3.0.4/js/responsive.bootstrap5.js"></script>
+<script src="//npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="//npmcdn.com/isotope-packery@2/packery-mode.pkgd.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-<script src="/gcc/_resources/js/global.js?v=1.3"></script>
-<script src="/gcc/_resources/js/components.js?v=1.3"></script>
+<script src="/gcc/_resources/js/global.js?v=2"></script>
+<script src="/gcc/_resources/js/components.js?v=2"></script>

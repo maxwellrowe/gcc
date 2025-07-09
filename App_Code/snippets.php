@@ -99,6 +99,13 @@
 					</div>
 				</section>
 				
+				<section class="mb-5" id="collapse">
+					<div class="container">
+						<h2>Collapse</h2>
+						<?php include('includes/snippets/collapse.php'); ?>
+					</div>
+				</section>
+				
 				<section class="mb-5" id="card">
 					<div class="container">
 						<h2>Card</h2>

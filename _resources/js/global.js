@@ -475,9 +475,14 @@ document.addEventListener("DOMContentLoaded", function () {
 		scrollWithOffset(window.location.hash);
 	}
 
-	// 2. On anchor link click
+	// 2. On anchor link click (but NOT collapse toggles)
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		anchor.addEventListener("click", function (e) {
+			// Skip if it's a Bootstrap collapse toggle
+			if (this.hasAttribute('data-bs-toggle') && this.getAttribute('data-bs-toggle') === 'collapse') {
+				return; // Allow default behavior
+			}
+
 			const target = this.getAttribute("href");
 			if (target.length > 1 && document.querySelector(target)) {
 				e.preventDefault();
@@ -574,67 +579,69 @@ $('.page-hero-slider').each(function(index, slider) {
 
 
 // Homepage Hero Swiper
-const swiperHome = new Swiper('.page-hero-home-swiper', {
-  effect: 'fade',
-  fadeEffect: { crossFade: true },
-  slidesPerView: 1,
-  spaceBetween: 0,
-  loop: false,
-  speed: 800,
-  autoplay: {
-	delay: 2000,
-	disableOnInteraction: false,
-  },
-  on: {
-	init: function () {
-		const activeText = document.querySelector('.swiper-slide-active .swiper-slide-content-text');
-		if (activeText) {
-		activeText.style.opacity = 1;
-		activeText.style.transform = 'translateX(0)';
+document.querySelectorAll('.page-hero-home-swiper').forEach((el, i) => {
+	const swiper = new Swiper(el, {
+		effect: 'fade',
+		fadeEffect: { crossFade: true },
+		slidesPerView: 1,
+		spaceBetween: 0,
+		loop: false,
+		speed: 800,
+		autoplay: {
+			delay: 2000,
+			disableOnInteraction: false,
+		},
+		on: {
+			init: function () {
+				const activeText = el.querySelector('.swiper-slide-active .swiper-slide-content-text');
+				if (activeText) {
+					activeText.style.opacity = 1;
+					activeText.style.transform = 'translateX(0)';
+				}
+			},
+			slideChangeTransitionStart: function () {
+				const prevText = el.querySelector('.swiper-slide-prev .swiper-slide-content-text');
+				if (prevText) {
+					prevText.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+					prevText.style.opacity = 0;
+					prevText.style.transform = 'translateX(100%)';
+				}
+			},
+			slideChangeTransitionEnd: function () {
+				const activeText = el.querySelector('.swiper-slide-active .swiper-slide-content-text');
+				if (activeText) {
+					activeText.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+					activeText.style.opacity = 1;
+					activeText.style.transform = 'translateX(0)';
+				}
+			},
+			slideChange: function () {
+				const vertDots = el.closest('header')?.querySelector('.vert-dots');
+
+				if (this.isEnd) {
+					this.autoplay.stop();
+
+					if (vertDots) {
+						vertDots.classList.add('animate');
+
+						vertDots.addEventListener(
+							'animationend',
+							() => {
+								vertDots.classList.remove('animate');
+								vertDots.classList.add('done');
+							},
+							{ once: true }
+						);
+					}
+				} else {
+					if (vertDots) {
+						vertDots.classList.remove('animate', 'done');
+						vertDots.style.height = '';
+					}
+				}
+			}
 		}
-	},
-	slideChangeTransitionStart: function () {
-		// Only animate the CURRENT slide out to the right
-		const prevText = document.querySelector('.swiper-slide-prev .swiper-slide-content-text');
-		if (prevText) {
-		prevText.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
-		prevText.style.opacity = 0;
-		prevText.style.transform = 'translateX(100%)';
-		}
-	},
-	slideChangeTransitionEnd: function () {
-		// Animate the NEW active slide in from the left
-		const activeText = document.querySelector('.swiper-slide-active .swiper-slide-content-text');
-		if (activeText) {
-		activeText.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
-		activeText.style.opacity = 1;
-		activeText.style.transform = 'translateX(0)';
-		}
-	},
-	slideChange: function () {
-	  const vertDots = document.querySelector('.vert-dots');
-	
-	  if (this.isEnd) {
-		this.autoplay.stop();
-	
-		if (vertDots) {
-		  vertDots.classList.add('animate');
-	
-		  // Optional: replace animate with a "done" class once animation finishes
-		  vertDots.addEventListener('animationend', () => {
-			vertDots.classList.remove('animate');
-			vertDots.classList.add('done');
-		  }, { once: true });
-		}
-	  } else {
-		// Reset if not on last slide
-		if (vertDots) {
-		  vertDots.classList.remove('animate', 'done');
-		  vertDots.style.height = ''; // optional if height is controlled by class
-		}
-	  }
-	}
-  }
+	});
 });
 
 // Homepage Toast

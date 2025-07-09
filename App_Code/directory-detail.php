@@ -128,6 +128,28 @@ error_reporting(E_ALL);
 													</a>
 												</div>
 											</li>
+											<li class="list-group-item border-gray-500">
+												<div class="d-flex align-items-center justify-content-start gap-2">
+													<span class="fa-sharp fa-regular fa-sitemap"></span>
+													<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+														<span>
+															<span class="fw-bold">Department:</span> Department Name
+														</span>
+														<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+													</a>
+												</div>
+											</li>
+											<li class="list-group-item border-gray-500">
+												<div class="d-flex align-items-center justify-content-start gap-2">
+													<span class="fa-sharp fa-regular fa-sitemap"></span>
+													<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+														<span>
+															<span class="fw-bold">Division:</span> Division Name
+														</span>
+														<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+													</a>
+												</div>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -136,6 +158,11 @@ error_reporting(E_ALL);
 									<a href="" class="btn btn-primary">Download Resume</a>
 								</div>
 								
+								<h2 class="h4">Office Hours</h2>
+								<ul>
+									<li>Monday: 10 AM to 12PM</li>
+									<li>Thursday: 11 AM to 1 PM</li>
+								</ul>
 								<h2 class="h4">Biography</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in hendrerit enim, ut cursus felis. Cras tincidunt neque lorem, malesuada tincidunt tellus fermentum at. Proin hendrerit velit in felis mattis dictum. Integer eget eleifend risus. Suspendisse potenti. In eget tortor interdum, egestas felis eu, pharetra neque. Sed at arcu est. Phasellus elementum dolor ut purus pretium bibendum. Sed non arcu at quam sodales dictum.</p>
 									

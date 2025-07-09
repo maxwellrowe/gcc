@@ -81,7 +81,7 @@ error_reporting(E_ALL);
 							Announcements
 						</h2>
 						
-						<div class="row row-cols-1 row-cols-3 gy-3">
+						<div class="row row-cols-1 row-cols-md-3 gy-3">
 							<div class="col">
 								<?php card(
 									'Introducing Bank Mobile',

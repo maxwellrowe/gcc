@@ -13,4 +13,6 @@
 	<li><a href="#block-link">Block Link</a></li>
 	<li><a href="#programs">Academic Programs</a></li>
 	<li><a href="#awards">Academic Awards</a></li>
+	<li><a href="#homepage-hero">Homepage Hero</a></li>
+	<li><a href="#photo-gallery">Photo Gallery</a></li>
 </ul>

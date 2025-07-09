@@ -140,7 +140,7 @@ error_reporting(E_ALL);
 											<p class="mb-0 fs-6 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in hendrerit enim, ut cursus felis.</p>
 										</div>
 									</div>
-									<a href="#" class="btn btn-secondary btn-sm align-self-start align-self-lg-center text-nowrap">Call to Action</a>
+									<a href="#" class="btn btn-outline-light btn-sm align-self-start align-self-lg-center text-nowrap">Call to Action</a>
 								</div>
 							</div>
 						</div>

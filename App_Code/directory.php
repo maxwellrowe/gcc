@@ -74,12 +74,27 @@ error_reporting(E_ALL);
 				
 				<section class="mb-4">
 					<div class="container">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at placerat neque, tristique suscipit lacus. Fusce dictum lectus vel venenatis dapibus. Cras fringilla dignissim dui vitae pulvinar. Quisque sed rutrum tortor. Sed eget tempus neque. Etiam molestie pharetra dictum. Curabitur fringilla ante venenatis augue malesuada, da</p>
+					</div>
+				</section>
+				
+				<section class="mb-4">
+					<div class="container">
+						
+						<div id="alpha-filter" class="mb-3 text-center">
+						  <strong class="me-2">Filter by Last Name:</strong>
+						  <a href="#" class="alpha-letter active" data-letter="all">All</a>
+						  <?php foreach (range('A', 'Z') as $letter): ?>
+							<a href="#" class="alpha-letter" data-letter="<?php echo $letter; ?>"><?php echo $letter; ?></a>
+						  <?php endforeach; ?>
+						</div>
+						
 						<table class="table table-striped directory-datatable nowrap">
 							<thead>
 								<tr>
-									<th data-priority="1">Name &amp; Title</th>
+									<th data-priority="1">Name</th>
 									<th>Email</th>
-									<th>Phone</th>
+									<th>Extension/ Phone</th>
 									<th>Location</th>
 									<th>Department</th>
 									<th data-priority="2"></th>

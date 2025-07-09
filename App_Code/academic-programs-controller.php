@@ -3,7 +3,7 @@
 	<form>
 		<input type="text" class="form-control mb-2" id="ap-controller-search" placeholder="Search..." aria-label="Search Programs">
 		
-		<button class="btn btn-link p-0 mt-2 mb-1 fw-bold text-dark text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#ap-controller-awards" aria-expanded="true" aria-controls="ap-controller-awards">
+		<button class="btn btn-link p-0 mt-2 mb-1 fw-bold text-dark text-decoration-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#ap-controller-awards" aria-expanded="true" aria-controls="ap-controller-awards">
 			<span class="fa-sharp fa-regular fa-angle-down"></span> Award Types
 		</button>
 		<div class="collapse show" id="ap-controller-awards">
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		
-		<button class="btn btn-link p-0 mt-2 mb-1 fw-bold text-dark text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#ap-controller-lpp" aria-expanded="true" aria-controls="ap-controller-lpp">
+		<button class="btn btn-link p-0 mt-2 mb-1 fw-bold text-dark text-decoration-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#ap-controller-lpp" aria-expanded="true" aria-controls="ap-controller-lpp">
 			<span class="fa-sharp fa-regular fa-angle-down"></span> Learning &amp; Professional Pathways
 		</button>
 		<div class="collapse show" id="ap-controller-lpp">
@@ -56,7 +56,7 @@
 			<?php } ?>
 		</div>
 		
-		<button class="btn btn-link p-0 mt-2 mb-1 fw-bold text-dark text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#ap-controller-divisions" aria-expanded="false" aria-controls="ap-controller-divisions">
+		<button class="btn btn-link p-0 mt-2 mb-1 fw-bold text-dark text-decoration-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#ap-controller-divisions" aria-expanded="false" aria-controls="ap-controller-divisions">
 			<span class="fa-sharp fa-regular fa-angle-down"></span> Divisions
 		</button>
 		<div class="collapse" id="ap-controller-divisions">

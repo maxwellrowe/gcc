@@ -1,7 +1,7 @@
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Morgan Clark</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Clark, Morgan</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -29,8 +29,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Garcia</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Garcia, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -58,8 +58,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Davis</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
+		<span class="fw-medium fs-5">Davis, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -87,8 +87,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Riley Martinez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Martinez, Riley</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -116,8 +116,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Drew Smith</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Smith, Drew</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -145,8 +145,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Alex Johnson</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Coordinator</span>
+		<span class="fw-medium fs-5">Johnson, Alex</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Coordinator</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -174,8 +174,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Skyler Lopez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Lopez, Skyler</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -203,8 +203,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Clark</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Instructor</span>
+		<span class="fw-medium fs-5">Clark, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Instructor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -232,8 +232,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jordan Lee</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Coordinator</span>
+		<span class="fw-medium fs-5">Lee, Jordan</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Coordinator</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -261,8 +261,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Brown</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Instructor</span>
+		<span class="fw-medium fs-5">Brown, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Instructor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -290,8 +290,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Skyler Lopez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Coordinator</span>
+		<span class="fw-medium fs-5">Lopez, Skyler</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Coordinator</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -319,8 +319,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Casey Martinez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Martinez, Casey</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -348,8 +348,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Alex Garcia</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Coordinator</span>
+		<span class="fw-medium fs-5">Garcia, Alex</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Coordinator</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -377,8 +377,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Drew Lee</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Instructor</span>
+		<span class="fw-medium fs-5">Lee, Drew</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Instructor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -406,8 +406,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Morgan Martinez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Instructor</span>
+		<span class="fw-medium fs-5">Martinez, Morgan</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Instructor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -435,8 +435,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Drew Lewis</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
+		<span class="fw-medium fs-5">Lewis, Drew</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -464,8 +464,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Riley Lee</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Lee, Riley</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -493,8 +493,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Morgan Smith</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
+		<span class="fw-medium fs-5">Smith, Morgan</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -522,8 +522,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Garcia</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Garcia, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -551,8 +551,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Taylor Brown</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Brown, Taylor</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -580,8 +580,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Lewis</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Coordinator</span>
+		<span class="fw-medium fs-5">Lewis, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Coordinator</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -609,8 +609,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Morgan Martinez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Martinez, Morgan</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -638,8 +638,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Skyler Lee</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Coordinator</span>
+		<span class="fw-medium fs-5">Lee, Skyler</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Coordinator</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -667,8 +667,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Riley Johnson</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
+		<span class="fw-medium fs-5">Johnson, Riley</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -696,8 +696,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Morgan Martinez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Martinez, Morgan</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -725,8 +725,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Casey Lopez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Lopez, Casey</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -754,8 +754,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jordan Davis</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Instructor</span>
+		<span class="fw-medium fs-5">Davis, Jordan</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Instructor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -783,8 +783,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Casey Smith</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Instructor</span>
+		<span class="fw-medium fs-5">Smith, Casey</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Instructor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -812,8 +812,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Casey Lopez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Lopez, Casey</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -841,8 +841,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Riley Lopez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Lopez, Riley</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -870,8 +870,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Johnson</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
+		<span class="fw-medium fs-5">Johnson, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -899,8 +899,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Taylor Lopez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Lopez, Taylor</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -928,8 +928,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jordan Smith</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Smith, Jordan</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -957,8 +957,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Martinez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Instructor</span>
+		<span class="fw-medium fs-5">Martinez, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Instructor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -986,8 +986,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Morgan Johnson</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Johnson, Morgan</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1015,8 +1015,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Skyler Davis</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
+		<span class="fw-medium fs-5">Davis, Skyler</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1044,8 +1044,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Skyler Smith</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
+		<span class="fw-medium fs-5">Smith, Skyler</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1073,8 +1073,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Drew Brown</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Brown, Drew</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1102,8 +1102,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Riley Davis</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
+		<span class="fw-medium fs-5">Davis, Riley</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1131,8 +1131,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Martinez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Instructor</span>
+		<span class="fw-medium fs-5">Martinez, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Instructor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1160,8 +1160,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Drew Garcia</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
+		<span class="fw-medium fs-5">Garcia, Drew</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Administrative Assistant</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1189,8 +1189,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Lee</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Program Manager</span>
+		<span class="fw-medium fs-5">Lee, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Program Manager</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1218,8 +1218,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Riley Martinez</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Coordinator</span>
+		<span class="fw-medium fs-5">Martinez, Riley</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Coordinator</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1247,8 +1247,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Jamie Lewis</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Instructor</span>
+		<span class="fw-medium fs-5">Lewis, Jamie</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Instructor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">
@@ -1276,8 +1276,8 @@
 
 <tr>
 	<td>
-		<span class="fw-medium fs-5">Riley Brown</span>
-		<span class="d-block lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
+		<span class="fw-medium fs-5">Brown, Riley</span>
+		<span class="d-none lora fst-italic fs-8 text-gray-600">Assistant Professor</span>
 	</td>
 	<td>
 		<div class="d-flex align-items-center justify-content-start gap-2">

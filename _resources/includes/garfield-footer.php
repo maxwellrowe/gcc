@@ -2,44 +2,54 @@
 	<div class="py-4">
 		<div class="container-xxl">
 			<div class="row gy-3">
-				<div class="col-12 col-md-6 text-center text-md-start">
-					<div class="d-md-flex align-items-center justify-content-start gap-3">
-						<div id="footer-brand" class="mb-2">
-							<a href="/">
-								<img src="/gcc/_resources/images/garfield/logo.svg" class="img-fluid" alt="Glendale Community College Logo" />
-							</a>
+				<div class="col-12 col-md-6 col-lg-8 col-xl-6">
+					<div class="row">
+						<div class="col-12 col-lg-6 text-center text-md-start">
+							<div class="d-md-flex align-items-center justify-content-start gap-3">
+								<div id="footer-brand" class="mb-2">
+									<a href="/">
+										<img src="/gcc/_resources/images/garfield/logo.svg" class="img-fluid" alt="Glendale Community College Logo" />
+									</a>
+								</div>
+								<div>
+									<p class="small">
+										1122 East Garfield Ave<br />
+										Glendale, CA 91208<br />
+										<a href="tel:8182401000" target="_blank">818-240-1000 Etx. 5678</a>
+										<br />
+										<a href="/maps"><span class="fa-sharp fa-regular fa-location-dot mt-1"></span> Maps &amp; Parking</a>
+									</p>
+								</div>
+							</div>
+							<div class="d-flex align-items-center justify-content-center justify-content-md-start flex-wrap gap-2 mt-2">
+								<a href="https://www.linkedin.com/company/glendale-community-college-ca-91208" class="btn btn-yellow btn-circle btn-sm" target="_blank">
+									<span class="fa-brands fa-instagram"></span>
+									<span class="visually-hidden">Instagram</span>
+								</a>
+								<a href="https://twitter.com/gccpio" class="btn btn-yellow btn-circle btn-sm" target="_blank">
+									<span class="fa-brands fa-x-twitter"></span>
+									<span class="visually-hidden">X</span>
+								</a>
+								<a href="https://www.linkedin.com/company/glendale-community-college-ca-91208" class="btn btn-yellow btn-circle btn-sm" target="_blank">
+									<span class="fa-brands fa-linkedin"></span>
+									<span class="visually-hidden">LinkedIn</span>
+								</a>
+								<a href="https://www.facebook.com/GlendaleCollege" class="btn btn-yellow btn-circle btn-sm" target="_blank">
+									<span class="fa-brands fa-facebook"></span>
+									<span class="visually-hidden">Facebook</span>
+								</a>
+							</div>
 						</div>
-						<div>
-							<p class="small">
-								1122 East Garfield Ave<br />
-								Glendale, CA 91208<br />
-								<a href="tel:8182401000" target="_blank">818-240-1000 Etx. 5678</a>
-							</p>
+						<div class="col-12 col-lg-6 my-3 mt-lg-0">
+							<div class="d-flex gap-2 flex-column small text-center text-md-start">
+								<a href="#">Faculty &amp; Staff</a>
+								<a href="#">Campus Safety</a>
+								<a href="#">Sign Up for Emergency Alerts</a>
+							</div>
 						</div>
-					</div>
-					<div class="d-flex align-items-center justify-content-center justify-content-md-start flex-wrap gap-2 mt-2">
-						<a href="https://www.linkedin.com/company/glendale-community-college-ca-91208" class="btn btn-yellow btn-circle btn-sm" target="_blank">
-							<span class="fa-brands fa-instagram"></span>
-							<span class="visually-hidden">Instagram</span>
-						</a>
-						<a href="https://twitter.com/gccpio" class="btn btn-yellow btn-circle btn-sm" target="_blank">
-							<span class="fa-brands fa-x-twitter"></span>
-							<span class="visually-hidden">X</span>
-						</a>
-						<a href="https://www.linkedin.com/company/glendale-community-college-ca-91208" class="btn btn-yellow btn-circle btn-sm" target="_blank">
-							<span class="fa-brands fa-linkedin"></span>
-							<span class="visually-hidden">LinkedIn</span>
-						</a>
-						<a href="https://www.facebook.com/GlendaleCollege" class="btn btn-yellow btn-circle btn-sm" target="_blank">
-							<span class="fa-brands fa-facebook"></span>
-							<span class="visually-hidden">Facebook</span>
-						</a>
-					</div>
-					<div class="mt-3">
-						<a href="#" class="btn btn-outline-primary btn-sm">Faculty &amp; Staff</a>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 mb-3">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-6 mb-3">
 					<div class="d-md-flex justify-content-end w-100">
 						<div class="text-center text-md-start">
 							<h2 class="preheading small">Locations</h2>

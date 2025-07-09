@@ -68,6 +68,13 @@ error_reporting(E_ALL);
 						</button>
 						<div class="container">
 							<div class="page-title-wrapper d-flex justify-content-end flex-column pt-5">
+								<nav class="breadcrumbs" aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="#">Home</a></li>
+										<li class="breadcrumb-item"><a href="#">Section</a></li>
+										<li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
+									</ol>
+								</nav>
 								<h1 id="page-title" class="text-white"><?php echo $page_title; ?></h1>
 								<div class="on-this-page bg-gray-300 rounded p-2 d-flex gap-1 align-items-center fw-bold lh-1 flex-wrap w-max-content mt-2">
 									<span class="text-uppercase text-nowrap">On this page</span>

@@ -168,6 +168,27 @@
 					</div>
 				</section>
 				
+				<section>
+					<div class="container">
+						<h2 id="homepage-hero">Homepage Hero</h2>
+						<p>For the homepage hero, the editor should be able to:</p>
+						<ul>
+							<li>Choose an image to align to each item/ text OR choose a single video as a background.</li>
+							<li>Select whether the "announcements" box should be the bottom right corner or top right corner. If the top right corner is selected the class "home-toast-top-right" should be added to the div with class "home-toast."</li>
+						</ul>
+					</div>
+					<div class="container-xxl">
+						<?php include('includes/components/homepage-hero.php'); ?>
+					</div>
+				</section>
+				
+				<section class="mb-4">
+					<div class="container">
+						<h2 id="photo-gallery">Academic Awards</h2>
+						<a href="photo-gallery.php" class="btn btn-primary">View the Photo Gallery Component</a>
+					</div>
+				</section>
+				
 			</main>
 			<?php if($page_nav_tertiary) { ?>
 				<div class="d-none d-lg-block bg-light-red border-start border-1 border-primary nav-tertiary-lg">

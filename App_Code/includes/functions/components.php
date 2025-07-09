@@ -27,7 +27,7 @@ function card(
 		<div class="component-card-content">
 			<?php if(!empty($title)) { ?>
 				<div class="card-header">
-					<h2 class="h4 mb-0 lh-sm">
+					<h2 class="h5 mb-0 lh-sm">
 						<?php echo $title; ?>
 					</h2>
 				</div>
@@ -266,7 +266,7 @@ function primary_menu_links( $links = [] ) {
 	?>
 		<div class="d-flex flex-column gap-2 w-100 primary-menu-links">
 			<?php foreach($links as $link) { ?>
-				<a href="<?php echo $link['url']; ?>" class="d-flex justify-content-start align-items-center w-100 gap-1">
+				<a href="<?php echo $link['url']; ?>">
 					<?php if (isset($link['icon']) && !empty($link['icon'])) { ?>
 						<span class="primary-menu-link-icon flex-shrink-0">
 							<span class="<?php echo $link['icon']; ?>"></span>

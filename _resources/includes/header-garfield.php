@@ -37,13 +37,14 @@
 </div>
 <header id="global-header" class="bg-white">
 	<div id="main-nav">
+		<a href="" class="btn btn-primary d-block btn-sm rounded-0 mobile-top-apply-button d-sm-none">Apply to Noncredit</a>
 		<div class="container-xxl">
 			<nav class="d-flex justify-content-between align-items-center gap-1 gap-md-4 py-3 py-lg-0 position-relative">
 				<div class="d-flex justify-content-start align-items-center gap-3">
 					<a href="index.php" class="global-brand">
 						<img src="/gcc/_resources/images/garfield/logo.png" alt="Glendale City College Logo" />
 					</a>
-					<a href="#" class="btn btn-primary d-none d-lg-block">Apply to Noncredit</a>
+					<a href="#" class="btn btn-primary d-none d-sm-block">Apply to Noncredit</a>
 					
 					<!-- Garfield Desktop Nav-->
 					<nav id="garfield-nav-primary-desktop" class="navbar navbar-expand-lg d-none d-lg-block py-0">
@@ -95,6 +96,7 @@
 						<li class="nav-item d-block d-lg-none">
 							<button class="btn btn-primary d-flex align-items-center justify-content-between gap-1" id="primary-menu-toggle" data-bs-toggle="offcanvas" type="button" data-bs-target="#primary-menu" aria-label="Main Navigation">
 								<span class="menu-bars">
+									<span class="menu-bar"></span>
 									<span class="menu-bar"></span>
 									<span class="menu-bar"></span>
 								</span>

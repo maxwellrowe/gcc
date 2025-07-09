@@ -82,7 +82,22 @@ error_reporting(E_ALL);
 						<?php block_link (
 							$style = 'red-border',
 							$links = [
-								["url" => "homepage.php", "text" => "Home Page"],
+								["url" => "homepage.php", "text" => "Home Page"]
+							]
+						); ?>
+						<div class="mt-1 mb-3">
+							<button class="btn btn-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#component-collapse-1" aria-expanded="false" aria-controls="component-collapse-1">
+								Homepage Notes <span class="fa-sharp fa-regular fa-plus"></span>
+							</button>
+							<div class="collapse mt-2" id="component-collapse-1">
+								<p>The homepage should be modular like other pages, preferrably using components and snippets so that it can evolve over time.</p>
+								<h2 class="h4">Hero</h2>
+								<a href="components.php#homepage-hero">View Homepage Hero component</a>
+							</div>
+						</div>
+						<?php block_link (
+							$style = 'red-border',
+							$links = [
 								["url" => "news.php", "text" => "News"],
 								["url" => "news-archive.php", "text" => "News Archive"],
 								["url" => "news-single.php", "text" => "News Single Article"],
@@ -97,6 +112,7 @@ error_reporting(E_ALL);
 								["url" => "apply.php", "text" => "Apply"],
 								["url" => "directory.php", "text" => "Directory"],
 								["url" => "directory-detail.php", "text" => "Directory Detail"],
+								["url" => "directory-thumbnail.php", "text" => "Directory People/ Thumbnail"],
 								["url" => "temp-basic-page.php", "text" => "Basic Page"],
 								["url" => "temp-hero-split.php", "text" => "Hero - Split"],
 								["url" => "temp-hero-split-slider.php", "text" => "Hero - Split Slider"],

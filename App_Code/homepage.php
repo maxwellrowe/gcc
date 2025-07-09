@@ -89,7 +89,7 @@ error_reporting(E_ALL);
 									</div>
 								</div>
 								<div class="swiper-slide">
-									<div class="swiper-slide-content rounded" style="background-image: url('/gcc/_resources/images/homepage/hero-3.jpg');">
+									<div class="swiper-slide-content rounded" style="background-image: url('/gcc/_resources/images/homepage/hero-6.jpg');">
 										<div class="swiper-slide-content-inner match-height-row">
 											<div class="container">
 												<div class="swiper-slide-content-text text-white">
@@ -102,7 +102,7 @@ error_reporting(E_ALL);
 									</div>
 								</div>
 								<div class="swiper-slide">
-									<div class="swiper-slide-content rounded" style="background-image: url('/gcc/_resources/images/homepage/hero-4.jpg');">
+									<div class="swiper-slide-content rounded" style="background-image: url('/gcc/_resources/images/homepage/hero-5.jpg');">
 										<div class="swiper-slide-content-inner match-height-row">
 											<div class="container">
 												<div class="swiper-slide-content-text text-white">
@@ -120,7 +120,7 @@ error_reporting(E_ALL);
 							</div>
 						</div>
 						
-						<div class="home-toast">
+						<div class="home-toast home-toast-top-right">
 							<div class="home-toast-swiper swiper">
 								<div class="swiper-wrapper">
 									<a href="" class="swiper-slide d-flex align-items-center justify-content-start">
@@ -148,7 +148,155 @@ error_reporting(E_ALL);
 					</header>
 				</div>
 				
-				<section class="pt-4 z-2 position-relative">
+				<section class="py-lg-4 py-4">
+					<div class="container">
+						<span class="preheading preheading-arrow">What's happening at &amp; around GCC</span>
+						<div class="row gx-4 gy-3">
+							<div class="col-12 col-md-8 col-lg-8">
+								<h2 class="pt-2">Your GCC Connection</h2>
+								<div class="swiper component-carousel-anything" data-mobile-items="1" data-tablet-items="2" data-desktop-items="3" data-autoplay="false">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="swiper-slide-content">
+												<?php card(
+													'Lorem ipsum dolor sit amet',
+													'',
+													'light-gray',
+													[
+														["link" => "https://glendale.edu", "link_text" => "Learn More"]
+													],
+													'/gcc/_resources/images/placeholder_students.jpg',
+													'vertical',
+													false,
+													'arrow-link'
+												); ?>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="swiper-slide-content">
+												<?php card(
+													'Lorem ipsum dolor sit amet',
+													'',
+													'light-gray',
+													[
+														["link" => "https://glendale.edu", "link_text" => "Learn More"]
+													],
+													'/gcc/_resources/images/placeholder_students_3.jpg',
+													'vertical',
+													false,
+													'arrow-link'
+												); ?>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="swiper-slide-content">
+												<?php card(
+													'Lorem ipsum dolor sit amet',
+													'',
+													'light-gray',
+													[
+														["link" => "https://glendale.edu", "link_text" => "Learn More"]
+													],
+													'/gcc/_resources/images/placeholder_students.jpg',
+													'vertical',
+													false,
+													'arrow-link'
+												); ?>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="swiper-slide-content">
+												<?php card(
+													'Lorem ipsum dolor sit amet',
+													'',
+													'light-gray',
+													[
+														["link" => "https://glendale.edu", "link_text" => "Learn More"]
+													],
+													'/gcc/_resources/images/placeholder_students_3.jpg',
+													'vertical',
+													false,
+													'arrow-link'
+												); ?>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-button-prev"><span class="visually-hidden">Previous Slide</span></div>
+									<div class="swiper-button-next"><span class="visually-hidden">Next Slide</span></div>
+									<div class="swiper-scrollbar"></div>
+								</div>
+							</div>
+							<div class="col-12 col-md-4 col-lg-4">
+								<h3 class="preheading mt-3">Events</h3>
+								<div class="card component-card-event-list">
+									<div class="list-group list-group-flush">
+										<a href="" class="list-group-item">
+											<div class="d-flex justify-content-start gap-2 align-items-start">
+												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
+												<div>
+													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
+														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
+														<span>11:00 AM - 12:30 PM</span>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="" class="list-group-item">
+											<div class="d-flex justify-content-start gap-2 align-items-start">
+												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
+												<div>
+													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
+														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
+														<span>11:00 AM - 12:30 PM</span>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="" class="list-group-item">
+											<div class="d-flex justify-content-start gap-2 align-items-start">
+												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
+												<div>
+													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
+														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
+														<span>11:00 AM - 12:30 PM</span>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="" class="list-group-item">
+											<div class="d-flex justify-content-start gap-2 align-items-start">
+												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
+												<div>
+													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
+														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
+														<span>11:00 AM - 12:30 PM</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="d-flex justify-content-center justify-content-lg-end mt-2">
+									<a href="#" class="arrow-link fs-7">View All Events</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="d-none d-lg-block position-relative z-3">
+					<div class="vert-dots-three">
+						<div class="container">
+							<div class="vert-dots"></div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="pt-4 pt-lg-5 z-2 position-relative">
 					<div class="container">
 						<div class="row gx-5 gy-3">
 							<div class="col-12 col-md-8 col-lg-7">
@@ -165,8 +313,8 @@ error_reporting(E_ALL);
 				</section>
 				
 				<section class="mt-md-n4 mt-lg-n5 z-1 position-relative">
-					<div class="container-xxl bg-sunset rounded pt-4 pb-5">
-						<div class="container mb-5">
+					<div class="container-xxl bg-sunset rounded pt-4 pb-4 pb-md-5">
+						<div class="container mb-0 mb-md-5">
 							<div class="row gx-5 gy-3">
 								<div class="col-12 col-md-8 col-lg-7">
 									<h2 class="h3 gcc-anim-fade">Start Your Future</h2>
@@ -385,155 +533,6 @@ error_reporting(E_ALL);
 						</div>
 					</div>
 				</section>
-				
-				<section class="d-none d-lg-block position-relative z-3">
-					<div class="vert-dots-three">
-						<div class="container">
-							<div class="vert-dots"></div>
-						</div>
-					</div>
-				</section>
-				
-				<section class="py-lg-5 py-4">
-					<div class="container">
-						<span class="preheading preheading-arrow">What's happening at &amp; around GCC</span>
-						<div class="row gx-4 gy-3">
-							<div class="col-12 col-md-8 col-lg-8">
-								<h2 class="pt-2">Your GCC Connection</h2>
-								<div class="swiper component-carousel-anything" data-mobile-items="1" data-tablet-items="2" data-desktop-items="3" data-autoplay="false">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="swiper-slide-content">
-												<?php card(
-													'Lorem ipsum dolor sit amet',
-													'',
-													'light-gray',
-													[
-														["link" => "https://glendale.edu", "link_text" => "Learn More"]
-													],
-													'/gcc/_resources/images/placeholder_students.jpg',
-													'vertical',
-													false,
-													'arrow-link'
-												); ?>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="swiper-slide-content">
-												<?php card(
-													'Lorem ipsum dolor sit amet',
-													'',
-													'light-gray',
-													[
-														["link" => "https://glendale.edu", "link_text" => "Learn More"]
-													],
-													'/gcc/_resources/images/placeholder_students_3.jpg',
-													'vertical',
-													false,
-													'arrow-link'
-												); ?>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="swiper-slide-content">
-												<?php card(
-													'Lorem ipsum dolor sit amet',
-													'',
-													'light-gray',
-													[
-														["link" => "https://glendale.edu", "link_text" => "Learn More"]
-													],
-													'/gcc/_resources/images/placeholder_students.jpg',
-													'vertical',
-													false,
-													'arrow-link'
-												); ?>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="swiper-slide-content">
-												<?php card(
-													'Lorem ipsum dolor sit amet',
-													'',
-													'light-gray',
-													[
-														["link" => "https://glendale.edu", "link_text" => "Learn More"]
-													],
-													'/gcc/_resources/images/placeholder_students_3.jpg',
-													'vertical',
-													false,
-													'arrow-link'
-												); ?>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-button-prev"><span class="visually-hidden">Previous Slide</span></div>
-									<div class="swiper-button-next"><span class="visually-hidden">Next Slide</span></div>
-									<div class="swiper-scrollbar"></div>
-								</div>
-							</div>
-							<div class="col-12 col-md-4 col-lg-4">
-								<h3 class="preheading mt-3">Events</h3>
-								<div class="card component-card-event-list">
-									<div class="list-group list-group-flush">
-										<a href="" class="list-group-item">
-											<div class="d-flex justify-content-start gap-2 align-items-start">
-												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
-												<div>
-													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
-													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
-														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
-														<span>11:00 AM - 12:30 PM</span>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="" class="list-group-item">
-											<div class="d-flex justify-content-start gap-2 align-items-start">
-												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
-												<div>
-													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
-													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
-														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
-														<span>11:00 AM - 12:30 PM</span>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="" class="list-group-item">
-											<div class="d-flex justify-content-start gap-2 align-items-start">
-												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
-												<div>
-													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
-													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
-														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
-														<span>11:00 AM - 12:30 PM</span>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="" class="list-group-item">
-											<div class="d-flex justify-content-start gap-2 align-items-start">
-												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
-												<div>
-													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
-													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
-														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
-														<span>11:00 AM - 12:30 PM</span>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="d-flex justify-content-center justify-content-lg-end mt-2">
-									<a href="#" class="arrow-link fs-7">View All Events</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				
 				
 			</main>
 			<?php if($page_nav_tertiary) { ?>

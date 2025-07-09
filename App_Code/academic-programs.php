@@ -16,7 +16,7 @@ error_reporting(E_ALL);
 	
 	// Nav Includes if applicable, otherwise leave blank
 	$page_nav_secondary_include = 'navs/secondary-nav-academics.php';
-	$page_nav_tertiary_inlcude = 'navs/tertiary-nav-academic-programs.php';
+	$page_nav_tertiary_inlcude = '';
 	
 	//  Body Classes Based on Navigation
 	$body_classes = [];
@@ -88,6 +88,28 @@ error_reporting(E_ALL);
 							<?php 
 								$programs = get_academic_programs();
 								
+								//Tracker for a-z links
+								$programs_first_character_links = [];
+								
+								echo '<div class="d-flex justify-content-center align-items-center gap-1 mb-2">';
+								
+								foreach($programs as $anchor) {
+									$name = $anchor->program;	
+									$first_character = strtolower($name[0]);
+									if (!in_array($first_character, $programs_first_character_links)) {
+										$programs_first_character_links[] = $first_character;
+										?>
+										<a href="#ap-anchor-<?php echo $first_character; ?>" class="text-uppercase">
+											<?php echo $first_character; ?>
+										</a>
+										<?php
+									}
+								}
+								
+								echo '</div>';
+								
+								// Track anchors for programs
+								$programs_first_character = [];
 								foreach($programs as $program) { 
 									$name = $program->program;
 									$division = $program->division;
@@ -95,9 +117,16 @@ error_reporting(E_ALL);
 									$lpp = $program->lpp;
 									$lpp_id = $program->lpp_id;
 									$awards = array_map('trim', explode(',', $program->awards));
+									$first_character = strtolower($name[0]);
+									if (in_array($first_character, $programs_first_character)) {
+										$anchor_id = '';
+									} else {
+										$programs_first_character[] = $first_character;
+										$anchor_id = 'ap-anchor-' . $first_character;
+									}
 									
 									?>
-									<a href="" class="card academic-program-card bg-gray-300 mb-2 division-<?php echo $division_id; ?> lpp-<?php echo $lpp_id; ?> <?php foreach($awards as $award) { echo 'award-' . $award . ' '; } ?>">
+									<a href="" id="<?php echo $anchor_id; ?>" class="card academic-program-card bg-gray-300 mb-2 division-<?php echo $division_id; ?> lpp-<?php echo $lpp_id; ?> <?php foreach($awards as $award) { echo 'award-' . $award . ' '; } ?>">
 										<div class="card-body">
 											<div class="d-flex justify-content-between align-items-start align-items-lg-center gap-2">
 												<div class="d-flex flex-column flex-lg-row gap-2 justify-content-lg-between align-items-lg-center w-100">
@@ -152,17 +181,20 @@ error_reporting(E_ALL);
 				
 				
 			</main>
-			<?php if($page_nav_tertiary) { ?>
-				<div class="d-none d-lg-block bg-light-red border-start border-1 border-primary nav-tertiary-lg">
-					<button class="toggle-tertiary">
-						<span class="fa-sharp fa-regular fa-angle-right"></span>
-						<span class="visually-hidden">Open / Close Menu</span>
-					</button>
-					<div class="border-start border-5 border-secondary position-sticky">
-						<?php include('../_resources/includes/nav-tertiary.php'); ?>
-					</div>
+			<div id="academic-programs-controller" class="bg-light-red border-start border-1 border-primary nav-tertiary-lg">
+				<button class="toggle-tertiary">
+					<span class="fa-sharp fa-regular fa-angle-right"></span>
+					<span class="visually-hidden">Open / Close Menu</span>
+				</button>
+				<div class="border-start border-5 border-secondary position-sticky">
+					<nav class="nav-tertiary" aria-label="Subsection Navigation">
+						<?php include('../App_Code/academic-programs-controller.php'); ?>
+					</nav>
 				</div>
-			<?php } ?>
+				<button id="ap-controller-open-mobile" class="d-lg-none btn btn-primary btn-sm">Search &amp; Filter</button>
+			</div>
+			
+			
 		</div>
 		
 		<?php include('../_resources/includes/footer.php'); ?>

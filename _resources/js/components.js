@@ -44,7 +44,8 @@ $(document).ready(function () {
 		responsive: true,
 		paging: true,
 		searching: true,
-		ordering: false,
+		ordering: true, // enable ordering
+		order: [[0, 'asc']], // sort by first column ascending
 		pageLength: 25,
 		dom:
 			// Top row: search left, filters placeholder right
@@ -78,6 +79,25 @@ $(document).ready(function () {
 					select.append(`<option value="${d}">${d}</option>`);
 				});
 			});
+		}
+	});
+	
+	// A-Z Filter
+	$('#alpha-filter .alpha-letter').on('click', function (e) {
+		e.preventDefault();
+	
+		const letter = $(this).data('letter');
+		const table = $('.directory-datatable').DataTable();
+	
+		// Set active styling
+		$('#alpha-filter .alpha-letter').removeClass('active');
+		$(this).addClass('active');
+	
+		if (letter === 'all') {
+			table.column(0).search('').draw(); // clear filter
+		} else {
+			const regex = '^' + letter; // match start of last name
+			table.column(0).search(regex, true, false).draw();
 		}
 	});
 });
@@ -182,6 +202,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		// Optional: trigger filter on page load if needed
 		filterCards();
 	}
+	
+	$('#ap-controller-open-mobile').on('click', function() {
+		$('#academic-programs-controller').addClass('nav-tertiary-lg-show');
+	});
 });
 
 // Slide Card
@@ -221,4 +245,89 @@ document.addEventListener('DOMContentLoaded', () => {
 // Responsive update
 window.addEventListener('resize', () => {
 	setSlideCardHeights();
+});
+
+// Photo Gallery
+document.addEventListener('DOMContentLoaded', function () {
+  const gallerySection = document.querySelector('.component-photo-gallery');
+  const grid = gallerySection.querySelector('.isotope-grid');
+  const items = grid.querySelectorAll('.gallery-item');
+  const modal = document.getElementById('galleryModal');
+  let swiper;
+
+  const breakpoints = {
+	xs: 0,
+	sm: 576,
+	md: 768,
+	lg: 992
+  };
+
+  function getCurrentColumns() {
+	const width = window.innerWidth;
+	if (width >= breakpoints.lg) return parseInt(gallerySection.dataset.columnsLg) || 4;
+	if (width >= breakpoints.md) return parseInt(gallerySection.dataset.columnsMd) || 3;
+	if (width >= breakpoints.sm) return parseInt(gallerySection.dataset.columnsSm) || 2;
+	return parseInt(gallerySection.dataset.columnsXs) || 1;
+  }
+
+  function updateItemWidths() {
+	const columns = getCurrentColumns();
+	const totalGutter = 10 * (columns - 1);
+	const itemWidth = `calc(${100 / columns}% - ${totalGutter / columns}px)`;
+
+	items.forEach(item => {
+	  item.style.width = itemWidth;
+	});
+
+	if (window.iso) window.iso.layout();
+  }
+
+  // Wait for images, then initialize Isotope
+  imagesLoaded(grid, function () {
+	updateItemWidths();
+	window.iso = new Isotope(grid, {
+	  itemSelector: '.gallery-item',
+	  layoutMode: 'packery',
+	  packery: {
+		gutter: 10
+	  }
+	});
+  });
+
+  window.addEventListener('resize', updateItemWidths);
+
+  // Initialize Swiper inside Bootstrap modal
+  modal.addEventListener('shown.bs.modal', function (event) {
+	  const index = event.relatedTarget?.dataset.index || 0;
+  
+	  // Delay and force paint with requestAnimationFrame
+	  setTimeout(() => {
+		  requestAnimationFrame(() => {
+			  swiper = new Swiper('#galleryModal .gallery-swiper', {
+				  initialSlide: parseInt(index),
+				  loop: true,
+				  keyboard: {
+					  enabled: true,
+					  onlyInViewport: false
+				  },
+				  navigation: {
+					  nextEl: '#galleryModal .swiper-button-next',
+					  prevEl: '#galleryModal .swiper-button-prev'
+				  },
+				  pagination: {
+					  el: '#galleryModal .swiper-pagination',
+					  clickable: true
+				  }
+			  });
+		  });
+	  }, 100);
+  });
+
+  // Destroy Swiper when modal is closed
+  modal.addEventListener('hidden.bs.modal', function () {
+	if (swiper) {
+	  swiper.destroy(true, true);
+	  swiper = null;
+	}
+  });
 });
