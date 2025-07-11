@@ -2,70 +2,84 @@
 	<div class="py-4">
 		<div class="container-xxl">
 			<div class="row gy-3">
-				<div class="col-12 col-md-6 col-lg-8 col-xl-6">
-					<div class="row">
-						<div class="col-12 col-lg-6 text-center text-md-start">
-							<div class="d-md-flex align-items-center justify-content-start gap-3">
-								<div id="footer-brand" class="mb-2">
-									<a href="/">
-										<img src="/gcc/_resources/images/garfield/logo.svg" class="img-fluid" alt="Glendale Community College Logo" />
-									</a>
-								</div>
-								<div>
-									<p class="small">
-										1122 East Garfield Ave<br />
-										Glendale, CA 91208<br />
-										<a href="tel:8182401000" target="_blank">818-240-1000 Etx. 5678</a>
-										<br />
-										<a href="/maps"><span class="fa-sharp fa-regular fa-location-dot mt-1"></span> Maps &amp; Parking</a>
-									</p>
-								</div>
-							</div>
-							<div class="d-flex align-items-center justify-content-center justify-content-md-start flex-wrap gap-2 mt-2">
-								<a href="https://www.linkedin.com/company/glendale-community-college-ca-91208" class="btn btn-yellow btn-circle btn-sm" target="_blank">
-									<span class="fa-brands fa-instagram"></span>
-									<span class="visually-hidden">Instagram</span>
-								</a>
-								<a href="https://twitter.com/gccpio" class="btn btn-yellow btn-circle btn-sm" target="_blank">
-									<span class="fa-brands fa-x-twitter"></span>
-									<span class="visually-hidden">X</span>
-								</a>
-								<a href="https://www.linkedin.com/company/glendale-community-college-ca-91208" class="btn btn-yellow btn-circle btn-sm" target="_blank">
-									<span class="fa-brands fa-linkedin"></span>
-									<span class="visually-hidden">LinkedIn</span>
-								</a>
-								<a href="https://www.facebook.com/GlendaleCollege" class="btn btn-yellow btn-circle btn-sm" target="_blank">
-									<span class="fa-brands fa-facebook"></span>
-									<span class="visually-hidden">Facebook</span>
-								</a>
-							</div>
-						</div>
-						<div class="col-12 col-lg-6 my-3 mt-lg-0">
-							<div class="d-flex gap-2 flex-column small text-center text-md-start">
+				<div class="col-12 col-md-6 col-lg-3 text-center text-md-start">
+					<div id="footer-brand" class="mb-2">
+						<a href="/">
+							<img src="/gcc/_resources/images/garfield/logo.svg" class="img-fluid" alt="Glendale Community College Logo" />
+						</a>
+					</div>
+					<p class="small">
+						1122 East Garfield Ave<br />
+						Glendale, CA 91208
+					</p>
+					<p class="small">
+						<a href="tel:8182401000" target="_blank">818-240-1000 Ext. 5678</a>
+					</p>
+					<p class="small">
+						<a href="/maps"><span class="fa-sharp fa-regular fa-location-dot"></span> Maps &amp; Parking</a>
+					</p>
+					<div class="d-flex align-items-center justify-content-center justify-content-md-start flex-wrap gap-2 mb-2 mt-1">
+						<a href="https://www.instagram.com/garfieldcampusgcc/" class="btn btn-yellow btn-circle btn-sm" target="_blank">
+							<span class="fa-brands fa-instagram"></span>
+							<span class="visually-hidden">Instagram</span>
+						</a>
+						<a href="https://www.garfield.glendale.edu/home" class="btn btn-yellow btn-circle btn-sm" target="_blank">
+							<span class="fa-brands fa-youtube"></span>
+							<span class="visually-hidden">YouTube</span>
+						</a>
+						<a href="https://www.garfield.glendale.edu/home" class="btn btn-yellow btn-circle btn-sm" target="_blank">
+							<span class="fa-brands fa-linkedin"></span>
+							<span class="visually-hidden">LinkedIn</span>
+						</a>
+						<a href="https://www.facebook.com/GarfieldCampusGCC/" class="btn btn-yellow btn-circle btn-sm" target="_blank">
+							<span class="fa-brands fa-facebook"></span>
+							<span class="visually-hidden">Facebook</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 text-center text-md-start col-md-6 col-lg-4">
+					<h2 class="preheading small">Locations</h2>
+					<div class="d-flex flex-column align-items-center align-items-md-start gap-2">
+						<a href="" class="d-flex align-items-center flex-column flex-md-row justify-content-start gap-2">
+							<img src="/gcc/_resources/images/footer-gcc.jpg" style="width: 3rem;" class="rounded-circle flex-shrink-0" alt="GCC" />
+							<span class="small">GCC Verdugo Campus</span>
+						</a>
+						<a href="" class="d-flex align-items-center flex-column flex-md-row justify-content-start gap-2">
+							<img src="/gcc/_resources/images/footer-garfield.jpg" style="width: 3rem;" class="rounded-circle flex-shrink-0" alt="GCC" />
+							<span class="small">Garfield Campus Continuing Education</span>
+						</a>
+						<a href="" class="d-flex align-items-center flex-column flex-md-row justify-content-start gap-2">
+							<img src="/gcc/_resources/images/footer-pdc.jpg" style="width: 3rem;" class="rounded-circle flex-shrink-0" alt="GCC" />
+							<span class="small">Professional Development Center</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-5 text-center text-md-start">
+					<div class="row gy-3">
+						<div class="col-12 col-md-6 col-lg-4">
+							<h2 class="preheading small">A Title</h2>
+							<div class="d-flex gap-2 flex-column small">
 								<a href="#">Faculty &amp; Staff</a>
 								<a href="#">Campus Safety</a>
 								<a href="#">Sign Up for Emergency Alerts</a>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-4 col-xl-6 mb-3">
-					<div class="d-md-flex justify-content-end w-100">
-						<div class="text-center text-md-start">
-							<h2 class="preheading small">Locations</h2>
-							<div class="d-flex flex-column align-items-center align-items-md-start gap-2">
-								<a href="" class="d-flex align-items-center flex-column flex-md-row justify-content-start gap-2">
-									<img src="/gcc/_resources/images/footer-gcc.jpg" style="width: 3rem;" class="rounded-circle flex-shrink-0" alt="GCC" />
-									<span class="small">GCC Verdugo Campus</span>
-								</a>
-								<a href="" class="d-flex align-items-center flex-column flex-md-row justify-content-start gap-2">
-									<img src="/gcc/_resources/images/footer-garfield.jpg" style="width: 3rem;" class="rounded-circle flex-shrink-0" alt="GCC" />
-									<span class="small">Garfield Campus Continuing Education</span>
-								</a>
-								<a href="" class="d-flex align-items-center flex-column flex-md-row justify-content-start gap-2">
-									<img src="/gcc/_resources/images/footer-pdc.jpg" style="width: 3rem;" class="rounded-circle flex-shrink-0" alt="GCC" />
-									<span class="small">Professional Development Center</span>
-								</a>
+						<div class="col-12 col-md-6 col-lg-4">
+							<h2 class="preheading small">A Title</h2>
+							<div class="d-flex gap-2 flex-column small">
+								<a href="">Lorem ipsum dolor</a>
+								<a href="">Lorem ipsum dolor</a>
+								<a href="">Lorem ipsum dolor</a>
+								<a href="">Lorem ipsum dolor</a>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<h2 class="preheading small">A Title</h2>
+							<div class="d-flex gap-2 flex-column small">
+								<a href="">Lorem ipsum dolor</a>
+								<a href="">Lorem ipsum dolor</a>
+								<a href="">Lorem ipsum dolor</a>
+								<a href="">Lorem ipsum dolor</a>
 							</div>
 						</div>
 					</div>

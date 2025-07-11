@@ -49,7 +49,7 @@ $(document).ready(function () {
 		pageLength: 25,
 		dom:
 			// Top row: search left, filters placeholder right
-			'<"row align-items-center mb-2"<"col-sm-6"f><"col-sm-6 text-end dataTables_filters">>' +
+			'<"row align-items-center mb-2"<"col-md-6"f><"col-md-6 text-md-end text-start dataTables_filters">>' +
 			// Table
 			'rt' +
 			// Bottom row: length left, info center, pagination right
@@ -65,7 +65,7 @@ $(document).ready(function () {
 				const column = this;
 				const title = $(column.header()).text();
 				const select = $(`
-					<select class="form-select form-select-sm d-inline-block ms-2" style="width: auto;">
+					<select class="form-select form-select-sm d-inline-block me-2 me-md-0 ms-md-2 mb-1 mb-md-0" style="width: auto;">
 						<option value="">Filter ${title}</option>
 					</select>
 				`)

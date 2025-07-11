@@ -162,8 +162,8 @@ error_reporting(E_ALL);
 				<section class="position-relative z-2">
 					<div class="container-xxl">
 						<div class="homepage-cta homepage-cta-garfield rounded bg-primary position-relative py-lg-3">
-							<div class="container py-5 gcc-anim-fade-up">
-								<div class="text-center mb-5">
+							<div class="container py-3 py-lg-5 gcc-anim-fade-up">
+								<div class="text-center mb-3 mb-lg-5">
 									<h2 class="text-white">Choose Your Program</h2>
 									<a href="#" class="btn btn-light">View All Programs</a>
 								</div>

@@ -81,8 +81,8 @@ error_reporting(E_ALL);
 				<section class="mb-4">
 					<div class="container">
 						
-						<div id="alpha-filter" class="mb-3 text-center">
-						  <strong class="me-2">Filter by Last Name:</strong>
+						<div id="alpha-filter" class="mb-3 text-start text-md-center">
+						  <strong class="me-2 d-block d-md-inline">Filter by Last Name:</strong>
 						  <a href="#" class="alpha-letter active" data-letter="all">All</a>
 						  <?php foreach (range('A', 'Z') as $letter): ?>
 							<a href="#" class="alpha-letter" data-letter="<?php echo $letter; ?>"><?php echo $letter; ?></a>

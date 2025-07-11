@@ -8,6 +8,16 @@
 							<img src="/gcc/_resources/images/gcc-logo.png" class="img-fluid" alt="Glendale Community College Logo" />
 						</a>
 					</div>
+					<p class="small">
+						1500 North Verdugo Road<br />
+						Glendale, CA 91208
+					</p>
+					<p class="small">
+						<a href="tel:8182401000" target="_blank">818-240-1000</a>
+					</p>
+					<p class="small">
+						<a href="/maps"><span class="fa-sharp fa-regular fa-location-dot"></span> Maps &amp; Parking</a>
+					</p>
 					<div class="d-flex align-items-center justify-content-center justify-content-md-start flex-wrap gap-2 mb-2 mt-1">
 						<a href="https://www.linkedin.com/company/glendale-community-college-ca-91208" class="btn btn-yellow btn-circle btn-sm" target="_blank">
 							<span class="fa-brands fa-instagram"></span>
@@ -26,16 +36,6 @@
 							<span class="visually-hidden">Facebook</span>
 						</a>
 					</div>
-					<p class="small">
-						1500 North Verdugo Road<br />
-						Glendale, CA 91208
-					</p>
-					<p class="small">
-						<a href="tel:8182401000" target="_blank">818-240-1000</a>
-					</p>
-					<p class="small">
-						<a href="/maps"><span class="fa-sharp fa-regular fa-location-dot"></span> Maps &amp; Parking</a>
-					</p>
 				</div>
 				<div class="col-12 text-center text-md-start col-md-6 col-lg-4">
 					<h2 class="preheading small">Locations</h2>

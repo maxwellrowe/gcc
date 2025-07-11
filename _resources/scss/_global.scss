@@ -84,7 +84,7 @@ Header
 *****************************/
 #global-header .global-brand {
 	display: block;
-	max-width: 12.5rem;
+	max-width: 14.5rem;
 }
 #global-header .global-brand img {
 	max-width: 100%;
@@ -1494,13 +1494,22 @@ body.homepage {
 			.swiper-slide-content-inner {
 				display: flex;
 				flex-direction: column;
-				height: 70vh;
-				max-height: 800px;
+				aspect-ratio: 4 / 5;
 				min-height: 400px;
 				justify-content: end;
 				align-items: start;
 				width: 100%;
 				background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 100%);
+				
+				@media (min-width: 600px) {
+					aspect-ratio: 10 / 8;
+					min-height: 700px;
+				}
+				
+				@media (min-width: 768px) {
+					aspect-ratio: 16 / 9;
+					min-height: 800px;
+				}
 				
 				.swiper-slide-content-text {
 					padding-bottom: 4rem;	
@@ -1515,7 +1524,20 @@ body.homepage {
 					
 					@media (min-width: 1400px) {
 						max-width: calc(100% - 18rem);
-						padding-bottom: 12rem;
+						padding-bottom: 8rem;
+					}
+					
+					span {
+						&.fs-lg {
+							@media (max-width: 450px) {	
+								font-size: 2rem !important;	
+							}
+						}
+						&.fs-2 {
+							@media (max-width: 400px) {	
+								font-size: 1rem !important;	
+							}	
+						}	
 					}
 				}
 			}		
@@ -1687,8 +1709,8 @@ body.homepage {
 			opacity: 1;
 		
 			@media (min-width: 1400px) {
-				height: 14rem;
-				max-height: 14rem;
+				height: 10rem;
+				max-height: 10rem;
 			}
 		}
 	}
