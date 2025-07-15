@@ -36,7 +36,7 @@ function accordion_component($heading, $content) {
 	?>
 		<div class="accordion-item">
 			<h2 class="accordion-header">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-<?php echo $id; ?>" aria-expaneded="false" aria-controls="accordion-<?php echo $id; ?>">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-<?php echo $id; ?>" aria-expanded="false" aria-controls="accordion-<?php echo $id; ?>">
 					<?php echo $heading; ?>
 				</button>
 			</h2>

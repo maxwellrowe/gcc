@@ -60,26 +60,62 @@ $(document).ready(function () {
 		},
 		initComplete: function () {
 			$('.directory-datatable').closest('.dt-container').addClass('directory-datatable-wrapper');
-			// Add filters to the placeholder container
-			this.api().columns([3, 4]).every(function () {
+			const api = this.api();
+		
+			api.columns([3, 4]).every(function () {
 				const column = this;
+				const columnIndex = column.index();
 				const title = $(column.header()).text();
+				const selectId = `filter-col-${columnIndex}`;
 				const select = $(`
-					<select class="form-select form-select-sm d-inline-block me-2 me-md-0 ms-md-2 mb-1 mb-md-0" style="width: auto;">
+					<label for="${selectId}" class="visually-hidden">Filter ${title}</label>
+					<select id="${selectId}" class="form-select form-select-sm d-inline-block me-2 me-md-0 ms-md-2 mb-1 mb-md-0" style="width: auto;">
 						<option value="">Filter ${title}</option>
 					</select>
 				`)
 				.appendTo('.dataTables_filters')
 				.on('change', function () {
-					const val = $.fn.dataTable.util.escapeRegex($(this).val());
-					column.search(val ? '^' + val + '$' : '', true, false).draw();
+					const val = $(this).val();
+					column.search(val ? val : '', true, false).draw();
 				});
-
-				column.data().unique().sort().each(function (d) {
-					select.append(`<option value="${d}">${d}</option>`);
-				});
+		
+				// Custom logic for column 4 (index 4)
+				if (columnIndex === 4) {
+					let values = new Set();
+		
+					// Loop through each cell in the column
+					column.nodes().each(function (cell) {
+						// Look for <li> items inside the <td>
+						$(cell).find('li').each(function () {
+							const text = $(this).text().trim();
+							if (text) values.add(text);
+						});
+					});
+		
+					// Sort and append unique <li> values
+					Array.from(values).sort().forEach(function (d) {
+						select.append(`<option value="${d}">${d}</option>`);
+					});
+				} else {
+					// Default logic for other columns
+					column.data().unique().sort().each(function (d) {
+						select.append(`<option value="${d}">${d}</option>`);
+					});
+				}
+			});
+			$('.dataTables_filter label').each(function () {
+				const $label = $(this);
+				const $input = $label.find('input');
+			
+				// Give the input an ID if it doesn't have one
+				const inputId = 'directory-search-input';
+				$input.attr('id', inputId);
+			
+				// Replace label text with a visually-hidden label
+				$label.html(`<label for="${inputId}" class="visually-hidden">Search directory</label>`).append($input);
 			});
 		}
+		
 	});
 	
 	// A-Z Filter
@@ -250,6 +286,7 @@ window.addEventListener('resize', () => {
 // Photo Gallery
 document.addEventListener('DOMContentLoaded', function () {
   const gallerySection = document.querySelector('.component-photo-gallery');
+  if (!gallerySection) return;
   const grid = gallerySection.querySelector('.isotope-grid');
   const items = grid.querySelectorAll('.gallery-item');
   const modal = document.getElementById('galleryModal');

@@ -235,6 +235,10 @@ error_reporting(E_ALL);
 												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
 												<div>
 													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-8 mb-1">
+														<span class="fa-sharp fa-regular fa-calendar text-primary"></span>
+														<span>July 15, 2025</span>
+													</div>
 													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
 														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
 														<span>11:00 AM - 12:30 PM</span>
@@ -247,6 +251,10 @@ error_reporting(E_ALL);
 												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
 												<div>
 													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-8 mb-1">
+														<span class="fa-sharp fa-regular fa-calendar text-primary"></span>
+														<span>July 15, 2025</span>
+													</div>
 													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
 														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
 														<span>11:00 AM - 12:30 PM</span>
@@ -259,18 +267,10 @@ error_reporting(E_ALL);
 												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
 												<div>
 													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
-													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
-														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
-														<span>11:00 AM - 12:30 PM</span>
+													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-8 mb-1">
+														<span class="fa-sharp fa-regular fa-calendar text-primary"></span>
+														<span>July 15, 2025</span>
 													</div>
-												</div>
-											</div>
-										</a>
-										<a href="" class="list-group-item">
-											<div class="d-flex justify-content-start gap-2 align-items-start">
-												<div class="component-event-list-image flex-shrink-0" style="background-image: url('/gcc/_resources/images/placeholder_profile.jpg');"></div>
-												<div>
-													<h2 class="fs-5 lh-sm mb-1">The Event Title</h2>
 													<div class="d-flex align-items-center justify-content-start w-100 gap-1 fs-7">
 														<span class="fa-sharp fa-regular fa-clock text-primary"></span>
 														<span>11:00 AM - 12:30 PM</span>

@@ -15,6 +15,8 @@
 		]
 	);
 	
+	echo '<div class="component-spacer cs2"></div>';
+	
 	quicklinks(
 		$style = 'red', 
 		$columns_desktop = '4',
@@ -28,6 +30,8 @@
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-laptop"]
 		]
 	);
+	
+	echo '<div class="component-spacer cs2"></div>';
 	
 	quicklinks(
 		$style = 'light-gray', 
@@ -43,6 +47,8 @@
 		]
 	);
 	
+	echo '<div class="component-spacer cs2"></div>';
+	
 	quicklinks(
 		$style = 'white-red-border', 
 		$columns_desktop = '4',
@@ -57,6 +63,8 @@
 		]
 	);
 	
+	echo '<div class="component-spacer cs2"></div>';
+	
 	quicklinks(
 		$style = 'white', 
 		$columns_desktop = '4',
@@ -70,6 +78,8 @@
 			["url" => "https://url.com", "text" => "Sign Up for a Zoom Session", "icon" => "fa-sharp fa-regular fa-laptop"]
 		]
 	);
+	
+	echo '<div class="component-spacer cs2"></div>';
 	
 	quicklinks(
 		$style = 'gray', 

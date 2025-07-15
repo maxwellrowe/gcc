@@ -1,4 +1,4 @@
-<aside id="ap-controller">
+<div id="ap-controller">
 	<span class="h5 d-block mb-2">Search &amp; Filter</span>
 	<form>
 		<input type="text" class="form-control mb-2" id="ap-controller-search" placeholder="Search..." aria-label="Search Programs">
@@ -73,4 +73,4 @@
 			<?php } ?>
 		</div>
 	</form>
-</aside>
+</div>

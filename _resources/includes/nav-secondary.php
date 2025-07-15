@@ -2,9 +2,9 @@
 	<div id="secondary-nav">
 		<div class="px-0 border-bottom border-1 border-gray-500 bg-white">
 			<div class="container-xxl">
-				<div class="d-block d-lg-flex justify-content-start align-items-center">
+				<div class="d-block d-lg-flex justify-content-start align-items-center" role="navigation">
 					<div class="d-flex justify-content-between justify-content-lg-start align-items-center">
-						<div class="secondary-nav-section">
+						<div class="secondary-nav-section" aria-label="Section Home">
 							<a href="<?php echo $section_url; ?>" class="lora py-2 match-height-row d-inline-block"><em><?php echo $section_title; ?></em></a>
 						</div>
 						<button class="btn btn-link d-inline-block d-lg-none secondary-nav-mobile-toggle d-flex align-items-center justify-content-between gap-1 px-3 match-height-row collapsed" data-bs-toggle="collapse" data-bs-target="#secondary-nav-nav" aria-expanded="false" aria-controls="secondary-nav-nav">

@@ -84,7 +84,7 @@ error_reporting(E_ALL);
 												<img src="/gcc/_resources/images/news-4.jpg" class="rounded" alt="Image Title" data-aos="fade" />
 											</div>
 											<div class="col-12 col-md-8 order-lg-1">
-												<h3 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<h2 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 												<p class="fs-8">February 2, 2025</p>
 											</div>
 										</div>
@@ -94,7 +94,7 @@ error_reporting(E_ALL);
 									<div class="card-body p-0">
 										<div class="row">
 											<div class="col-12">
-												<h3 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<h2 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 												<p class="fs-8">February 2, 2025</p>
 											</div>
 										</div>
@@ -107,7 +107,7 @@ error_reporting(E_ALL);
 												<img src="/gcc/_resources/images/news-2.jpg" class="rounded" alt="Image Title" data-aos="fade" />
 											</div>
 											<div class="col-12 col-md-8 order-lg-1">
-												<h3 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<h2 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 												<p class="fs-8">February 2, 2025</p>
 											</div>
 										</div>
@@ -120,7 +120,7 @@ error_reporting(E_ALL);
 												<img src="/gcc/_resources/images/news-1.jpg" class="rounded" alt="Image Title" data-aos="fade" />
 											</div>
 											<div class="col-12 col-md-8 order-lg-1">
-												<h3 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<h2 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 												<p class="fs-8">February 2, 2025</p>
 											</div>
 										</div>
@@ -133,7 +133,7 @@ error_reporting(E_ALL);
 												<img src="/gcc/_resources/images/news-3.jpg" class="rounded" alt="Image Title" data-aos="fade" />
 											</div>
 											<div class="col-12 col-md-8 order-lg-1">
-												<h3 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<h2 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 												<p class="fs-8">February 2, 2025</p>
 											</div>
 										</div>
@@ -146,7 +146,7 @@ error_reporting(E_ALL);
 												<img src="/gcc/_resources/images/news-4.jpg" class="rounded" alt="Image Title" data-aos="fade" />
 											</div>
 											<div class="col-12 col-md-8 order-lg-1">
-												<h3 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<h2 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 												<p class="fs-8">February 2, 2025</p>
 											</div>
 										</div>
@@ -159,7 +159,7 @@ error_reporting(E_ALL);
 												<img src="/gcc/_resources/images/news-1.jpg" class="rounded" alt="Image Title" data-aos="fade" />
 											</div>
 											<div class="col-12 col-md-8 order-lg-1">
-												<h3 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<h2 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 												<p class="fs-8">February 2, 2025</p>
 											</div>
 										</div>
@@ -172,7 +172,7 @@ error_reporting(E_ALL);
 												<img src="/gcc/_resources/images/news-3.jpg" class="rounded" alt="Image Title" data-aos="fade" />
 											</div>
 											<div class="col-12 col-md-8 order-lg-1">
-												<h3 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<h2 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 												<p class="fs-8">February 2, 2025</p>
 											</div>
 										</div>
@@ -185,7 +185,7 @@ error_reporting(E_ALL);
 												<img src="/gcc/_resources/images/news-2.jpg" class="rounded" alt="Image Title" data-aos="fade" />
 											</div>
 											<div class="col-12 col-md-8 order-lg-1">
-												<h3 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+												<h2 class="h4 mt-3 mt-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 												<p class="fs-8">February 2, 2025</p>
 											</div>
 										</div>

@@ -78,6 +78,7 @@ error_reporting(E_ALL);
 						<p><strong>Structure:</strong> There are couple of snippets that provide structure — Section and Columns. By default, the #main-content does not have a container, the container is provided by Section snippet, which contains a "container." To me this could be problematic for the average editor. One potential solution:</p>
 						<ul>
 							<li>Create a page parameter to set the main content as contained vs full width. If full width, then the editor would need to use the Section snippets to provide basic structure.</li>
+							<li>Breadcrumbs should be optional and able to be turned off/ on.</li>
 						</ul>
 						<?php block_link (
 							$style = 'red-border',
@@ -101,6 +102,7 @@ error_reporting(E_ALL);
 								["url" => "news.php", "text" => "News"],
 								["url" => "news-archive.php", "text" => "News Archive"],
 								["url" => "news-single.php", "text" => "News Single Article"],
+								["url" => "news-single-image.php", "text" => "News Single Article w/ Image"],
 								["url" => "academic-programs.php", "text" => "Academic Program Listing"],
 								["url" => "academic-program-accounting.php", "text" => "Academic Program - Accounting"],
 								["url" => "academic-program-nursing.php", "text" => "Academic Program - Nursing"],

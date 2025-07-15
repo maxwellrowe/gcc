@@ -184,7 +184,7 @@
 				
 				<section class="mb-4">
 					<div class="container">
-						<h2 id="photo-gallery">Academic Awards</h2>
+						<h2 id="photo-gallery">Photo Gallery</h2>
 						<a href="photo-gallery.php" class="btn btn-primary">View the Photo Gallery Component</a>
 					</div>
 				</section>

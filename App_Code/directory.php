@@ -93,10 +93,10 @@ error_reporting(E_ALL);
 							<thead>
 								<tr>
 									<th data-priority="1">Name</th>
-									<th>Email</th>
-									<th>Extension/ Phone</th>
-									<th>Location</th>
-									<th>Department</th>
+									<th data-priority="4">Email</th>
+									<th data-priority="5">Extension/ Phone</th>
+									<th data-priority="6">Location</th>
+									<th data-priority="3">Department</th>
 									<th data-priority="2"></th>
 								</tr>
 							</thead>
