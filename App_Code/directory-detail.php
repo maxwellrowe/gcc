@@ -144,6 +144,17 @@ error_reporting(E_ALL);
 													<span class="fa-sharp fa-regular fa-sitemap"></span>
 													<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
 														<span>
+															<span class="fw-bold">Department:</span> Department Name 2
+														</span>
+														<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>
+													</a>
+												</div>
+											</li>
+											<li class="list-group-item border-gray-500">
+												<div class="d-flex align-items-center justify-content-start gap-2">
+													<span class="fa-sharp fa-regular fa-sitemap"></span>
+													<a href="#" class="fw-medium flex-grow-1 text-break d-flex align-items-center justify-content-between gap-2 pe-1">
+														<span>
 															<span class="fw-bold">Division:</span> Division Name
 														</span>
 														<span class="fa-sharp fa-light fa-arrow-right-long flex-shrink-0"></span>

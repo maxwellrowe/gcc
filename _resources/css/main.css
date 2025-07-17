@@ -1836,18 +1836,27 @@ body.homepage #main-content {
   left: 0;
   right: auto;
 }
+.home-toast .home-toast-swiper .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .home-toast .home-toast-swiper .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  display: block;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  border-radius: 0;
+  margin: 0;
+  background: no-repeat center center/12px 12px url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><circle cx='6' cy='6' r='6' fill='%23666'/></svg>");
+}
 @media (min-width: 992px) {
   .home-toast .home-toast-swiper .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .home-toast .home-toast-swiper .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
-    background: var(--bs-white);
+    background: no-repeat center center/12px 12px url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><circle cx='6' cy='6' r='6' fill='%23fff'/></svg>");
     opacity: 1;
   }
 }
 .home-toast .home-toast-swiper .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet-active, .home-toast .home-toast-swiper .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet-active {
-  background: var(--bs-primary);
+  background: no-repeat center center/12px 12px url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><circle cx='6' cy='6' r='6' fill='%23A32036'/></svg>");
 }
 @media (min-width: 992px) {
   .home-toast .home-toast-swiper .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet-active, .home-toast .home-toast-swiper .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet-active {
-    background: var(--bs-yellow);
+    background: no-repeat center center/12px 12px url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><circle cx='6' cy='6' r='6' fill='%23FFC62A'/></svg>");
   }
 }
 

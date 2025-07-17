@@ -3,7 +3,7 @@
 	<div id="main-nav">
 		<a href="" class="btn btn-primary d-block btn-sm rounded-0 mobile-top-apply-button d-sm-none">Apply Now</a>
 		<div class="container-xxl">
-			<nav class="d-flex justify-content-between align-items-center gap-1 gap-md-4 py-3">
+			<nav class="d-flex justify-content-between align-items-center gap-1 gap-md-4 py-3" aria-label="Tertiary Navigation">
 				<div class="d-flex justify-content-start align-items-center gap-3">
 					<a href="index.php" class="global-brand">
 						<img src="/gcc/_resources/images/gcc-logo.png" alt="Glendale City College Logo" />

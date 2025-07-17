@@ -56,7 +56,7 @@ error_reporting(E_ALL);
 				page_nav_secondary($page_title, $section_title, $section_url, $page_nav_secondary_include, $page_nav_tertiary);
 			} 
 		?>
-		
+		<h1 class="visually-hidden">Glendale Community College Homepage</h1>
 		<div class="main-wrapper d-flex justify-content-center align-items-stretch">
 			<main id="main-content" class="flex-grow-1">
 				<div class="container-xxl">
