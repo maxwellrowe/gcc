@@ -266,7 +266,11 @@ function primary_menu_links( $links = [] ) {
 	?>
 		<div class="d-flex flex-column gap-2 w-100 primary-menu-links">
 			<?php foreach($links as $link) { ?>
+				<?php if (isset($link['icon']) && !empty($link['icon'])) { ?>
+				<a href="<?php echo $link['url']; ?>" class="d-flex align-items-center justify-content-start gap-1">
+				<?php } else { ?>
 				<a href="<?php echo $link['url']; ?>">
+				<?php } ?>
 					<?php if (isset($link['icon']) && !empty($link['icon'])) { ?>
 						<span class="primary-menu-link-icon flex-shrink-0">
 							<span class="<?php echo $link['icon']; ?>"></span>

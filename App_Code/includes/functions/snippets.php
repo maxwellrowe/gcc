@@ -31,9 +31,23 @@ function card_snippet(
 
 
 // Accordion
-function accordion_component($heading, $content) {
+function accordion_component($heading, $content, $open = false) {
 	$id = uniqid();
+	if($open == true) {
 	?>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-<?php echo $id; ?>" aria-expanded="true" aria-controls="accordion-<?php echo $id; ?>">
+					<?php echo $heading; ?>
+				</button>
+			</h2>
+			<div id="accordion-<?php echo $id; ?>" class="accordion-collapse">
+				<div class="accordion-body">
+					<?php echo $content; ?>
+				</div>
+			</div>
+		</div>
+	<?php } else { ?>
 		<div class="accordion-item">
 			<h2 class="accordion-header">
 				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-<?php echo $id; ?>" aria-expanded="false" aria-controls="accordion-<?php echo $id; ?>">
@@ -47,4 +61,5 @@ function accordion_component($heading, $content) {
 			</div>
 		</div>
 	<?php
+	}
 }

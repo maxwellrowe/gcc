@@ -11,6 +11,19 @@
 	?>
 </div>
 
+<h3>Default - Item Open</h3>
+<div class="accordion accordion-flush mb-2" id="accordion-default">
+	<?php
+		
+		accordion_component("Accordion Heading", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo libero, consequat aliquam accumsan nec, porta sit amet lorem. Fusce nibh nisl, posuere sit amet egestas nec, vehicula in mi.</p>");
+		
+		accordion_component("Accordion Heading 2", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo libero, consequat aliquam accumsan nec, porta sit amet lorem. Fusce nibh nisl, posuere sit amet egestas nec, vehicula in mi.</p>", true);
+		
+		accordion_component("Accordion Heading 3", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo libero, consequat aliquam accumsan nec, porta sit amet lorem. Fusce nibh nisl, posuere sit amet egestas nec, vehicula in mi.</p>");
+		
+	?>
+</div>
+
 <h3>Rounded</h3>
 <div class="accordion accordion-flush accordion-rounded" id="accordion-default-2">
 	<?php
