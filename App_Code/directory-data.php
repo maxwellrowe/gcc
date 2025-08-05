@@ -22,7 +22,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Health Sciences</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-division">Health Sciences Division</li><li class="directory-list-department">Nursing</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -49,7 +49,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Mathematics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Mathematics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -76,7 +76,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Business</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Business</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -103,7 +103,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Business</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Business</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Health Sciences</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Health Sciences</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -157,7 +157,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -184,7 +184,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Biology</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Biology</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -211,7 +211,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Health Sciences</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Health Sciences</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -238,7 +238,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>English</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">English</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -265,7 +265,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Health Sciences</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Health Sciences</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -292,7 +292,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Business</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Business</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -319,7 +319,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Art</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Art</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -346,7 +346,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -373,7 +373,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -427,7 +427,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Mathematics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Mathematics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -454,7 +454,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>English</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">English</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -481,7 +481,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Psychology</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Psychology</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -508,7 +508,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Biology</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Biology</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -535,7 +535,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Mathematics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Mathematics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -562,7 +562,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Music</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Music</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -589,7 +589,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -616,7 +616,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -643,7 +643,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Biology</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Biology</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Health Sciences</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Health Sciences</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -697,7 +697,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>English</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">English</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -724,7 +724,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Music</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Music</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -751,7 +751,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -778,7 +778,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Biology</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Biology</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -805,7 +805,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Music</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Music</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -832,7 +832,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Business</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Business</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -859,7 +859,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Biology</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Biology</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -886,7 +886,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Mathematics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Mathematics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -913,7 +913,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -940,7 +940,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -967,7 +967,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Mathematics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Mathematics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -994,7 +994,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Music</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Music</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -1022,9 +1022,9 @@
 </td>
 <td>Garfield</td>
 <td class="text-wrap">
-<ul class="m-0 ps-2">
-<li>Arts</li>
-<li>Media Arts</li>
+<ul class="m-0 ps-0">
+<li class="directory-list-department">Arts</li>
+<li class="directory-list-department">Media Arts</li>
 </ul>
 </td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
@@ -1054,8 +1054,8 @@
 </td>
 <td>Garfield</td>
 <td>
-<ul class="m-0 ps-2">
-<li>Art</li>
+<ul class="m-0 ps-0">
+<li class="directory-list-department">Art</li>
 </ul>
 </td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
@@ -1084,7 +1084,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Psychology</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Psychology</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -1111,7 +1111,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Biology</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Biology</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -1138,7 +1138,7 @@
 </div>
 </td>
 <td>Garfield</td>
-<td><ul class="m-0 ps-2"><li>Physics</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Physics</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -1165,7 +1165,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Business</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Business</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -1192,7 +1192,7 @@
 </div>
 </td>
 <td>Verdugo</td>
-<td><ul class="m-0 ps-2"><li>Computer Science</li></ul></td>
+<td><ul class="m-0 ps-0"><li class="directory-list-department">Computer Science</li></ul></td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>
 </tr>
 <tr>
@@ -1220,9 +1220,9 @@
 </td>
 <td>Garfield</td>
 <td>
-<ul class="m-0 ps-2">
-<li>Mathematics</li>
-<li>Computer Science</li>
+<ul class="m-0 ps-0">
+<li class="directory-list-department">Mathematics</li>
+<li class="directory-list-department">Computer Science</li>
 </ul>
 </td>
 <td><a class="arrow-link fs-8" href="directory-detail.php">View</a></td>

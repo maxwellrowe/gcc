@@ -96,7 +96,7 @@ error_reporting(E_ALL);
 									<th data-priority="4">Email</th>
 									<th data-priority="5">Extension/ Phone</th>
 									<th data-priority="6">Location</th>
-									<th data-priority="3">Department</th>
+									<th data-priority="3">Division/ Department</th>
 									<th data-priority="2"></th>
 								</tr>
 							</thead>

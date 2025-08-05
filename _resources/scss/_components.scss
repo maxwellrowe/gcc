@@ -937,6 +937,53 @@ table {
 			td {
 				padding: 1.5rem 1rem;
 				vertical-align: middle;	
+				
+				ul {
+					margin-left: 0;
+					
+					li {
+						margin-bottom: 0.5rem;
+						
+						&:last-child {
+							margin-bottom: 0;	
+						}
+						
+						&.directory-list-division {
+							list-style: none;
+							display: flex;
+							justify-content: start;
+							align-items: start;
+							line-height: 1.25;
+							gap: 0.5rem;
+							
+							&:before {
+								font-family: "Font Awesome 6 Sharp";
+								font-weight: 400;
+								content:'\e56e';	
+								font-size: 0.85rem;
+								color: var(--bs-primary);
+								margin-top: 0.25rem;
+							}
+						}	
+						&.directory-list-department {
+							list-style: none;
+							display: flex;
+							justify-content: start;
+							align-items: start;
+							line-height: 1.25;
+							gap: 0.5rem;
+							
+							&:before {
+								font-family: "Font Awesome 6 Sharp";
+								font-weight: 400;
+								content:'\f549';	
+								font-size: 0.85rem;
+								color: var(--bs-primary);
+								margin-top: 0.25rem;
+							}
+						}	
+					}	
+				}
 			}	
 		}	
 	}	

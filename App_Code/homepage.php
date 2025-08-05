@@ -510,7 +510,7 @@ error_reporting(E_ALL);
 				</section>
 				<section class="position-relative z-2">
 					<div class="container-xxl">
-						<div class="homepage-cta rounded bg-primary position-relative py-lg-5">
+						<div class="homepage-cta rounded bg-primary position-relative py-lg-5" style="background-image: url('/gcc/_resources/images/homepage/home-cta-bg.jpg');">
 							<div class="container py-5 gcc-anim-fade-up">
 								<h2 class="text-white fw-bolder mt-3">What does your tomorrow look like?</h2>
 								

@@ -2987,6 +2987,47 @@ table.directory-datatable tr td {
   padding: 1.5rem 1rem;
   vertical-align: middle;
 }
+table.directory-datatable tr td ul {
+  margin-left: 0;
+}
+table.directory-datatable tr td ul li {
+  margin-bottom: 0.5rem;
+}
+table.directory-datatable tr td ul li:last-child {
+  margin-bottom: 0;
+}
+table.directory-datatable tr td ul li.directory-list-division {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  line-height: 1.25;
+  gap: 0.5rem;
+}
+table.directory-datatable tr td ul li.directory-list-division:before {
+  font-family: "Font Awesome 6 Sharp";
+  font-weight: 400;
+  content: "\e56e";
+  font-size: 0.85rem;
+  color: var(--bs-primary);
+  margin-top: 0.25rem;
+}
+table.directory-datatable tr td ul li.directory-list-department {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  line-height: 1.25;
+  gap: 0.5rem;
+}
+table.directory-datatable tr td ul li.directory-list-department:before {
+  font-family: "Font Awesome 6 Sharp";
+  font-weight: 400;
+  content: "\f549";
+  font-size: 0.85rem;
+  color: var(--bs-primary);
+  margin-top: 0.25rem;
+}
 
 .component-events {
   transition: all 0.2s ease-in-out;
