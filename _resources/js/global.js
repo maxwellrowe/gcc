@@ -134,6 +134,60 @@ primaryMenuOffcanvas.addEventListener('hide.bs.offcanvas', () => {
 	header.classList.remove('fixed-top');
 });
 
+// Fix for browser size change from mobile to desktop on main navigation
+// Close all offcanvas + clean up when switching to desktop
+(function () {
+  const DESKTOP = '(min-width: 992px)';
+
+  function closeAllOffcanvas() {
+	// Hide any open offcanvas via Bootstrap API
+	document.querySelectorAll('.offcanvas').forEach(el => {
+	  const inst = bootstrap.Offcanvas.getOrCreateInstance(el);
+	  inst.hide();
+	  el.classList.remove('show'); // belt & suspenders
+	});
+
+	// Remove body states Bootstrap adds
+	document.body.classList.remove('offcanvas-open');
+	document.body.style.overflow = '';
+	document.body.style.paddingRight = '';
+
+	// Remove any backdrops that might linger
+	document.querySelectorAll('.offcanvas-backdrop').forEach(b => b.remove());
+
+	// Reset any toggles you style as "open"
+	document.querySelectorAll('[data-bs-toggle="offcanvas"].is-open')
+	  .forEach(btn => {
+		btn.classList.remove('is-open');
+		btn.setAttribute('aria-expanded', 'false');
+	  });
+
+	// Your header tweaks (matches your existing handlers)
+	const header = document.getElementById('global-header');
+	if (header) header.classList.remove('fixed-top');
+  }
+
+  // Run once if we load directly on desktop
+  if (window.matchMedia(DESKTOP).matches) {
+	closeAllOffcanvas();
+  }
+
+  // React when breakpoint changes to desktop
+  const mql = window.matchMedia(DESKTOP);
+  mql.addEventListener('change', e => {
+	if (e.matches) closeAllOffcanvas();
+  });
+
+  // Optional: also run on resize with a light debounce (for older browsers)
+  let t;
+  window.addEventListener('resize', () => {
+	clearTimeout(t);
+	t = setTimeout(() => {
+	  if (window.matchMedia(DESKTOP).matches) closeAllOffcanvas();
+	}, 150);
+  });
+})();
+
 // Toggle behavior for Tabs
 document.addEventListener('DOMContentLoaded', function () {
 	const tabButtons = document.querySelectorAll('.primary-menu-tabs button[data-bs-toggle="pill"]');
