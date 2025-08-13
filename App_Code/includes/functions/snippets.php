@@ -31,7 +31,7 @@ function card_snippet(
 
 
 // Accordion
-function accordion_component($heading, $content, $open = false) {
+function accordion_component($heading, $content, $parent_id = '', $open = false) {
 	$id = uniqid();
 	if($open == true) {
 	?>
@@ -41,7 +41,7 @@ function accordion_component($heading, $content, $open = false) {
 					<?php echo $heading; ?>
 				</button>
 			</h2>
-			<div id="accordion-<?php echo $id; ?>" class="accordion-collapse">
+			<div id="accordion-<?php echo $id; ?>" class="accordion-collapse show" data-bs-parent="#<?php echo $parent_id; ?>">
 				<div class="accordion-body">
 					<?php echo $content; ?>
 				</div>
@@ -54,7 +54,7 @@ function accordion_component($heading, $content, $open = false) {
 					<?php echo $heading; ?>
 				</button>
 			</h2>
-			<div id="accordion-<?php echo $id; ?>" class="accordion-collapse collapse">
+			<div id="accordion-<?php echo $id; ?>" class="accordion-collapse collapse" data-bs-parent="#<?php echo $parent_id; ?>">
 				<div class="accordion-body">
 					<?php echo $content; ?>
 				</div>
