@@ -47,7 +47,9 @@ error_reporting(E_ALL);
 							<span class="fa-sharp fa-light fa-circle-exclamation"></span>
 						</div>
 						<div>
+							<span class="fs-8 text-uppercase d-block mb-1">December 9, 2025</span>
 							<h2 class="h4 my-0">Notification Title</h2>
+							<h3 class="fs-6 mb-1 fw-bold">Notification Subtitle</h3>
 							<p class="mb-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in hendrerit enim, ut cursus felis.</p>
 						</div>
 					</div>
@@ -102,7 +104,9 @@ error_reporting(E_ALL);
 											<span class="fa-sharp fa-light fa-circle-exclamation"></span>
 										</div>
 										<div>
+											<span class="fs-8 text-uppercase d-block mb-1">December 9, 2025</span>
 											<h2 class="h4 my-0">Notification Title</h2>
+											<h3 class="fs-6 mb-1 fw-bold">Notification Subtitle</h3>
 											<p class="mb-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in hendrerit enim, ut cursus felis.</p>
 										</div>
 									</div>
@@ -119,7 +123,9 @@ error_reporting(E_ALL);
 											<span class="fa-sharp fa-light fa-circle-exclamation"></span>
 										</div>
 										<div>
+											<span class="fs-8 text-uppercase d-block mb-1">December 9, 2025</span>
 											<h2 class="h4 my-0">Notification Title</h2>
+											<h3 class="fs-6 mb-1 fw-bold">Notification Subtitle</h3>
 											<p class="mb-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in hendrerit enim, ut cursus felis.</p>
 										</div>
 									</div>
@@ -136,7 +142,9 @@ error_reporting(E_ALL);
 											<span class="fa-sharp fa-light fa-circle-exclamation"></span>
 										</div>
 										<div>
+											<span class="fs-8 text-uppercase d-block mb-1 text-white">December 9, 2025</span>
 											<h2 class="h4 my-0 text-white">Notification Title</h2>
+											<h3 class="fs-6 mb-1 fw-bold text-white">Notification Subtitle</h3>
 											<p class="mb-0 fs-6 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in hendrerit enim, ut cursus felis.</p>
 										</div>
 									</div>
