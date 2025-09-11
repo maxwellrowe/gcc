@@ -1,6 +1,6 @@
 <div id="ap-controller">
 	<span class="h5 d-block mb-2">Search &amp; Filter</span>
-	<form>
+	<form onsubmit="event.preventDefault();">
 		<input type="text" class="form-control mb-2" id="ap-controller-search" placeholder="Search..." aria-label="Search Programs">
 		
 		<button class="btn btn-link p-0 mt-2 mb-1 fw-bold text-dark text-decoration-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#ap-controller-awards" aria-expanded="true" aria-controls="ap-controller-awards">
