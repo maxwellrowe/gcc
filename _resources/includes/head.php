@@ -43,7 +43,13 @@
 		<link rel="stylesheet" href="https://use.typekit.net/cxl7ewr.css">
 		
 		<!-- Font Awesome -->
-		<script src="https://kit.fontawesome.com/e5f14fee05.js" crossorigin="anonymous"></script>
+		<link href="/gcc/_resources/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
+		<link href="/gcc/_resources/font-awesome/css/brands.min.css" rel="stylesheet" />
+		<link href="/gcc/_resources/font-awesome/css/sharp-light.min.css" rel="stylesheet" />
+		<link href="/gcc/_resources/font-awesome/css/sharp-regular.min.css" rel="stylesheet" />
+		<link href="/gcc/_resources/font-awesome/css/sharp-solid.min.css" rel="stylesheet" />
+		<link href="/gcc/_resources/font-awesome/css/sharp-thin.min.css" rel="stylesheet" />
+		<link href="/gcc/_resources/font-awesome/css/all.css" rel="stylesheet" />
 		
 		<!-- Plugins -->
 		<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
