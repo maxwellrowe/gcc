@@ -61,7 +61,7 @@
 		<link href="/gcc/_resources/css/gcc-bootstrap.css" rel="stylesheet" />
 		
 		<!-- GCC -->
-		<link href="/gcc/_resources/css/main.css?v=2.2" rel="stylesheet" />
+		<link href="/gcc/_resources/css/main.css?v=2.3" rel="stylesheet" />
 		
 		<?php if (isset($page_garfield) && $page_garfield === true) { ?>
 			<!-- Garfield-->

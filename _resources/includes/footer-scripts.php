@@ -11,5 +11,5 @@
 <script src="//npmcdn.com/isotope-packery@2/packery-mode.pkgd.js"></script>
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-<script src="/gcc/_resources/js/global.js?v=2.2"></script>
+<script src="/gcc/_resources/js/global.js?v=2.3"></script>
 <script src="/gcc/_resources/js/components.js?v=2.2"></script>
