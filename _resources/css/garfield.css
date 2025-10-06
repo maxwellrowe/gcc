@@ -194,9 +194,28 @@ main#main-content #page-header.page-hero-garfield-home {
 .garfield-hero-swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--bs-primary);
 }
+.garfield-hero-swiper #swiper-toggle-garfield {
+  position: absolute;
+  bottom: 1rem;
+  right: 0.85rem;
+  top: auto;
+  font-size: 1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  background-color: var(--bs-white);
+  transition: all 0.2s ease-in-out;
+  z-index: 6;
+  color: var(--bs-primary);
+  background: transparent;
+}
+.garfield-hero-swiper #swiper-toggle-garfield:hover {
+  border-color: var(--bs-primary);
+}
 .garfield-hero-swiper .swiper-button-next {
   top: auto;
-  bottom: 1rem;
+  bottom: 3rem;
   right: 1rem;
 }
 .garfield-hero-swiper .swiper-button-next:after {
@@ -210,7 +229,7 @@ main#main-content #page-header.page-hero-garfield-home {
   left: auto;
   top: auto;
   right: 1rem;
-  bottom: 4rem;
+  bottom: 6rem;
 }
 .garfield-hero-swiper .swiper-button-prev:after {
   font-family: "Font Awesome 6 Sharp";

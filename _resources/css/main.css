@@ -1722,6 +1722,21 @@ body.homepage #main-content {
     font-size: 1rem !important;
   }
 }
+.page-hero-home .page-hero-home-swiper #swiper-toggle {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  top: auto;
+  font-size: 1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  border-width: 0;
+  background-color: var(--bs-white);
+  transition: all 0.2s ease-in-out;
+  z-index: 6;
+  color: var(--bs-primary);
+}
 .page-hero-home .page-hero-home-swiper .swiper-slide-active .swiper-slide-content-text {
   opacity: 1;
   transform: translateY(0);
@@ -1858,6 +1873,30 @@ body.homepage #main-content {
   .home-toast .home-toast-swiper .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet-active, .home-toast .home-toast-swiper .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet-active {
     background: no-repeat center center/12px 12px url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><circle cx='6' cy='6' r='6' fill='%23FFC62A'/></svg>");
   }
+}
+.home-toast #swiper-toggle-toast {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  top: auto;
+  font-size: 0.75rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 2rem;
+  border-width: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  z-index: 6;
+  color: var(--bs-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-toast #swiper-toggle-toast span {
+  line-height: 1;
+}
+.home-toast #swiper-toggle-toast:hover {
+  background-color: rgb(0, 0, 0);
 }
 
 .home-header-dots {

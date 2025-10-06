@@ -696,20 +696,64 @@ document.querySelectorAll('.page-hero-home-swiper').forEach((el, i) => {
 			}
 		}
 	});
+	
+	// Pause/Play toggle
+	const toggleBtn = document.getElementById('swiper-toggle');
+	if (toggleBtn) {
+		const icon = toggleBtn.querySelector('span.fa-sharp');
+		const label = toggleBtn.querySelector('.visually-hidden');
+	
+		toggleBtn.addEventListener('click', function () {
+			if (swiper.autoplay.running) {
+				swiper.autoplay.stop();
+				icon.classList.remove('fa-pause');
+				icon.classList.add('fa-play');
+				label.textContent = 'Play autoplay';
+			} else {
+				swiper.autoplay.start();
+				icon.classList.remove('fa-play');
+				icon.classList.add('fa-pause');
+				label.textContent = 'Pause autoplay';
+			}
+		});
+	}
 });
 
 // Homepage Toast
-const homeToast = new Swiper('.home-toast-swiper', {
-  direction: 'vertical',
-  loop: true,
-  pagination: {
-	el: '.swiper-pagination',
-	clickable: true,
-  },
-  autoplay: {
-	delay: 4000,
-	disableOnInteraction: true
-  }
+document.querySelectorAll('.home-toast-swiper').forEach((el, i) => {
+	const swiper = new Swiper(el, {
+		direction: 'vertical',
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: true
+		}
+	});
+	
+	// Pause/Play toggle
+	const toggleBtn = document.getElementById('swiper-toggle-toast');
+	if (toggleBtn) {
+		const icon = toggleBtn.querySelector('span.fa-sharp');
+		const label = toggleBtn.querySelector('.visually-hidden');
+	
+		toggleBtn.addEventListener('click', function () {
+			if (swiper.autoplay.running) {
+				swiper.autoplay.stop();
+				icon.classList.remove('fa-pause');
+				icon.classList.add('fa-play');
+				label.textContent = 'Play autoplay';
+			} else {
+				swiper.autoplay.start();
+				icon.classList.remove('fa-play');
+				icon.classList.add('fa-pause');
+				label.textContent = 'Pause autoplay';
+			}
+		});
+	}
 });
 
 // Homepage Parallax Effect
@@ -735,6 +779,12 @@ $(document).ready(function () {
 	});
 });
 
+// Registry for all Garfield swipers
+const garfieldSwipers = new Map();
+function registerSwiper(key, instance) {
+  garfieldSwipers.set(key, instance);
+}
+
 // Image Sliders
 function shuffleSlidesById(swiperId) {
 	const wrapper = document.querySelector(`${swiperId} .swiper-wrapper`);
@@ -744,21 +794,20 @@ function shuffleSlidesById(swiperId) {
 
 // Create isolated Swiper instance with fade + random autoplay
 function createFadeSwiper(swiperId) {
-	shuffleSlidesById(swiperId);
+  shuffleSlidesById(swiperId);
+  const delay = Math.floor(Math.random() * 4000) + 3000;
 
-	const delay = Math.floor(Math.random() * 4000) + 3000; // 3000–7000 ms
+  const inst = new Swiper(swiperId, {
+	loop: true,
+	effect: 'fade',
+	speed: 1200,
+	fadeEffect: { crossFade: true },
+	autoplay: { delay, disableOnInteraction: false },
+	allowTouchMove: false,
+  });
 
-	return new Swiper(swiperId, {
-		loop: true,
-		effect: 'fade',
-		speed: 1200,
-		fadeEffect: { crossFade: true },
-		autoplay: {
-			delay: delay,
-			disableOnInteraction: false,
-		},
-		allowTouchMove: false,
-	});
+  registerSwiper(swiperId, inst);
+  return inst;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -775,26 +824,63 @@ document.addEventListener('DOMContentLoaded', () => {
   
 // Hero Slider
 $('.garfield-hero-swiper').each(function(index, slider) {
-	var swiper = new Swiper(slider, {
-		direction: 'vertical',
-		loop: true,
-		speed: 500,
-		slidesPerView: 1,
-		spaceBetween: 0,
-		zoom: true,
-		watchOverflow: false,
-		pagination: {
-		el: '.swiper-pagination',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-		autoplay: {
-			delay: 4000,
-			disableOnInteraction: true
-		}
-	});
+  const inst = new Swiper(slider, {
+	direction: 'vertical',
+	loop: true,
+	speed: 500,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	zoom: true,
+	watchOverflow: false,
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	autoplay: {
+	  delay: 4000,
+	  disableOnInteraction: true
+	}
+  });
+
+  // use explicit id if present, else make one
+  registerSwiper(slider.id || `garfield-hero-${index}`, inst);
 });
+
+// Gafield Play/ Pause
+(function () {
+  const toggleBtn = document.getElementById('swiper-toggle-garfield');
+  if (!toggleBtn) return;
+
+  const icon  = toggleBtn.querySelector('span.fa-sharp');
+  const label = toggleBtn.querySelector('.visually-hidden');
+
+  // derive initial state from any swiper
+  const anyRunning = () => {
+	for (const s of garfieldSwipers.values()) {
+	  if (s.autoplay && s.autoplay.running) return true;
+	}
+	return false;
+  };
+
+  toggleBtn.addEventListener('click', () => {
+	const shouldPause = anyRunning();
+
+	garfieldSwipers.forEach(sw => {
+	  if (!sw.autoplay) return;
+	  if (shouldPause) sw.autoplay.stop();
+	  else sw.autoplay.start();
+	});
+
+	// UI state
+	if (icon) {
+	  icon.classList.toggle('fa-pause', !shouldPause);
+	  icon.classList.toggle('fa-play', shouldPause);
+	}
+	if (label) label.textContent = shouldPause ? 'Play autoplay' : 'Pause autoplay';
+  });
+})();
 

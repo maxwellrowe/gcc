@@ -118,6 +118,10 @@ error_reporting(E_ALL);
 									</div>
 								</div>
 							</div>
+							<button id="swiper-toggle">
+								<span class="fa-sharp fa-solid fa-pause" aria-hidden="true"></span>
+								<span class="visually-hidden">Pause autoplay</span>
+							</button>
 						</div>
 						
 						<div class="home-toast home-toast-top-right">
@@ -137,6 +141,10 @@ error_reporting(E_ALL);
 									</a>
 								</div>
 								<div class="swiper-pagination"></div>
+								<button id="swiper-toggle-toast">
+									<span class="fa-sharp fa-solid fa-pause" aria-hidden="true"></span>
+									<span class="visually-hidden">Pause autoplay</span>
+								</button>
 							</div>
 						</div>
 						

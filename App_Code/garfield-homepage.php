@@ -130,6 +130,10 @@ error_reporting(E_ALL);
 										</div>
 										<div class="swiper-button-prev"><span class="visually-hidden">Previous Slide</span></div>
 										<div class="swiper-button-next"><span class="visually-hidden">Next Slide</span></div>
+										<button id="swiper-toggle-garfield">
+											<span class="fa-sharp fa-solid fa-pause" aria-hidden="true"></span>
+											<span class="visually-hidden">Pause autoplay</span>
+										</button>
 										<div class="swiper-pagination"></div>
 									</div>
 								</div>
