@@ -41,7 +41,7 @@ a {
 	transition: all .2s ease-in-out;
 	
 	&:hover {
-		text-decoration-color: var(--bs-yellow);	
+		text-decoration: none;	
 	}	
 }
 ul,
