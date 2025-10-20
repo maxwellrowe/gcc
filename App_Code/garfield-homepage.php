@@ -61,45 +61,83 @@ error_reporting(E_ALL);
 		<div class="main-wrapper d-flex justify-content-center align-items-stretch">
 			<main id="main-content" class="flex-grow-1">
 				<div class="container-xxl">
+					<?php
+						// Garfield Hero Options
+						// Images #s starting on desktop left to right, top to bottom
+						// True or false
+						$ghero_image_1 = true;
+						$ghero_image_2 = true;
+						$ghero_image_3 = true;
+						
+						// Set baseline classes
+						$ghero_image_1_classes = 'col-4 col-lg-3 d-block d-md-none d-lg-block order-lg-1';
+						$ghero_image_2_3_classes = 'col-8 col-md-4 col-lg-3 order-md-3 order-lg-3';
+						$ghero_image_2_classes = 'garfield-hero-cube-1';
+						$ghero_image_3_classes = 'garfield-hero-cube-2 d-none d-lg-block';
+						
+						// Mod classes based on T/F
+						if($ghero_image_1 == false && $ghero_image_2 == true && $ghero_image_3 == true) {
+							$ghero_image_2_3_classes = 'col col-md-4 col-lg-4 order-md-3 order-lg-3';	
+						}
+						if($ghero_image_1 == true && $ghero_image_2 == false && $ghero_image_3 == true) {
+							$ghero_image_3_classes = 'garfield-hero-cube-2 mt-0 h-100';	
+						}
+						if($ghero_image_1 == true && $ghero_image_2 == true && $ghero_image_3 == false) {
+							$ghero_image_2_classes = 'garfield-hero-cube-1 h-100';	
+						}
+						if($ghero_image_1 == true && $ghero_image_2 == false && $ghero_image_3 == false) {
+							$ghero_image_1_classes = 'col-12 col-md-4 col-lg-4 d-block order-lg-1';
+						}
+						
+					?>
 					<header id="page-header" class="page-hero page-hero-garfield-home">
 						<div class="row gy-2 gy-md-3 gx-2">
-							<div class="col-4 col-lg-3 d-block d-md-none d-lg-block order-lg-1">
-								<div class="garfield-hero-portrait">
-									<div id="garfield-hero-swiper-1" class="swiper">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide garfield-hero-match-height" style="background-image: url('/gcc/_resources/images/garfield/homepage/portrait.jpg');"></div>
-											<div class="swiper-slide garfield-hero-match-height" style="background-image: url('/gcc/_resources/images/garfield/homepage/portrait-2.jpg');"></div>
-											<div class="swiper-slide garfield-hero-match-height" style="background-image: url('/gcc/_resources/images/garfield/homepage/portrait-3.jpg');"></div>
-											<div class="swiper-slide garfield-hero-match-height" style="background-image: url('/gcc/_resources/images/garfield/homepage/portrait-4.jpg');"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-8 col-md-4 col-lg-3 order-md-3 order-lg-3">
-								<div class="garfield-hero-cubes garfield-hero-match-height">
-									<div class="garfield-hero-cube-1">
-										<div id="garfield-hero-swiper-2" class="swiper">
+							<?php if($ghero_image_1 == true) { ?>
+								<div class="<?php echo $ghero_image_1_classes; ?>">
+									<div class="garfield-hero-portrait">
+										<div id="garfield-hero-swiper-1" class="swiper">
 											<div class="swiper-wrapper">
-												<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube.jpg');"></div>
-												<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-2.jpg');"></div>
-												<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-3.jpg');"></div>
-												<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-4.jpg');"></div>
-											</div>
-										</div>
-									</div>
-									<div class="garfield-hero-cube-2 d-none d-lg-block">
-										<div id="garfield-hero-swiper-3" class="swiper">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-5.jpg');"></div>
-												<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-6.jpg');"></div>
-												<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-7.jpg');"></div>
-												<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-8.jpg');"></div>
+												<div class="swiper-slide garfield-hero-match-height" style="background-image: url('/gcc/_resources/images/garfield/homepage/portrait.jpg');"></div>
+												<div class="swiper-slide garfield-hero-match-height" style="background-image: url('/gcc/_resources/images/garfield/homepage/portrait-2.jpg');"></div>
+												<div class="swiper-slide garfield-hero-match-height" style="background-image: url('/gcc/_resources/images/garfield/homepage/portrait-3.jpg');"></div>
+												<div class="swiper-slide garfield-hero-match-height" style="background-image: url('/gcc/_resources/images/garfield/homepage/portrait-4.jpg');"></div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-12 col-md-8 col-lg-6 order-md-2 order-lg-2">
+							<?php } ?>
+							<?php if($ghero_image_2 == true || $ghero_image_3 == true) { ?>
+								<div class="<?php echo $ghero_image_2_3_classes; ?>">
+									<div class="garfield-hero-cubes garfield-hero-match-height">
+										<?php if($ghero_image_2 == true) { ?>
+											<div class="<?php echo $ghero_image_2_classes; ?>">
+												<div id="garfield-hero-swiper-2" class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube.jpg');"></div>
+														<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-2.jpg');"></div>
+														<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-3.jpg');"></div>
+														<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-4.jpg');"></div>
+													</div>
+												</div>
+											</div>
+										<?php } ?>
+										<?php if($ghero_image_3 == true) { ?>
+											<div class="<?php echo $ghero_image_3_classes; ?>">
+												<div id="garfield-hero-swiper-3" class="swiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-5.jpg');"></div>
+														<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-6.jpg');"></div>
+														<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-7.jpg');"></div>
+														<div class="swiper-slide" style="background-image: url('/gcc/_resources/images/garfield/homepage/cube-8.jpg');"></div>
+													</div>
+												</div>
+											</div>
+										<?php } ?>
+									</div>
+								</div>
+							<?php } ?>
+							<!-- Main Content -- Always Displayed -->
+							<div class="col order-md-2 order-lg-2">
 								<div class="garfield-hero-content">
 									<div class="garfield-hero-swiper swiper">
 										<div class="swiper-wrapper">
