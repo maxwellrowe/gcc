@@ -1,5 +1,10 @@
 <h3>Default</h3>
+
 <div class="accordion accordion-flush mb-2" id="accordion-default">
+	<span role="group" class="d-flex align-items-center justify-content-end gap-1 mb-2">
+		<button class="btn btn-sm btn-light py-1 px-2 accordion-expand-all">Expand All</button>
+		<button class="btn btn-sm btn-light py-1 px-2 accordion-collapse-all">Collapse All</button>
+	</span>
 	<?php
 		
 		accordion_component("Accordion Heading", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo libero, consequat aliquam accumsan nec, porta sit amet lorem. Fusce nibh nisl, posuere sit amet egestas nec, vehicula in mi.</p>", 'accordion-default');
@@ -13,6 +18,10 @@
 
 <h3>Default - Item Open</h3>
 <div class="accordion accordion-flush mb-2" id="accordion-default-open">
+	<span role="group" class="d-flex align-items-center justify-content-end gap-1 mb-2">
+		<button class="btn btn-sm btn-light py-1 px-2 accordion-expand-all">Expand All</button>
+		<button class="btn btn-sm btn-light py-1 px-2 accordion-collapse-all">Collapse All</button>
+	</span>
 	<?php
 		
 		accordion_component("Accordion Heading", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo libero, consequat aliquam accumsan nec, porta sit amet lorem. Fusce nibh nisl, posuere sit amet egestas nec, vehicula in mi.</p>", 'accordion-default-open');
@@ -26,6 +35,10 @@
 
 <h3>Rounded</h3>
 <div class="accordion accordion-flush accordion-rounded" id="accordion-default-rounded">
+	<span role="group" class="d-flex align-items-center justify-content-end gap-1 mb-2">
+		<button class="btn btn-sm btn-light py-1 px-2 accordion-expand-all">Expand All</button>
+		<button class="btn btn-sm btn-light py-1 px-2 accordion-collapse-all">Collapse All</button>
+	</span>
 	<?php
 		
 		accordion_component("<span class='fa-sharp fa-light fa-unicorn'></span> Accordion Heading", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo libero, consequat aliquam accumsan nec, porta sit amet lorem. Fusce nibh nisl, posuere sit amet egestas nec, vehicula in mi.</p>", 'accordion-default-rounded');

@@ -41,7 +41,7 @@ function accordion_component($heading, $content, $parent_id = '', $open = false)
 					<?php echo $heading; ?>
 				</button>
 			</h2>
-			<div id="accordion-<?php echo $id; ?>" class="accordion-collapse show" data-bs-parent="#<?php echo $parent_id; ?>">
+			<div id="accordion-<?php echo $id; ?>" class="accordion-collapse show">
 				<div class="accordion-body">
 					<?php echo $content; ?>
 				</div>
@@ -54,7 +54,7 @@ function accordion_component($heading, $content, $parent_id = '', $open = false)
 					<?php echo $heading; ?>
 				</button>
 			</h2>
-			<div id="accordion-<?php echo $id; ?>" class="accordion-collapse collapse" data-bs-parent="#<?php echo $parent_id; ?>">
+			<div id="accordion-<?php echo $id; ?>" class="accordion-collapse collapse">
 				<div class="accordion-body">
 					<?php echo $content; ?>
 				</div>

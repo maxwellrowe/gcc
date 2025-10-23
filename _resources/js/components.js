@@ -368,3 +368,67 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
   });
 });
+
+// Accordion Expand / Collapse All
+document.addEventListener('DOMContentLoaded', () => {
+	// Click handlers for any toolbar inside an accordion
+	document.addEventListener('click', (e) => {
+		const expandBtn = e.target.closest('.accordion-expand-all');
+		const collapseBtn = e.target.closest('.accordion-collapse-all');
+		if (!expandBtn && !collapseBtn) return;
+
+		const btn = expandBtn || collapseBtn;
+		const accordion = btn.closest('.accordion');
+		if (!accordion) return;
+
+		const isExpand = !!expandBtn;
+		const collapses = accordion.querySelectorAll(':scope .accordion-collapse');
+
+		collapses.forEach(c => {
+			const inst = bootstrap.Collapse.getOrCreateInstance(c, { toggle: false });
+			isExpand ? inst.show() : inst.hide();
+		});
+
+		// Immediate pass; final state will also sync on shown/hidden events
+		updateToolbarState(accordion);
+	});
+
+	// Keep buttons in sync when users open/close items manually
+	document.querySelectorAll('.accordion').forEach(acc => {
+		acc.addEventListener('shown.bs.collapse', () => updateToolbarState(acc));
+		acc.addEventListener('hidden.bs.collapse', () => updateToolbarState(acc));
+		updateToolbarState(acc);
+	});
+
+	function setDisabled(el, disabled) {
+		if (!el) return;
+		el.disabled = disabled;
+		if (disabled) {
+			el.setAttribute('disabled', 'disabled');
+			el.setAttribute('aria-disabled', 'true');
+			el.classList.add('disabled');   // visual parity (esp. if styles expect it)
+			el.setAttribute('tabindex', '-1');
+		} else {
+			el.removeAttribute('disabled');
+			el.setAttribute('aria-disabled', 'false');
+			el.classList.remove('disabled');
+			el.removeAttribute('tabindex');
+		}
+	}
+
+	function updateToolbarState(accordion) {
+		// Find the buttons inside THIS accordion (don't assume a specific wrapper class)
+		const expandBtn   = accordion.querySelector(':scope .accordion-expand-all');
+		const collapseBtn = accordion.querySelector(':scope .accordion-collapse-all');
+
+		// If buttons aren't present, bail
+		if (!expandBtn && !collapseBtn) return;
+
+		const collapses = accordion.querySelectorAll(':scope .accordion-collapse');
+		const allExpanded  = Array.from(collapses).every(c => c.classList.contains('show'));
+		const allCollapsed = Array.from(collapses).every(c => !c.classList.contains('show'));
+
+		setDisabled(expandBtn, allExpanded);
+		setDisabled(collapseBtn, allCollapsed);
+	}
+});
