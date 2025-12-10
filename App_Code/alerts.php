@@ -39,7 +39,7 @@ error_reporting(E_ALL);
 	<body class="<?php echo implode(' ', $body_classes); ?>">
 		
 		<!-- Alert -->
-		<div class="component-ou-alerts bg-gray-300" role="alert">
+		<div class="component-ou-alerts bg-gray-300 alert alert-dismissible fade show rounded-0 p-0" role="alert">
 			<div class="container-xxl">
 				<div class="component-notification d-flex flex-column flex-lg-row align-items-lg-center justify-content-start justify-content-lg-between p-3 gap-2">
 					<div class="d-flex d-flex flex-column flex-lg-row align-items-lg-center justify-content-start gap-2">
@@ -50,11 +50,12 @@ error_reporting(E_ALL);
 							<span class="fs-8 text-uppercase d-block mb-1">December 9, 2025</span>
 							<h2 class="h4 my-0">Notification Title</h2>
 							<h3 class="fs-6 mb-1 fw-bold">Notification Subtitle</h3>
-							<p class="mb-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in hendrerit enim, ut cursus felis.</p>
+							<p class="mb-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in hendrerit enim, ut cursus felis. <a href="#">Link to Something</a></p>
 						</div>
 					</div>
 					<a href="#" class="btn btn-primary btn-sm align-self-start align-self-lg-center text-nowrap">Call to Action</a>
 				</div>
+				<button type="button" class="btn-close p-0 pt-3 pe-3" data-bs-dismiss="alert" aria-label="Close"></button>
 			</div>
 		</div>
 		

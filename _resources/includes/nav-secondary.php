@@ -1,7 +1,7 @@
 <?php function page_nav_secondary($page_title, $section_title, $section_url, $page_nav_secondary_include, $page_nav_tertiary) { ?>
 	<div id="secondary-nav">
 		<div class="px-0 border-bottom border-1 border-gray-500 bg-white">
-			<div class="container-xxl">
+			<div class="container-fluid px-xl-4">
 				<div class="d-block d-lg-flex justify-content-start align-items-center" role="navigation">
 					<div class="d-flex justify-content-between justify-content-lg-start align-items-center">
 						<div class="secondary-nav-section" aria-label="Section Home">

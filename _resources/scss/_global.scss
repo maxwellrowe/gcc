@@ -85,6 +85,7 @@ Header
 #global-header .global-brand {
 	display: block;
 	max-width: 14.5rem;
+	transition: all .2s ease-in-out;
 }
 #global-header .global-brand img {
 	max-width: 100%;
@@ -113,9 +114,40 @@ Header
 			transform: none;
 		}
 	}
+	.header-apply-button {
+		visibility: hidden;
+		opacity: 0;
+		max-width: 0;
+		max-height: 0;
+		position: absolute;
+		left: 1.5rem;
+		
+		@media (min-width: 576px) {
+			opacity: 1;
+			visibility: visible;
+			max-width: 100%;	
+			max-height: 100%;
+			position: relative;
+			left: auto;
+		}
+	}
 	&.fixed-top {
 		transform: none;
 		position: fixed;
+		
+		.global-brand {
+			visibility: hidden;
+			opacity: 0;	
+			z-index: -1;
+			position: relative;
+		}
+		
+		.header-apply-button {
+			visibility: visible;
+			max-width: 100%;
+			max-height: 100%;
+			opacity: 1;
+		}
 	}
 }
 
@@ -322,6 +354,9 @@ PRIMARY NAV
 		@media (min-width: 992px) {
 			z-index: 4;	
 		}
+		@media (min-width: 1600px) {
+			width: 460px !important;	
+		}
 	}
 	
 	.primary-menu-content {
@@ -329,6 +364,90 @@ PRIMARY NAV
 		@media (min-width: 992px) {
 			z-index: 2;	
 		}
+		
+		.tab-pane {
+			.row {
+				@media (min-width: 1200px) {
+					--bs-gutter-x: 3rem;
+				}	
+			}
+			> .row {
+				> [class^="col-"] {
+					@media (min-width: 992px) {
+						position: relative;
+						
+						&:before {
+							content: '';
+							height: 100%;
+							min-height: calc(100vh - 320px);
+							width: 1px;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							background: var(--bs-gray-500);
+							left: 0;	
+						}
+						
+						&:first-child {
+							&:before {
+								display: none;	
+							}	
+						}
+						
+						> .row {
+							> [class^="col-"] {
+								position: relative;
+								
+								&:after {
+									content: '';
+									height: 100%;
+									min-height: calc(100vh - 320px);
+									width: 1px;
+									position: absolute;
+									top: 0;
+									bottom: 0;
+									background: var(--bs-gray-500);
+									right: 0;	
+								}
+								
+								&:last-child {
+									&:after {
+										display: none;	
+									}	
+								}
+								
+								&.order-xxl-2 {
+									&:after {
+										display: none;	
+									}	
+								}
+							}	
+						}
+					}
+					
+					@media (min-width: 1400px) {
+						> .row {
+							> [class^="col-"] {
+								&.order-xxl-1 {
+									&:after {
+										content: '';
+										height: 100%;
+										min-height: calc(100vh - 320px);
+										width: 1px;
+										position: absolute;
+										top: 0;
+										bottom: 0;
+										background: var(--bs-gray-500);
+										right: 0;	
+										display: block;
+									}
+								}	
+							}
+						}
+					}	
+				}
+			}
+		} 
 	}
 	
 	#primary-menu-desktop-quicklinks {

@@ -6,5 +6,6 @@
 	<li><a href="#buttons">Buttons</a></li>
 	<li><a href="#images">Images</a></li>
 	<li><a href="#forms">Forms</a></li>
+	<li><a href="#tables">Tables</a></li>
 	<li><a href="#utilities">Utilities</a></li>
 </ul>

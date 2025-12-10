@@ -124,6 +124,13 @@ error_reporting(E_ALL);
 				
 				<section class="mb-4">
 					<div class="container">
+						<h2 id="tables">Tables</h2>
+						<?php include('styleguide/tables.php'); ?>
+					</div>
+				</section>
+				
+				<section class="mb-4">
+					<div class="container">
 						<h2 id="utilities">Utilities</h2>
 						<?php include('styleguide/utilities.php'); ?>
 					</div>

@@ -76,42 +76,73 @@ $(document).ready(function () {
 				.appendTo('.dataTables_filters')
 				.on('change', function () {
 					const val = $(this).val();
+					// regex = true, smart = false
 					column.search(val ? val : '', true, false).draw();
 				});
 		
-				// Custom logic for column 4 (index 4)
-				if (columnIndex === 4) {
+				// ---- Column-specific logic ----
+		
+				// 1) Locations column (e.g., index 3)
+				if (columnIndex === 3) {
 					let values = new Set();
 		
-					// Loop through each cell in the column
 					column.nodes().each(function (cell) {
-						// Look for <li> items inside the <td>
+						const $cell = $(cell);
+						const spans = $cell.find('span.location');
+		
+						if (spans.length) {
+							// Get each location from spans
+							spans.each(function () {
+								const text = $(this).text().trim();
+								if (text) values.add(text);
+							});
+						} else {
+							// Fallback if not using spans yet:
+							// try splitting on comma or line break
+							const raw = $cell.text().trim();
+							if (!raw) return;
+		
+							raw.split(/\s*[,|/]\s*/).forEach(function (part) {
+								if (part) values.add(part);
+							});
+						}
+					});
+		
+					Array.from(values).sort().forEach(function (d) {
+						select.append(`<option value="${d}">${d}</option>`);
+					});
+		
+				// 2) Your existing <li> logic for column 4
+				} else if (columnIndex === 4) {
+					let values = new Set();
+		
+					column.nodes().each(function (cell) {
 						$(cell).find('li').each(function () {
 							const text = $(this).text().trim();
 							if (text) values.add(text);
 						});
 					});
 		
-					// Sort and append unique <li> values
 					Array.from(values).sort().forEach(function (d) {
 						select.append(`<option value="${d}">${d}</option>`);
 					});
+		
+				// 3) Default behavior for other columns
 				} else {
-					// Default logic for other columns
 					column.data().unique().sort().each(function (d) {
 						select.append(`<option value="${d}">${d}</option>`);
 					});
 				}
 			});
+		
+			// existing search label cleanup...
 			$('.dataTables_filter label').each(function () {
 				const $label = $(this);
 				const $input = $label.find('input');
-			
-				// Give the input an ID if it doesn't have one
+		
 				const inputId = 'directory-search-input';
 				$input.attr('id', inputId);
-			
-				// Replace label text with a visually-hidden label
+		
 				$label.html(`<label for="${inputId}" class="visually-hidden">Search directory</label>`).append($input);
 			});
 		}
@@ -431,4 +462,25 @@ document.addEventListener('DOMContentLoaded', () => {
 		setDisabled(expandBtn, allExpanded);
 		setDisabled(collapseBtn, allCollapsed);
 	}
+});
+
+// Responsive Table Helper
+document.addEventListener('DOMContentLoaded', function () {
+	// Select any tables you want to auto-wrap
+	document.querySelectorAll('table').forEach(table => {
+
+		// 1. If the table is already inside .table-responsive, skip it
+		const parent = table.parentElement;
+		if (parent && parent.classList.contains('table-responsive')) {
+			return; // already wrapped — do nothing
+		}
+
+		// 2. Create the wrapper
+		const wrapper = document.createElement('div');
+		wrapper.className = 'table-responsive';
+
+		// 3. Insert wrapper before the table, then move table into wrapper
+		parent.insertBefore(wrapper, table);
+		wrapper.appendChild(table);
+	});
 });

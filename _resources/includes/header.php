@@ -1,14 +1,13 @@
 <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
 <header id="global-header" class="bg-white">
 	<div id="main-nav">
-		<a href="" class="btn btn-primary d-block btn-sm rounded-0 mobile-top-apply-button d-sm-none">Apply Now</a>
-		<div class="container-xxl">
+		<div class="container-fluid px-xl-4">
 			<nav class="d-flex justify-content-between align-items-center gap-1 gap-md-4 py-3" aria-label="Tertiary Navigation">
-				<div class="d-flex justify-content-start align-items-center gap-3">
+				<div class="d-flex justify-content-start align-items-center gap-sm-3">
 					<a href="index.php" class="global-brand">
 						<img src="/gcc/_resources/images/gcc-logo.png" alt="Glendale City College Logo" />
 					</a>
-					<a href="#" class="btn btn-primary d-none d-sm-block">Apply Now</a>
+					<a href="#" class="btn btn-primary header-apply-button">Apply Now</a>
 				</div>
 				<div class="d-flex justify-content-end gap-3">
 					<ul class="nav gap-1 gap-md-2 flex-nowrap">

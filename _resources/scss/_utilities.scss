@@ -244,3 +244,21 @@ a {
 .container {
 	max-width: 1140px;	
 }
+
+// Dropdown Toggle
+.dropdown-toggle {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	
+	&:after {
+		@include mixins.angle-down-icon;
+		border: none;
+		transition: all .2s ease-in-out;
+	}	
+	&.show {
+		&:after {
+			transform: rotate(180deg);	
+		}	
+	}
+}

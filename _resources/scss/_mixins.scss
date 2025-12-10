@@ -49,6 +49,12 @@
 	content: "\f061";	
 }
 
+@mixin angle-down-icon {
+	font-family: "Font Awesome 6 Sharp";
+	font-weight: 400;
+	content: "\f107";	
+}
+
 @mixin menu-bars {
   &.is-open {
 	.menu-bars {

@@ -2,9 +2,9 @@
 	<div class="offcanvas-body p-0 position-relative h-100">
 		<div class="container-fluid p-0 h-100">
 			<div class="row g-0 h-100">
-				<div class="primary-menu-navigation col-12 col-lg-3 col-xxl-2 bg-primary h-100 pt-lg-3 ps-lg-3 pe-lg-0 overflow-auto">
+				<div class="primary-menu-navigation col-12 col-lg-3 bg-primary h-100 pt-lg-1 ps-lg-3 pe-lg-0 overflow-auto">
 					
-					<div class="bg-gray-400 d-block d-lg-none p-2 pb-3">
+					<div class="bg-yellow d-block d-lg-none p-2 pb-3">
 						<div id="mobile-primary-menu-quicklinks" class="mb-2">
 							<?php
 								quicklinks(
@@ -87,7 +87,7 @@
 					</div>
 					
 				</div>
-				<div class="primary-menu-content col-12 col-lg-9 col-xxl-10 bg-white overflow-auto">
+				<div class="primary-menu-content col bg-white overflow-auto">
 					<button class="d-block d-lg-none" id="primary-menu-back">
 						<span class="fa-sharp fa-regular fa-arrow-left"></span> Main Menu
 					</button>
