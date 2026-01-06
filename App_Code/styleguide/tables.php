@@ -573,8 +573,8 @@
 	</tfoot>
 </table>
 
-<h3>Table Purple</h3>
-<table class="table table-purple">
+<h3>Table Medium Gray</h3>
+<table class="table table-medium-gray">
 	<caption>Academic Deadlines & Registration Timeline</caption>
 
 	<thead>

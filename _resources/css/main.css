@@ -3390,7 +3390,6 @@ table.table-dark-gray thead tr th {
   background-color: var(--bs-dark);
   color: var(--bs-white);
 }
-table.table-purple thead tr th {
-  background-color: #78357c;
-  color: var(--bs-white);
+table.table-medium-gray thead tr th {
+  background-color: var(--bs-gray-500);
 }
