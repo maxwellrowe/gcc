@@ -1,15 +1,34 @@
-$(document).ready(function () {
-	// Match Height
-	// By Row
+function applyMatchHeights() {
 	$('.match-height-row').matchHeight({
 		byRow: true,
 		property: 'min-height'
 	});
-	// By All
+
 	$('.match-height-all').matchHeight({
 		byRow: false,
 		property: 'min-height'
 	});
+}
+
+function refreshMatchHeights() {
+	$.fn.matchHeight._update();
+}
+
+$(document).ready(function () {
+	applyMatchHeights();
+
+	// Re-run once all assets finish loading to catch late-loading images in Firefox/Modern Campus.
+	$(window).on('load', refreshMatchHeights);
+
+	$('.match-height-row img, .match-height-all img').each(function () {
+		if (this.complete) return;
+
+		$(this).one('load error', refreshMatchHeights);
+	});
+
+	if (typeof imagesLoaded === 'function') {
+		imagesLoaded(document.body, refreshMatchHeights);
+	}
 });
 
 // Stop YT and Vimeo Videos on Modal Close
@@ -306,6 +325,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			e.preventDefault();
 			card.classList.toggle('active');
 		});
+	});
+
+	window.addEventListener('load', setSlideCardHeights);
+
+	document.querySelectorAll('.component-slide-card img').forEach(image => {
+		if (image.complete) return;
+		image.addEventListener('load', setSlideCardHeights, { once: true });
+		image.addEventListener('error', setSlideCardHeights, { once: true });
 	});
 });
 
