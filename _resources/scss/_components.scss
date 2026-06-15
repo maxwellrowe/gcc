@@ -1286,4 +1286,9 @@ table {
 			}
 		}	
 	}
+	&.datatable-fixed {
+		table-layout: fixed;
+		max-width: none;
+		width:  auto;
+	}
 }

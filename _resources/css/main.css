@@ -3393,3 +3393,8 @@ table.table-dark-gray thead tr th {
 table.table-medium-gray thead tr th {
   background-color: var(--bs-gray-500);
 }
+table.datatable-fixed {
+  table-layout: fixed;
+  max-width: none;
+  width: auto;
+}

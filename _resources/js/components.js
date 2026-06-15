@@ -46,7 +46,24 @@ document.querySelectorAll('.video-modal').forEach(modal => {
 // Data Tables
 $(document).ready(function () {
 	$('.datatable').DataTable({
-		responsive: true,
+		responsive: false,
+		scrollX: true,
+		paging: true,
+		searching: true,
+		ordering: true,
+		language: {
+			search: "_INPUT_",
+			searchPlaceholder: "Search..."
+		}
+	});
+});
+
+// Datatables Fixed
+$(document).ready(function () {
+	$('.datatable-fixed').DataTable({
+		responsive: false,
+		autoWidth: false,
+		scrollX: true,
 		paging: true,
 		searching: true,
 		ordering: true,
