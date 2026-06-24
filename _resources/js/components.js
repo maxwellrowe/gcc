@@ -360,12 +360,8 @@ window.addEventListener('resize', () => {
 
 // Photo Gallery
 document.addEventListener('DOMContentLoaded', function () {
-  const gallerySection = document.querySelector('.component-photo-gallery');
-  if (!gallerySection) return;
-  const grid = gallerySection.querySelector('.isotope-grid');
-  const items = grid.querySelectorAll('.gallery-item');
-  const modal = document.getElementById('galleryModal');
-  let swiper;
+  const gallerySections = document.querySelectorAll('.component-photo-gallery');
+  if (!gallerySections.length) return;
 
   const breakpoints = {
 	xs: 0,
@@ -374,73 +370,93 @@ document.addEventListener('DOMContentLoaded', function () {
 	lg: 992
   };
 
-  function getCurrentColumns() {
-	const width = window.innerWidth;
-	if (width >= breakpoints.lg) return parseInt(gallerySection.dataset.columnsLg) || 4;
-	if (width >= breakpoints.md) return parseInt(gallerySection.dataset.columnsMd) || 3;
-	if (width >= breakpoints.sm) return parseInt(gallerySection.dataset.columnsSm) || 2;
-	return parseInt(gallerySection.dataset.columnsXs) || 1;
-  }
+  gallerySections.forEach(gallerySection => {
+	const grid = gallerySection.querySelector('.isotope-grid');
+	if (!grid) return;
 
-  function updateItemWidths() {
-	const columns = getCurrentColumns();
-	const totalGutter = 10 * (columns - 1);
-	const itemWidth = `calc(${100 / columns}% - ${totalGutter / columns}px)`;
+	const items = grid.querySelectorAll('.gallery-item');
+	const modalTrigger = gallerySection.querySelector('[data-bs-target]');
+	const modalSelector = gallerySection.dataset.modalTarget || modalTrigger?.getAttribute('data-bs-target');
+	const modal = modalSelector ? document.querySelector(modalSelector) : null;
+	let iso;
+	let swiper;
 
-	items.forEach(item => {
-	  item.style.width = itemWidth;
+	function getCurrentColumns() {
+	  const width = window.innerWidth;
+	  if (width >= breakpoints.lg) return parseInt(gallerySection.dataset.columnsLg, 10) || 4;
+	  if (width >= breakpoints.md) return parseInt(gallerySection.dataset.columnsMd, 10) || 3;
+	  if (width >= breakpoints.sm) return parseInt(gallerySection.dataset.columnsSm, 10) || 2;
+	  return parseInt(gallerySection.dataset.columnsXs, 10) || 1;
+	}
+
+	function updateItemWidths() {
+	  const columns = getCurrentColumns();
+	  const totalGutter = 10 * (columns - 1);
+	  const itemWidth = `calc(${100 / columns}% - ${totalGutter / columns}px)`;
+
+	  items.forEach(item => {
+		item.style.width = itemWidth;
+	  });
+
+	  if (iso) iso.layout();
+	}
+
+	if (typeof imagesLoaded === 'function' && typeof Isotope === 'function') {
+	  imagesLoaded(grid, function () {
+		updateItemWidths();
+		iso = new Isotope(grid, {
+		  itemSelector: '.gallery-item',
+		  layoutMode: 'packery',
+		  packery: {
+			gutter: 10
+		  }
+		});
+	  });
+	} else {
+	  updateItemWidths();
+	}
+
+	window.addEventListener('resize', updateItemWidths);
+
+	if (!modal) return;
+
+	modal.addEventListener('shown.bs.modal', function (event) {
+	  const index = parseInt(event.relatedTarget?.dataset.index || 0, 10);
+	  const swiperElement = modal.querySelector('.gallery-swiper');
+	  if (!swiperElement) return;
+
+	  setTimeout(() => {
+		requestAnimationFrame(() => {
+		  if (swiper) {
+			swiper.destroy(true, true);
+		  }
+
+		  swiper = new Swiper(swiperElement, {
+			initialSlide: index,
+			loop: true,
+			keyboard: {
+			  enabled: true,
+			  onlyInViewport: false
+			},
+			navigation: {
+			  nextEl: modal.querySelector('.swiper-button-next'),
+			  prevEl: modal.querySelector('.swiper-button-prev')
+			},
+			pagination: {
+			  el: modal.querySelector('.swiper-pagination'),
+			  clickable: true
+			}
+		  });
+		});
+	  }, 100);
 	});
 
-	if (window.iso) window.iso.layout();
-  }
-
-  // Wait for images, then initialize Isotope
-  imagesLoaded(grid, function () {
-	updateItemWidths();
-	window.iso = new Isotope(grid, {
-	  itemSelector: '.gallery-item',
-	  layoutMode: 'packery',
-	  packery: {
-		gutter: 10
+	modal.addEventListener('hidden.bs.modal', function () {
+	  if (swiper) {
+		swiper.destroy(true, true);
+		swiper = null;
 	  }
 	});
-  });
-
-  window.addEventListener('resize', updateItemWidths);
-
-  // Initialize Swiper inside Bootstrap modal
-  modal.addEventListener('shown.bs.modal', function (event) {
-	  const index = event.relatedTarget?.dataset.index || 0;
-  
-	  // Delay and force paint with requestAnimationFrame
-	  setTimeout(() => {
-		  requestAnimationFrame(() => {
-			  swiper = new Swiper('#galleryModal .gallery-swiper', {
-				  initialSlide: parseInt(index),
-				  loop: true,
-				  keyboard: {
-					  enabled: true,
-					  onlyInViewport: false
-				  },
-				  navigation: {
-					  nextEl: '#galleryModal .swiper-button-next',
-					  prevEl: '#galleryModal .swiper-button-prev'
-				  },
-				  pagination: {
-					  el: '#galleryModal .swiper-pagination',
-					  clickable: true
-				  }
-			  });
-		  });
-	  }, 100);
-  });
-
-  // Destroy Swiper when modal is closed
-  modal.addEventListener('hidden.bs.modal', function () {
-	if (swiper) {
-	  swiper.destroy(true, true);
-	  swiper = null;
-	}
   });
 });
 

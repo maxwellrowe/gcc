@@ -1,26 +1,3 @@
-.utility-nav {
-  border-bottom-right-radius: var(--bs-border-radius-sm);
-  border-bottom-left-radius: var(--bs-border-radius-sm);
-}
-.utility-nav a:not(.btn) {
-  color: var(--bs-black);
-  text-decoration: none;
-  font-weight: 600;
-}
-.utility-nav a:not(.btn) span.fa-sharp {
-  color: var(--bs-primary);
-  transition: all 0.2s ease-in-out;
-}
-.utility-nav a:not(.btn):hover {
-  color: var(--bs-primary);
-}
-.utility-nav a:not(.btn):hover span.fa-sharp {
-  color: var(--bs-secondary);
-}
-.utility-nav a:not(.btn):hover span.fa-sharp.fa-arrow-left {
-  transform: translateX(-4px);
-}
-
 #global-header #garfield-nav-primary-desktop {
   position: unset;
 }

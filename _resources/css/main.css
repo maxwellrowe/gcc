@@ -333,6 +333,29 @@ hr.hr-short {
 /*****************************
 Header
 *****************************/
+.utility-nav {
+  border-bottom-right-radius: var(--bs-border-radius-sm);
+  border-bottom-left-radius: var(--bs-border-radius-sm);
+}
+.utility-nav a:not(.btn) {
+  color: var(--bs-black);
+  text-decoration: none;
+  font-weight: 600;
+}
+.utility-nav a:not(.btn) span.fa-sharp {
+  color: var(--bs-primary);
+  transition: all 0.2s ease-in-out;
+}
+.utility-nav a:not(.btn):hover {
+  color: var(--bs-primary);
+}
+.utility-nav a:not(.btn):hover span.fa-sharp {
+  color: var(--bs-secondary);
+}
+.utility-nav a:not(.btn):hover span.fa-sharp.fa-arrow-left {
+  transform: translateX(-4px);
+}
+
 #global-header .global-brand {
   display: block;
   max-width: 14.5rem;
@@ -388,10 +411,14 @@ Header
   position: fixed;
 }
 #global-header.fixed-top .global-brand {
-  visibility: hidden;
-  opacity: 0;
-  z-index: -1;
   position: relative;
+}
+@media (max-width: 576px) {
+  #global-header.fixed-top .global-brand {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+  }
 }
 #global-header.fixed-top .header-apply-button {
   visibility: visible;
@@ -1435,6 +1462,10 @@ main#main-content #page-header .page-title-wrapper {
 }
 main#main-content #page-header .page-title-wrapper .on-this-page {
   font-size: clamp(0.85rem, 0.4vw + 0.3rem, 1rem);
+}
+main#main-content ul:not([class]),
+main#main-content ol:not([class]) {
+  margin: clamp(0.5rem, 0.2vw + 0.25rem, 2rem) 0;
 }
 main#main-content .page-hero {
   position: relative;
@@ -3316,14 +3347,14 @@ table.directory-datatable tr td ul li.directory-list-department:before {
   line-height: 1.1;
 }
 
-#galleryModal .modal-content {
+.gallery-modal .modal-content {
   background: transparent;
   box-shadow: none;
 }
-#galleryModal .modal-body {
+.gallery-modal .modal-body {
   padding: 0;
 }
-#galleryModal .gallery-caption {
+.gallery-modal .gallery-caption {
   color: var(--bs-white);
   font-size: 0.875rem;
   margin-top: 1rem;
@@ -3332,7 +3363,7 @@ table.directory-datatable tr td ul li.directory-list-department:before {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-#galleryModal .swiper .swiper-slide {
+.gallery-modal .swiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3340,7 +3371,7 @@ table.directory-datatable tr td ul li.directory-list-department:before {
   padding: 1rem;
   height: 100vh;
 }
-#galleryModal .swiper .swiper-slide img {
+.gallery-modal .swiper .swiper-slide img {
   max-height: 80vh;
   max-width: 100%;
   height: auto;
@@ -3350,20 +3381,20 @@ table.directory-datatable tr td ul li.directory-list-department:before {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-#galleryModal .swiper .swiper-slide img.swiper-lazy-loaded, #galleryModal .swiper .swiper-slide img.swiper-slide-active {
+.gallery-modal .swiper .swiper-slide img.swiper-lazy-loaded, .gallery-modal .swiper .swiper-slide img.swiper-slide-active {
   opacity: 1;
 }
-#galleryModal .swiper.swiper-initialized .swiper-slide img {
+.gallery-modal .swiper.swiper-initialized .swiper-slide img {
   opacity: 1;
 }
-#galleryModal .swiper.swiper-initialized .swiper-slide .gallery-caption {
+.gallery-modal .swiper.swiper-initialized .swiper-slide .gallery-caption {
   opacity: 1;
 }
-#galleryModal .swiper .swiper-button-next,
-#galleryModal .swiper .swiper-button-prev {
+.gallery-modal .swiper .swiper-button-next,
+.gallery-modal .swiper .swiper-button-prev {
   color: var(--bs-white);
 }
-#galleryModal .swiper .swiper-pagination-bullet {
+.gallery-modal .swiper .swiper-pagination-bullet {
   background-color: var(--bs-white);
 }
 

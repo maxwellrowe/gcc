@@ -82,6 +82,38 @@ hr {
 /*****************************
 Header
 *****************************/
+.utility-nav {	
+	border-bottom-right-radius: var(--bs-border-radius-sm);
+	border-bottom-left-radius: var(--bs-border-radius-sm);	
+	a {
+		&:not(.btn) {
+			color: var(--bs-black);
+			text-decoration: none;
+			font-weight: 600;	
+			
+			span {
+				&.fa-sharp {
+					color: var(--bs-primary);	
+					transition: all .2s ease-in-out;
+				}	
+			}
+			
+			&:hover {
+				color: var(--bs-primary);
+				
+				span {
+					&.fa-sharp {	
+						color: var(--bs-secondary);
+						
+						&.fa-arrow-left {
+							transform: translateX(-4px);	
+						}
+					}	
+				}	
+			}
+		}	
+	}
+}
 #global-header .global-brand {
 	display: block;
 	max-width: 14.5rem;
@@ -136,9 +168,11 @@ Header
 		position: fixed;
 		
 		.global-brand {
-			visibility: hidden;
-			opacity: 0;	
-			z-index: -1;
+			@media (max-width: 576px) {
+				visibility: hidden;
+				opacity: 0;	
+				z-index: -1;
+			}
 			position: relative;
 		}
 		
@@ -1214,6 +1248,11 @@ main#main-content {
 				font-size: clamp(.85rem, 0.4vw + 0.3rem, 1rem);
 			}	
 		}
+	}
+
+	ul:not([class]),
+	ol:not([class]) {
+		margin:clamp(0.5rem, 0.2vw + 0.25rem, 2rem) 0;
 	}
 	
 	.page-hero {

@@ -126,7 +126,9 @@ error_reporting(E_ALL);
 				</section>
 				
 				<section>
+					<?php $gallery_modal_id = 'galleryModal-' . uniqid(); ?>
 					<div class="component-photo-gallery"
+						 data-modal-target="#<?= $gallery_modal_id ?>"
 						 data-columns-xs="1"
 						 data-columns-sm="2"
 						 data-columns-md="4"
@@ -148,7 +150,7 @@ error_reporting(E_ALL);
 						  ];
 						  foreach ($images as $i => $image): ?>
 							<div class="gallery-item" data-index="<?= $i ?>">
-							  <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-index="<?= $i ?>">
+							  <a href="#" data-bs-toggle="modal" data-bs-target="#<?= $gallery_modal_id ?>" data-index="<?= $i ?>">
 								<img src="<?= $image['src'] ?>" class="img-fluid" alt="Gallery image <?= $i ?>">
 							  </a>
 							  <?php if (!empty($image['caption'])): ?>
@@ -161,7 +163,57 @@ error_reporting(E_ALL);
 					</div>
 					
 					<!-- Modal -->
-					<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+					<div class="modal fade gallery-modal" id="<?= $gallery_modal_id ?>" tabindex="-1" aria-hidden="true">
+						<button class="btn btn-outline-light" data-bs-dismiss="modal"><span class="fa-sharp fa-regular fa-xmark"></span><span class="visually-hidden">Close</span></button>
+						<div class="modal-dialog modal-xl modal-dialog-centered">
+							<div class="modal-content bg-transparent border-0">
+							<div class="modal-body p-0">
+								<div class="swiper gallery-swiper">
+								<div class="swiper-wrapper">
+									<?php foreach ($images as $image): ?>
+									<div class="swiper-slide text-center">
+										<img src="<?= $image['src'] ?>" class="img-fluid" alt="Full view">
+										<?php if (!empty($image['caption'])): ?>
+										<div class="gallery-caption mt-2"><?= htmlspecialchars($image['caption']) ?></div>
+										<?php endif; ?>
+									</div>
+									<?php endforeach; ?>
+								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="mt-5">
+					<?php $gallery_modal_id = 'galleryModal-' . uniqid(); ?>
+					<div class="component-photo-gallery"
+						 data-modal-target="#<?= $gallery_modal_id ?>"
+						 data-columns-xs="1"
+						 data-columns-sm="2"
+						 data-columns-md="4"
+						 data-columns-lg="4">
+					  <div class="container">
+						<div class="isotope-grid">
+						  <?php foreach ($images as $i => $image): ?>
+							<div class="gallery-item" data-index="<?= $i ?>">
+							  <a href="#" data-bs-toggle="modal" data-bs-target="#<?= $gallery_modal_id ?>" data-index="<?= $i ?>">
+								<img src="<?= $image['src'] ?>" class="img-fluid" alt="Gallery image <?= $i ?>">
+							  </a>
+							  <?php if (!empty($image['caption'])): ?>
+								<div class="gallery-caption"><?= htmlspecialchars($image['caption']) ?></div>
+							  <?php endif; ?>
+							</div>
+						  <?php endforeach; ?>
+						</div>
+					  </div>
+					</div>
+
+					<div class="modal fade gallery-modal" id="<?= $gallery_modal_id ?>" tabindex="-1" aria-hidden="true">
 						<button class="btn btn-outline-light" data-bs-dismiss="modal"><span class="fa-sharp fa-regular fa-xmark"></span><span class="visually-hidden">Close</span></button>
 						<div class="modal-dialog modal-xl modal-dialog-centered">
 							<div class="modal-content bg-transparent border-0">

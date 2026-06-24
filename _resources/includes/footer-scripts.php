@@ -12,4 +12,4 @@
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <script src="/gcc/_resources/js/global.js?v=2.3"></script>
-<script src="/gcc/_resources/js/components.js?v=2.2"></script>
+<script src="/gcc/_resources/js/components.js?v=2.4"></script>

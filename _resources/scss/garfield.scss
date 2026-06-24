@@ -1,39 +1,7 @@
 @use "mixins";
 
 // Global Header
-.utility-nav {
-	border-bottom-right-radius: var(--bs-border-radius-sm);
-	border-bottom-left-radius: var(--bs-border-radius-sm);	
 	
-	a {
-		&:not(.btn) {
-			color: var(--bs-black);
-			text-decoration: none;
-			font-weight: 600;	
-			
-			span {
-				&.fa-sharp {
-					color: var(--bs-primary);	
-					transition: all .2s ease-in-out;
-				}	
-			}
-			
-			&:hover {
-				color: var(--bs-primary);
-				
-				span {
-					&.fa-sharp {	
-						color: var(--bs-secondary);
-						
-						&.fa-arrow-left {
-							transform: translateX(-4px);	
-						}
-					}	
-				}	
-			}
-		}	
-	}
-}	
 
 #global-header {
 	#garfield-nav-primary-desktop {
