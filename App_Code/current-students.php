@@ -52,7 +52,10 @@ error_reporting(E_ALL);
 			if($page_nav_secondary) {
 				require_once('../_resources/includes/nav-secondary.php');
 				page_nav_secondary($page_title, $section_title, $section_url, $page_nav_secondary_include, $page_nav_tertiary);
-			} 
+			} else if($page_nav_tertiary) {
+				require_once('../_resources/includes/nav-tertiary-mobile.php');
+				page_nav_tertiary($page_title, $section_title, $section_url, $page_nav_tertiary_inlcude);
+			}
 		?>
 		
 		<div class="main-wrapper d-flex justify-content-center align-items-stretch">
